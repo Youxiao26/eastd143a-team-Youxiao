@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*-
 """步骤 2／3：解析编目标题、归并历史政区、抽取实体与网络。
 
-输入  docs/data/raw_items.json 與 county_normalization.json
+输入  docs/minzhong-land-deeds/data/raw_items.json 與 county_normalization.json
 输出  records.json  entities.json  network.json  network_components.json
       lineage_clusters.json  spacetime.json  timeseries.json  period_summary.json
       chinese_land_records_235.csv
 """
 import collections, csv, json, math, os, random, re
 
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-D = os.path.join(REPO, "docs", "data")
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+D = os.path.join(REPO, "docs", "minzhong-land-deeds", "data")
 CJK = r"[一-鿿]"
 SURNAMES = set(
     "趙錢孫李周吳鄭王馮陳褚衛蔣沈韓楊朱秦尤許何呂施張孔曹嚴華金魏陶姜戚謝鄒喻柏水竇章雲蘇潘葛奚范彭郎魯韋昌馬苗鳳花方俞任袁柳酆鮑史唐費廉岑薛雷賀倪湯滕殷羅畢郝鄔安常樂于時傅皮卞齊康伍余元卜顧孟平黃和穆蕭尹姚邵湛汪祁毛禹狄米貝明臧計伏成戴談宋茅龐熊紀舒屈項祝董梁杜阮藍閔席季麻強賈路婁危江童顏郭林刁鍾徐邱駱高夏蔡田樊胡凌霍虞萬支柯昝管盧莫房繆干解應宗丁宣賁鄧郁單杭洪包諸左石崔吉鈕龔程嵇邢滑裴陸榮翁荀羊於惠甄曲家封芮羿儲靳汲邴糜松井段富巫烏焦巴弓牧隗山谷車侯宓蓬全郗班仰秋仲伊宮寧仇欒暴甘鈄厲戎祖武符劉景詹束龍葉幸司韶郜黎薊薄印宿白懷蒲邰從鄂索咸籍賴卓藺屠蒙池喬陰鬱胥能蒼雙聞莘黨翟譚貢勞逄姬申扶堵冉宰酈雍郤璩桑桂濮牛壽通邊扈燕冀郟浦尚農溫別莊晏柴瞿閻充慕連茹習宦艾魚容向古易慎戈廖庾終暨居衡步都耿滿弘匡國文寇廣祿闕東歐殳沃利蔚越夔隆師鞏厙聶晁勾敖融冷訾辛闞那簡饒空曾毋沙乜養鞠須豐巢關蒯相查后荊紅游竺權逯蓋益桓公紳")

@@ -16,8 +16,8 @@ FIELDS = ",".join([
     "title", "field_date_str", "field_edtf_date", "field_pid", "field_extent",
     "field_source_location", "drupal_internal__nid", "path",
 ])
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-OUT = os.path.join(REPO, "docs", "data")
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+OUT = os.path.join(REPO, "docs", "minzhong-land-deeds", "data")
 
 
 def get(url, tries=6):
@@ -49,7 +49,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     with open(os.path.join(OUT, "raw_items.json"), "w", encoding="utf-8") as f:
         json.dump(items, f, ensure_ascii=False, indent=1)
-    print(f"harvested {len(items)} items -> docs/data/raw_items.json")
+    print(f"harvested {len(items)} items -> docs/minzhong-land-deeds/data/raw_items.json")
 
 
 if __name__ == "__main__":

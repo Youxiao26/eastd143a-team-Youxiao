@@ -3,8 +3,8 @@
 """从分析结果生成静态站点 index.html。"""
 import json, os, sys, html, collections
 
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-P = os.path.join(REPO, "docs", "data")
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+P = os.path.join(REPO, "docs", "minzhong-land-deeds", "data")
 L = lambda f: json.load(open(os.path.join(P, f), encoding="utf-8"))
 recs   = L("records.json");      ents  = L("entities.json")
 norm   = L("county_normalization.json"); st = L("spacetime.json")
