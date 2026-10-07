@@ -220,8 +220,9 @@ def main():
         pos = layout(c, adj)
         docs = sorted({d for n in c for d in nodes[n]["docs"]})
         yrs = [y for n in c for y in nodes[n]["years"]]
-        sur = collections.Counter(n[0] for n in c if nodes[n]["type"] == "person")
-        dom, domn = sur.most_common(1)[0] if sur else ("", 0)
+        sur = collections.Counter(n[0] for n in sorted(c) if nodes[n]["type"] == "person")
+        # 平局時 most_common 取插入順序，隨 PYTHONHASHSEED 變動；改為按 (計數降序, 姓氏) 定序
+        dom, domn = min(sur.items(), key=lambda kv: (-kv[1], kv[0])) if sur else ("", 0)
         es = [{"s": a, "t": b, "kind": ew[(a, b)]["kind"], "w": ew[(a, b)]["weight"]}
               for a in sorted(c) for b in sorted(adj[a]) if b in c and b > a and (a, b) in ew]
         out.append({"nodes": [{"id": n, "type": nodes[n]["type"], "x": round(pos[n][0], 1),

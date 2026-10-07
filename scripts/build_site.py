@@ -316,7 +316,10 @@ def netcards(n=12):
         yr=f'{c["years"][0]}–{c["years"][1]}' if c["years"] else "年份不明"
         if c["years"] and c["years"][0]==c["years"][1]: yr=str(c["years"][0])
         u="、".join(c["units"]) or "地點不明"
-        o.append(f'<div class="netcard"><h4>{e(c["dominant_surname"])}氏等 {c["n"]} 人</h4>'
+        # 主姓未過半時不冠以某氏，避免誤導
+        head = (f'{e(c["dominant_surname"])}氏等 {c["n"]} 人' if c["surname_share"] >= 0.5
+                else f'{c["n"]} 人交易簇')
+        o.append(f'<div class="netcard"><h4>{head}</h4>'
                  f'<p class="meta">{c["n_docs"]} 件 · {e(yr)}<br>{e(u)}</p>{comp_svg(c)}</div>')
     o.append('</div>')
     return "\n".join(o)
