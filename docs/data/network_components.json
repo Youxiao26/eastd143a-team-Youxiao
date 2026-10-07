@@ -1,0 +1,6229 @@
+[
+ {
+  "nodes": [
+   {
+    "id": "林應香",
+    "type": "person",
+    "x": 144.2,
+    "y": 33.9,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林春發",
+    "type": "person",
+    "x": 131.3,
+    "y": 122.9,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林秋溥",
+    "type": "person",
+    "x": 42.2,
+    "y": 110.9,
+    "n_docs": 2,
+    "roles": {
+     "seller": 1,
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林萬開",
+    "type": "person",
+    "x": 93.5,
+    "y": 72.4,
+    "n_docs": 7,
+    "roles": {
+     "owner": 1,
+     "buyer": 5,
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "王聯鄧",
+    "type": "person",
+    "x": 54.7,
+    "y": 22,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "林應香",
+    "t": "林萬開",
+    "kind": "trade",
+    "w": 2
+   },
+   {
+    "s": "林春發",
+    "t": "林萬開",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "林秋溥",
+    "t": "林萬開",
+    "kind": "trade",
+    "w": 2
+   },
+   {
+    "s": "林萬開",
+    "t": "王聯鄧",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 5,
+  "n_docs": 7,
+  "docs": [
+   83816,
+   83821,
+   83826,
+   83827,
+   83830,
+   83833,
+   83840
+  ],
+  "years": [
+   1875,
+   1913
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.8
+ },
+ {
+  "nodes": [
+   {
+    "id": "黃同德",
+    "type": "person",
+    "x": 128.7,
+    "y": 76.3,
+    "n_docs": 2,
+    "roles": {
+     "owner": 2
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "黃同華",
+    "type": "person",
+    "x": 108.5,
+    "y": 104.1,
+    "n_docs": 3,
+    "roles": {
+     "owner": 3
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "黃國義",
+    "type": "person",
+    "x": 75.7,
+    "y": 93.5,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "黃國興",
+    "type": "person",
+    "x": 75.8,
+    "y": 59.1,
+    "n_docs": 2,
+    "roles": {
+     "owner": 2
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "黃遠容",
+    "type": "person",
+    "x": 108.5,
+    "y": 48.5,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "黃同德",
+    "t": "黃國義",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃同德",
+    "t": "黃國興",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃同德",
+    "t": "黃遠容",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃同德",
+    "t": "黃同華",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃同華",
+    "t": "黃國義",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃同華",
+    "t": "黃國興",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃同華",
+    "t": "黃遠容",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃國義",
+    "t": "黃國興",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃國義",
+    "t": "黃遠容",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃國興",
+    "t": "黃遠容",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 5,
+  "n_docs": 5,
+  "docs": [
+   83869,
+   83871,
+   83873,
+   83878,
+   83955
+  ],
+  "years": [
+   1917,
+   1926
+  ],
+  "units": [
+   "永泰（永福）"
+  ],
+  "dominant_surname": "黃",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "葉宜全保票人",
+    "type": "person",
+    "x": 171.0,
+    "y": 127.1,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2
+    },
+    "units": []
+   },
+   {
+    "id": "陳國遠",
+    "type": "person",
+    "x": 125.2,
+    "y": 93.5,
+    "n_docs": 3,
+    "roles": {
+     "buyer": 1,
+     "seller": 2
+    },
+    "units": []
+   },
+   {
+    "id": "陳國龍",
+    "type": "person",
+    "x": 28.8,
+    "y": 22.7,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   },
+   {
+    "id": "黃隆貫",
+    "type": "person",
+    "x": 74.6,
+    "y": 56.3,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "葉宜全保票人",
+    "t": "陳國遠",
+    "kind": "trade",
+    "w": 2
+   },
+   {
+    "s": "陳國遠",
+    "t": "黃隆貫",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "陳國龍",
+    "t": "黃隆貫",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 4,
+  "n_docs": 4,
+  "docs": [
+   83884,
+   83936,
+   83937,
+   83950
+  ],
+  "years": [
+   1805,
+   1829
+  ],
+  "units": [],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "林厚成",
+    "type": "person",
+    "x": 128.6,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林厚祥",
+    "type": "person",
+    "x": 100.0,
+    "y": 103.6,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林厚祿",
+    "type": "person",
+    "x": 71.4,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "葉成",
+    "type": "person",
+    "x": 100.0,
+    "y": 46.4,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2,
+     "owner": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "林厚成",
+    "t": "林厚祥",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林厚成",
+    "t": "葉成",
+    "kind": "trade",
+    "w": 2
+   },
+   {
+    "s": "林厚成",
+    "t": "林厚祿",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林厚祥",
+    "t": "葉成",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "林厚祥",
+    "t": "林厚祿",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林厚祿",
+    "t": "葉成",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 4,
+  "n_docs": 2,
+  "docs": [
+   83915,
+   83999
+  ],
+  "years": [
+   1844,
+   1854
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.75
+ },
+ {
+  "nodes": [
+   {
+    "id": "陳建璽",
+    "type": "person",
+    "x": 128.6,
+    "y": 75.1,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳成嘉",
+    "type": "person",
+    "x": 100.1,
+    "y": 103.6,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳道書",
+    "type": "person",
+    "x": 71.4,
+    "y": 74.9,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳雅",
+    "type": "person",
+    "x": 99.9,
+    "y": 46.4,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "陳建璽",
+    "t": "陳道書",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "陳建璽",
+    "t": "陳成嘉",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "陳建璽",
+    "t": "陳雅",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "陳成嘉",
+    "t": "陳道書",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "陳成嘉",
+    "t": "陳雅",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "陳道書",
+    "t": "陳雅",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 4,
+  "n_docs": 1,
+  "docs": [
+   83876
+  ],
+  "years": [
+   1890,
+   1890
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "吳淑珍",
+    "type": "person",
+    "x": 128.5,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   },
+   {
+    "id": "林宗",
+    "type": "person",
+    "x": 100.0,
+    "y": 103.5,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   },
+   {
+    "id": "林涯",
+    "type": "person",
+    "x": 71.5,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   },
+   {
+    "id": "林貢",
+    "type": "person",
+    "x": 100.0,
+    "y": 46.5,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "吳淑珍",
+    "t": "林涯",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "吳淑珍",
+    "t": "林貢",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "吳淑珍",
+    "t": "林宗",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林宗",
+    "t": "林貢",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林宗",
+    "t": "林涯",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林涯",
+    "t": "林貢",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 4,
+  "n_docs": 1,
+  "docs": [
+   83956
+  ],
+  "years": [
+   1952,
+   1952
+  ],
+  "units": [
+   "晉江"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.75
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉如慶",
+    "type": "person",
+    "x": 128.5,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "劉德桂",
+    "type": "person",
+    "x": 100.0,
+    "y": 103.5,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "劉德輝",
+    "type": "person",
+    "x": 71.5,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "劉景星",
+    "type": "person",
+    "x": 100.0,
+    "y": 46.5,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉如慶",
+    "t": "劉德輝",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉如慶",
+    "t": "劉景星",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉如慶",
+    "t": "劉德桂",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉德桂",
+    "t": "劉景星",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉德桂",
+    "t": "劉德輝",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉德輝",
+    "t": "劉景星",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 4,
+  "n_docs": 1,
+  "docs": [
+   83957
+  ],
+  "years": [
+   1935,
+   1935
+  ],
+  "units": [
+   "建陽"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "施性固",
+    "type": "person",
+    "x": 128.6,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   },
+   {
+    "id": "施松柏",
+    "type": "person",
+    "x": 100.0,
+    "y": 103.6,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   },
+   {
+    "id": "施能鎖",
+    "type": "person",
+    "x": 71.4,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   },
+   {
+    "id": "顏蒜",
+    "type": "person",
+    "x": 100.0,
+    "y": 46.4,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "施性固",
+    "t": "施松柏",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "施性固",
+    "t": "顏蒜",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "施性固",
+    "t": "施能鎖",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "施松柏",
+    "t": "顏蒜",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "施松柏",
+    "t": "施能鎖",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "施能鎖",
+    "t": "顏蒜",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 4,
+  "n_docs": 1,
+  "docs": [
+   83959
+  ],
+  "years": [
+   1952,
+   1952
+  ],
+  "units": [
+   "晉江"
+  ],
+  "dominant_surname": "施",
+  "surname_share": 0.75
+ },
+ {
+  "nodes": [
+   {
+    "id": "連芳",
+    "type": "person",
+    "x": 128.6,
+    "y": 75.1,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "南安"
+    ]
+   },
+   {
+    "id": "黃世",
+    "type": "person",
+    "x": 100.1,
+    "y": 103.6,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "南安"
+    ]
+   },
+   {
+    "id": "黃嚕",
+    "type": "person",
+    "x": 71.4,
+    "y": 74.9,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "南安"
+    ]
+   },
+   {
+    "id": "黃滑",
+    "type": "person",
+    "x": 99.9,
+    "y": 46.4,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "南安"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "連芳",
+    "t": "黃嚕",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "連芳",
+    "t": "黃滑",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "連芳",
+    "t": "黃世",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃世",
+    "t": "黃嚕",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃世",
+    "t": "黃滑",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "黃嚕",
+    "t": "黃滑",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 4,
+  "n_docs": 1,
+  "docs": [
+   83963
+  ],
+  "years": [
+   1952,
+   1952
+  ],
+  "units": [
+   "南安"
+  ],
+  "dominant_surname": "黃",
+  "surname_share": 0.75
+ },
+ {
+  "nodes": [
+   {
+    "id": "李水旺",
+    "type": "person",
+    "x": 128.6,
+    "y": 75.1,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "邵武"
+    ]
+   },
+   {
+    "id": "李義妹",
+    "type": "person",
+    "x": 100.1,
+    "y": 103.6,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "邵武"
+    ]
+   },
+   {
+    "id": "李義草",
+    "type": "person",
+    "x": 71.4,
+    "y": 74.9,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "邵武"
+    ]
+   },
+   {
+    "id": "陳連玉",
+    "type": "person",
+    "x": 99.9,
+    "y": 46.4,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "邵武"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "李水旺",
+    "t": "李義草",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "李水旺",
+    "t": "李義妹",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "李水旺",
+    "t": "陳連玉",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "李義妹",
+    "t": "李義草",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "李義妹",
+    "t": "陳連玉",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "李義草",
+    "t": "陳連玉",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 4,
+  "n_docs": 1,
+  "docs": [
+   83979
+  ],
+  "years": [
+   1952,
+   1952
+  ],
+  "units": [
+   "邵武"
+  ],
+  "dominant_surname": "李",
+  "surname_share": 0.75
+ },
+ {
+  "nodes": [
+   {
+    "id": "欽源",
+    "type": "person",
+    "x": 144.2,
+    "y": 115.4,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "福清"
+    ]
+   },
+   {
+    "id": "陳欽瑞",
+    "type": "person",
+    "x": 97.7,
+    "y": 89.0,
+    "n_docs": 5,
+    "roles": {
+     "buyer": 5
+    },
+    "units": [
+     "福清",
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳欽隆",
+    "type": "person",
+    "x": 50.6,
+    "y": 62.2,
+    "n_docs": 4,
+    "roles": {
+     "seller": 4
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "欽源",
+    "t": "陳欽瑞",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "陳欽瑞",
+    "t": "陳欽隆",
+    "kind": "trade",
+    "w": 4
+   }
+  ],
+  "n": 3,
+  "n_docs": 5,
+  "docs": [
+   83882,
+   83942,
+   83945,
+   83946,
+   83947
+  ],
+  "years": [
+   1932,
+   1936
+  ],
+  "units": [
+   "福清",
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.67
+ },
+ {
+  "nodes": [
+   {
+    "id": "施至尚",
+    "type": "person",
+    "x": 137.8,
+    "y": 33.7,
+    "n_docs": 3,
+    "roles": {
+     "buyer": 3
+    },
+    "units": [
+     "晉江"
+    ]
+   },
+   {
+    "id": "施至祥",
+    "type": "person",
+    "x": 46.0,
+    "y": 89.3,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "晉江"
+    ]
+   },
+   {
+    "id": "陳佃",
+    "type": "person",
+    "x": 92.4,
+    "y": 61.2,
+    "n_docs": 4,
+    "roles": {
+     "seller": 4
+    },
+    "units": [
+     "晉江"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "施至尚",
+    "t": "陳佃",
+    "kind": "trade",
+    "w": 3
+   },
+   {
+    "s": "施至祥",
+    "t": "陳佃",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 4,
+  "docs": [
+   83960,
+   83971,
+   83974,
+   83975
+  ],
+  "years": [
+   1935,
+   1953
+  ],
+  "units": [
+   "晉江"
+  ],
+  "dominant_surname": "施",
+  "surname_share": 0.67
+ },
+ {
+  "nodes": [
+   {
+    "id": "和意軒老人會",
+    "type": "institution",
+    "x": 137.8,
+    "y": 33.7,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "秋意軒老人會",
+    "type": "institution",
+    "x": 46.0,
+    "y": 89.3,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   },
+   {
+    "id": "鄒允春",
+    "type": "person",
+    "x": 92.4,
+    "y": 61.2,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "和意軒老人會",
+    "t": "鄒允春",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "秋意軒老人會",
+    "t": "鄒允春",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 2,
+  "docs": [
+   83799,
+   84024
+  ],
+  "years": [
+   1900,
+   1900
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "鄒",
+  "surname_share": 0.33
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉咸安",
+    "type": "person",
+    "x": 127.4,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 1,
+     "owner": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "劉盛章",
+    "type": "person",
+    "x": 86.3,
+    "y": 98.7,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "劉道建",
+    "type": "person",
+    "x": 86.3,
+    "y": 51.3,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉咸安",
+    "t": "劉盛章",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "劉咸安",
+    "t": "劉道建",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉盛章",
+    "t": "劉道建",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 2,
+  "docs": [
+   83817,
+   83818
+  ],
+  "years": [
+   1798,
+   1805
+  ],
+  "units": [
+   "建陽"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉興國",
+    "type": "person",
+    "x": 144.2,
+    "y": 115.4,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林可瓊",
+    "type": "person",
+    "x": 97.7,
+    "y": 89.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 1,
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林為良",
+    "type": "person",
+    "x": 50.6,
+    "y": 62.2,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉興國",
+    "t": "林可瓊",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "林可瓊",
+    "t": "林為良",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 2,
+  "docs": [
+   83822,
+   83825
+  ],
+  "years": [
+   1906,
+   1913
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.67
+ },
+ {
+  "nodes": [
+   {
+    "id": "張寶詨",
+    "type": "person",
+    "x": 144.2,
+    "y": 115.4,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "程長孫",
+    "type": "person",
+    "x": 97.7,
+    "y": 89.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2
+    },
+    "units": []
+   },
+   {
+    "id": "藍炳孫",
+    "type": "person",
+    "x": 50.6,
+    "y": 62.2,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "張寶詨",
+    "t": "程長孫",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "程長孫",
+    "t": "藍炳孫",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 2,
+  "docs": [
+   83906,
+   83907
+  ],
+  "years": [
+   1890,
+   1890
+  ],
+  "units": [],
+  "dominant_surname": "程",
+  "surname_share": 0.33
+ },
+ {
+  "nodes": [
+   {
+    "id": "咸宜",
+    "type": "person",
+    "x": 115.2,
+    "y": 75.3,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2
+    },
+    "units": []
+   },
+   {
+    "id": "昌宜",
+    "type": "person",
+    "x": 115.2,
+    "y": 128,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "道楷",
+    "type": "person",
+    "x": 115.2,
+    "y": 22,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "咸宜",
+    "t": "昌宜",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "咸宜",
+    "t": "道楷",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 2,
+  "docs": [
+   83940,
+   83941
+  ],
+  "years": null,
+  "units": [],
+  "dominant_surname": "昌",
+  "surname_share": 0.33
+ },
+ {
+  "nodes": [
+   {
+    "id": "陳宿康",
+    "type": "person",
+    "x": 144.2,
+    "y": 115.4,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳桂修",
+    "type": "person",
+    "x": 97.7,
+    "y": 89.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳聖榜",
+    "type": "person",
+    "x": 50.6,
+    "y": 62.2,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "陳宿康",
+    "t": "陳桂修",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "陳桂修",
+    "t": "陳聖榜",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 2,
+  "docs": [
+   84036,
+   84037
+  ],
+  "years": [
+   1929,
+   1932
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "吳淮棉",
+    "type": "person",
+    "x": 127.3,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   },
+   {
+    "id": "藍維乾",
+    "type": "person",
+    "x": 86.3,
+    "y": 98.7,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "藍維坤",
+    "type": "person",
+    "x": 86.3,
+    "y": 51.3,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "吳淮棉",
+    "t": "藍維坤",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "吳淮棉",
+    "t": "藍維乾",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "藍維乾",
+    "t": "藍維坤",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 1,
+  "docs": [
+   83806
+  ],
+  "years": [
+   1940,
+   1940
+  ],
+  "units": [],
+  "dominant_surname": "藍",
+  "surname_share": 0.67
+ },
+ {
+  "nodes": [
+   {
+    "id": "林久澍",
+    "type": "person",
+    "x": 127.4,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "林久興",
+    "type": "person",
+    "x": 86.3,
+    "y": 98.7,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "林可鑒",
+    "type": "person",
+    "x": 86.3,
+    "y": 51.3,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "林久澍",
+    "t": "林久興",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林久澍",
+    "t": "林可鑒",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林久興",
+    "t": "林可鑒",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 1,
+  "docs": [
+   83829
+  ],
+  "years": [
+   1924,
+   1924
+  ],
+  "units": [],
+  "dominant_surname": "林",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "林忠",
+    "type": "person",
+    "x": 127.4,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "林榮",
+    "type": "person",
+    "x": 86.3,
+    "y": 98.7,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "賴榮松",
+    "type": "person",
+    "x": 86.3,
+    "y": 51.3,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "林忠",
+    "t": "林榮",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林忠",
+    "t": "賴榮松",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "林榮",
+    "t": "賴榮松",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 1,
+  "docs": [
+   83924
+  ],
+  "years": [
+   1841,
+   1841
+  ],
+  "units": [],
+  "dominant_surname": "林",
+  "surname_share": 0.67
+ },
+ {
+  "nodes": [
+   {
+    "id": "林邦端",
+    "type": "person",
+    "x": 127.4,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "程利欲",
+    "type": "person",
+    "x": 86.3,
+    "y": 98.7,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "程利霖",
+    "type": "person",
+    "x": 86.3,
+    "y": 51.3,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "林邦端",
+    "t": "程利欲",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "林邦端",
+    "t": "程利霖",
+    "kind": "trade",
+    "w": 1
+   },
+   {
+    "s": "程利欲",
+    "t": "程利霖",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 1,
+  "docs": [
+   83926
+  ],
+  "years": [
+   1868,
+   1868
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "程",
+  "surname_share": 0.67
+ },
+ {
+  "nodes": [
+   {
+    "id": "邱傳學",
+    "type": "person",
+    "x": 127.4,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "邱有本",
+    "type": "person",
+    "x": 86.3,
+    "y": 98.7,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "邱有炳",
+    "type": "person",
+    "x": 86.3,
+    "y": 51.3,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "邱傳學",
+    "t": "邱有本",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "邱傳學",
+    "t": "邱有炳",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "邱有本",
+    "t": "邱有炳",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 1,
+  "docs": [
+   83931
+  ],
+  "years": [
+   1802,
+   1802
+  ],
+  "units": [
+   "閩清"
+  ],
+  "dominant_surname": "邱",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉貞文",
+    "type": "person",
+    "x": 127.3,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1,
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "陸元盛",
+    "type": "person",
+    "x": 86.3,
+    "y": 98.7,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "黃象智",
+    "type": "person",
+    "x": 86.3,
+    "y": 51.3,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉貞文",
+    "t": "黃象智",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉貞文",
+    "t": "陸元盛",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "陸元盛",
+    "t": "黃象智",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 3,
+  "n_docs": 1,
+  "docs": [
+   84019
+  ],
+  "years": [
+   1869,
+   1869
+  ],
+  "units": [
+   "古田"
+  ],
+  "dominant_surname": "陸",
+  "surname_share": 0.33
+ },
+ {
+  "nodes": [
+   {
+    "id": "黃克動",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 3,
+    "roles": {
+     "owner": 3
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "黃生官",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 4,
+    "roles": {
+     "owner": 4
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "黃克動",
+    "t": "黃生官",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 6,
+  "docs": [
+   83889,
+   83911,
+   83921,
+   83927,
+   83928,
+   84007
+  ],
+  "years": [
+   1945,
+   1951
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "黃",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "陳必泉",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 4,
+    "roles": {
+     "buyer": 3,
+     "owner": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳必清",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 3,
+    "roles": {
+     "seller": 3
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "陳必泉",
+    "t": "陳必清",
+    "kind": "trade",
+    "w": 3
+   }
+  ],
+  "n": 2,
+  "n_docs": 4,
+  "docs": [
+   83919,
+   84009,
+   84010,
+   84011
+  ],
+  "years": [
+   1887,
+   1913
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "林有柱",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 1,
+     "owner": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "趙守藻",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 3,
+    "roles": {
+     "seller": 2,
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "林有柱",
+    "t": "趙守藻",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 3,
+  "docs": [
+   83837,
+   83838,
+   83841
+  ],
+  "years": [
+   1805,
+   1913
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "趙",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "林春源",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "王元靄",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1,
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "林春源",
+    "t": "王元靄",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83794,
+   83868
+  ],
+  "years": [
+   1866,
+   1869
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "王",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "吳開成",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳氏",
+    "type": "woman",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "吳開成",
+    "t": "陳氏",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83798,
+   83920
+  ],
+  "years": [
+   1873,
+   1890
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "吳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "吳右嚴",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳燦祥",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "吳右嚴",
+    "t": "陳燦祥",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83801,
+   83981
+  ],
+  "years": [
+   1918,
+   1918
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "王三妹",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳軍漢",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "王三妹",
+    "t": "陳軍漢",
+    "kind": "trade",
+    "w": 2
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83802,
+   84031
+  ],
+  "years": [
+   1924,
+   1924
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "王",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "吳秉鑒",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "owner": 1,
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "謝先經",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "吳秉鑒",
+    "t": "謝先經",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83808,
+   83925
+  ],
+  "years": [
+   1805,
+   1805
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "吳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "張銓銓",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "鄒道明",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "張銓銓",
+    "t": "鄒道明",
+    "kind": "trade",
+    "w": 2
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83812,
+   84023
+  ],
+  "years": [
+   1889,
+   1925
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "張",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "官方政府",
+    "type": "government",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林萬利",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 1,
+     "owner": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "官方政府",
+    "t": "林萬利",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83828,
+   83904
+  ],
+  "years": [
+   1884,
+   1886
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "王齊發",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "郭宗仲",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "王齊發",
+    "t": "郭宗仲",
+    "kind": "trade",
+    "w": 2
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83859,
+   84026
+  ],
+  "years": [
+   1906,
+   1906
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "郭",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "黃汝勷",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "owner": 2
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "黃雲村",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "黃汝勷",
+    "t": "黃雲村",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83874,
+   83880
+  ],
+  "years": [
+   1920,
+   1922
+  ],
+  "units": [
+   "永泰（永福）"
+  ],
+  "dominant_surname": "黃",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "沈齊",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "owner": 2
+    },
+    "units": [
+     "永安",
+     "永安 / 永泰（永福）"
+    ]
+   },
+   {
+    "id": "鄭其英",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "永安 / 永泰（永福）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "沈齊",
+    "t": "鄭其英",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83879,
+   83953
+  ],
+  "years": [
+   1895,
+   1900
+  ],
+  "units": [
+   "永安",
+   "永安 / 永泰（永福）"
+  ],
+  "dominant_surname": "沈",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "張國光",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "張國寶",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "buyer": 2
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "張國光",
+    "t": "張國寶",
+    "kind": "trade",
+    "w": 2
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83886,
+   83965
+  ],
+  "years": [
+   1928,
+   1928
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "張",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "文鳳",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 2,
+    "roles": {
+     "seller": 1,
+     "buyer": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "朝官",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "文鳳",
+    "t": "朝官",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 2,
+  "docs": [
+   83933,
+   83948
+  ],
+  "years": [
+   1926,
+   1927
+  ],
+  "units": [
+   "閩清"
+  ],
+  "dominant_surname": "朝",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "張學車",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1,
+     "buyer": 1
+    },
+    "units": [
+     "福清"
+    ]
+   },
+   {
+    "id": "陳書寶",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "福清"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "張學車",
+    "t": "陳書寶",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83792
+  ],
+  "years": [
+   1946,
+   1946
+  ],
+  "units": [
+   "福清"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "郑祚龙",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   },
+   {
+    "id": "高天钏",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "郑祚龙",
+    "t": "高天钏",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83796
+  ],
+  "years": [
+   1931,
+   1931
+  ],
+  "units": [],
+  "dominant_surname": "郑",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "王錦枝",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "王錦發",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "王錦枝",
+    "t": "王錦發",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83797
+  ],
+  "years": [
+   1887,
+   1887
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "王",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "吳省忠",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "永定"
+    ]
+   },
+   {
+    "id": "許瓊栢",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "永定"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "吳省忠",
+    "t": "許瓊栢",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83804
+  ],
+  "years": [
+   1761,
+   1761
+  ],
+  "units": [
+   "永定"
+  ],
+  "dominant_surname": "許",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "方元慈",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "方潮濤",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "方元慈",
+    "t": "方潮濤",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83809
+  ],
+  "years": [
+   1871,
+   1871
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "方",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉振萬",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "劉紀臣",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉振萬",
+    "t": "劉紀臣",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83810
+  ],
+  "years": [
+   1932,
+   1932
+  ],
+  "units": [
+   "閩清"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉仕懋",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   },
+   {
+    "id": "蘇章林",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉仕懋",
+    "t": "蘇章林",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83813
+  ],
+  "years": [
+   1898,
+   1898
+  ],
+  "units": [],
+  "dominant_surname": "劉",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉繼伍",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "應梓龍",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉繼伍",
+    "t": "應梓龍",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83819
+  ],
+  "years": [
+   1782,
+   1782
+  ],
+  "units": [
+   "建陽"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "林可昌",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": []
+   },
+   {
+    "id": "林可淦",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "林可昌",
+    "t": "林可淦",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83823
+  ],
+  "years": [
+   1932,
+   1932
+  ],
+  "units": [],
+  "dominant_surname": "林",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "熊亨讀",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "熊長生",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "熊亨讀",
+    "t": "熊長生",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83842
+  ],
+  "years": [
+   1784,
+   1784
+  ],
+  "units": [
+   "古田"
+  ],
+  "dominant_surname": "熊",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "張昌暢",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "屏南 / 古田"
+    ]
+   },
+   {
+    "id": "張邦昔",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "屏南 / 古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "張昌暢",
+    "t": "張邦昔",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83843
+  ],
+  "years": [
+   1870,
+   1870
+  ],
+  "units": [
+   "屏南 / 古田"
+  ],
+  "dominant_surname": "張",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "鄭嬌姑",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "鄭淳氏",
+    "type": "woman",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "鄭嬌姑",
+    "t": "鄭淳氏",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83844
+  ],
+  "years": [
+   1864,
+   1864
+  ],
+  "units": [
+   "古田"
+  ],
+  "dominant_surname": "鄭",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "徐幹通",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "南平"
+    ]
+   },
+   {
+    "id": "熊孫",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "南平"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "徐幹通",
+    "t": "熊孫",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83845
+  ],
+  "years": [
+   1767,
+   1767
+  ],
+  "units": [
+   "南平"
+  ],
+  "dominant_surname": "熊",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "李有定",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "謝氏",
+    "type": "woman",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "李有定",
+    "t": "謝氏",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83847
+  ],
+  "years": [
+   1779,
+   1779
+  ],
+  "units": [
+   "閩清"
+  ],
+  "dominant_surname": "李",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "鄭璟",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "陳裔煌",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "鄭璟",
+    "t": "陳裔煌",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83848
+  ],
+  "years": [
+   1872,
+   1872
+  ],
+  "units": [
+   "古田"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "蘇坐標",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "屏南"
+    ]
+   },
+   {
+    "id": "輝煌",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "屏南"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "蘇坐標",
+    "t": "輝煌",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83849
+  ],
+  "years": [
+   1869,
+   1869
+  ],
+  "units": [
+   "屏南"
+  ],
+  "dominant_surname": "輝",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "張氏",
+    "type": "woman",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林欽祥",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "張氏",
+    "t": "林欽祥",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83852
+  ],
+  "years": [
+   1920,
+   1920
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "陈謀丁",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "陳如良",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "陈謀丁",
+    "t": "陳如良",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83856
+  ],
+  "years": null,
+  "units": [
+   "古田"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "張炳源",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "林履同",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "張炳源",
+    "t": "林履同",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83857
+  ],
+  "years": [
+   1925,
+   1925
+  ],
+  "units": [
+   "古田"
+  ],
+  "dominant_surname": "張",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "許春願",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "黃財業",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1,
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "許春願",
+    "t": "黃財業",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83864
+  ],
+  "years": [
+   1904,
+   1904
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "黃",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "余傳荃",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "張道興",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1,
+     "buyer": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "余傳荃",
+    "t": "張道興",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83865
+  ],
+  "years": [
+   1942,
+   1942
+  ],
+  "units": [
+   "閩清"
+  ],
+  "dominant_surname": "張",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "張文楚",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "金寬英",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1,
+     "buyer": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "張文楚",
+    "t": "金寬英",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83866
+  ],
+  "years": [
+   1903,
+   1903
+  ],
+  "units": [
+   "永泰（永福）"
+  ],
+  "dominant_surname": "金",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉嘉命",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "劉源森",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉嘉命",
+    "t": "劉源森",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83885
+  ],
+  "years": [
+   1910,
+   1910
+  ],
+  "units": [
+   "建陽"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "林久樹",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林宜新",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "林久樹",
+    "t": "林宜新",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83905
+  ],
+  "years": [
+   1915,
+   1915
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "程姑仔",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "金寶",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "程姑仔",
+    "t": "金寶",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83909
+  ],
+  "years": [
+   1870,
+   1870
+  ],
+  "units": [],
+  "dominant_surname": "金",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "黃維岑",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "黃維裕",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "黃維岑",
+    "t": "黃維裕",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83914
+  ],
+  "years": [
+   1842,
+   1842
+  ],
+  "units": [],
+  "dominant_surname": "黃",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "陸元規",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "陸元賜",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "陸元規",
+    "t": "陸元賜",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83916
+  ],
+  "years": [
+   1888,
+   1888
+  ],
+  "units": [
+   "古田"
+  ],
+  "dominant_surname": "陸",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "余德光",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "林聖魁",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "余德光",
+    "t": "林聖魁",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83932
+  ],
+  "years": [
+   1913,
+   1913
+  ],
+  "units": [
+   "閩清"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉孝良",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "林高滿",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉孝良",
+    "t": "林高滿",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83934
+  ],
+  "years": [
+   1840,
+   1840
+  ],
+  "units": [
+   "閩清"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "邵李氏",
+    "type": "woman",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "黃懷周",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "邵李氏",
+    "t": "黃懷周",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83935
+  ],
+  "years": [
+   1934,
+   1934
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "黃",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "林明尊",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "陳功存",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "林明尊",
+    "t": "陳功存",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83938
+  ],
+  "years": [
+   1945,
+   1945
+  ],
+  "units": [],
+  "dominant_surname": "林",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "陳玉書",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   },
+   {
+    "id": "陳老鳳",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "陳玉書",
+    "t": "陳老鳳",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83943
+  ],
+  "years": [
+   1941,
+   1941
+  ],
+  "units": [],
+  "dominant_surname": "陳",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "康宗瑞",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "陳連孫",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "康宗瑞",
+    "t": "陳連孫",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83944
+  ],
+  "years": [
+   1879,
+   1879
+  ],
+  "units": [],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "黃丁荃",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "黃花蘭租客",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "黃丁荃",
+    "t": "黃花蘭租客",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83949
+  ],
+  "years": [
+   1927,
+   1927
+  ],
+  "units": [],
+  "dominant_surname": "黃",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉子珜",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   },
+   {
+    "id": "黃志林",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉子珜",
+    "t": "黃志林",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83961
+  ],
+  "years": null,
+  "units": [],
+  "dominant_surname": "劉",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉欽達違",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "劉王建",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉欽達違",
+    "t": "劉王建",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83964
+  ],
+  "years": [
+   1813,
+   1813
+  ],
+  "units": [
+   "建陽"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "方圍九",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "東山"
+    ]
+   },
+   {
+    "id": "林武",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "東山"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "方圍九",
+    "t": "林武",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83966
+  ],
+  "years": [
+   1953,
+   1953
+  ],
+  "units": [
+   "東山"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "林清",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "東山"
+    ]
+   },
+   {
+    "id": "陳蕃薯",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "東山"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "林清",
+    "t": "陳蕃薯",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83967
+  ],
+  "years": [
+   1954,
+   1954
+  ],
+  "units": [
+   "東山"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "姚望兌",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   },
+   {
+    "id": "姚望駀",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "姚望兌",
+    "t": "姚望駀",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83968
+  ],
+  "years": [
+   1921,
+   1921
+  ],
+  "units": [],
+  "dominant_surname": "姚",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "林學通",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林述璋",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "林學通",
+    "t": "林述璋",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83969
+  ],
+  "years": [
+   1934,
+   1934
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "黃榮森",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "東山"
+    ]
+   },
+   {
+    "id": "黃煌",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "東山"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "黃榮森",
+    "t": "黃煌",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83972
+  ],
+  "years": [
+   1947,
+   1947
+  ],
+  "units": [
+   "東山"
+  ],
+  "dominant_surname": "黃",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "沈秀清",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "東山"
+    ]
+   },
+   {
+    "id": "黃炮",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "東山"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "沈秀清",
+    "t": "黃炮",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83973
+  ],
+  "years": [
+   1943,
+   1943
+  ],
+  "units": [
+   "東山"
+  ],
+  "dominant_surname": "黃",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "李學堃",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "王昌年",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "李學堃",
+    "t": "王昌年",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83976
+  ],
+  "years": [
+   1910,
+   1910
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "李",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "金信江",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "金輯和",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "金信江",
+    "t": "金輯和",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83977
+  ],
+  "years": [
+   1925,
+   1925
+  ],
+  "units": [
+   "永泰（永福）"
+  ],
+  "dominant_surname": "金",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "何振華",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   },
+   {
+    "id": "何金盛",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "建陽"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "何振華",
+    "t": "何金盛",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83982
+  ],
+  "years": [
+   1909,
+   1909
+  ],
+  "units": [
+   "建陽"
+  ],
+  "dominant_surname": "何",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "余溪",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "東山"
+    ]
+   },
+   {
+    "id": "林定宗林登宗",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "東山"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "余溪",
+    "t": "林定宗林登宗",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83986
+  ],
+  "years": [
+   1949,
+   1949
+  ],
+  "units": [
+   "東山"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "張經炎",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "林祥德",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "張經炎",
+    "t": "林祥德",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83989
+  ],
+  "years": [
+   1921,
+   1921
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "林",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉隹",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "東山"
+    ]
+   },
+   {
+    "id": "沙延德",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "東山"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉隹",
+    "t": "沙延德",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   83998
+  ],
+  "years": [
+   1949,
+   1949
+  ],
+  "units": [
+   "東山"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "李清",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": []
+   },
+   {
+    "id": "陳亮",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "李清",
+    "t": "陳亮",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84000
+  ],
+  "years": [
+   1892,
+   1892
+  ],
+  "units": [],
+  "dominant_surname": "李",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "王師禮",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "許大華",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "王師禮",
+    "t": "許大華",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84002
+  ],
+  "years": [
+   1886,
+   1886
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "許",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "尚堃",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": []
+   },
+   {
+    "id": "熾原",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": []
+   }
+  ],
+  "edges": [
+   {
+    "s": "尚堃",
+    "t": "熾原",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84003
+  ],
+  "years": [
+   1909,
+   1909
+  ],
+  "units": [],
+  "dominant_surname": "尚",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "陳敦清",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳潮寳",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "陳敦清",
+    "t": "陳潮寳",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84013
+  ],
+  "years": [
+   1947,
+   1947
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "子秀",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "古田"
+    ]
+   },
+   {
+    "id": "陳敬侯",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "古田"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "子秀",
+    "t": "陳敬侯",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84014
+  ],
+  "years": [
+   1924,
+   1924
+  ],
+  "units": [
+   "古田"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "楊世平",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "順昌"
+    ]
+   },
+   {
+    "id": "陳道祥",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "owner": 1
+    },
+    "units": [
+     "順昌"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "楊世平",
+    "t": "陳道祥",
+    "kind": "co_party",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84017
+  ],
+  "years": [
+   1978,
+   1978
+  ],
+  "units": [
+   "順昌"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "楊坤貞",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "游振梅",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "楊坤貞",
+    "t": "游振梅",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84020
+  ],
+  "years": [
+   1850,
+   1850
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "游",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "吳開揚",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳世旺",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "吳開揚",
+    "t": "陳世旺",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84021
+  ],
+  "years": [
+   1864,
+   1864
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "王駿發",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "郭成亮",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "王駿發",
+    "t": "郭成亮",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84025
+  ],
+  "years": [
+   1906,
+   1906
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "王",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "方亨猷",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "方兆揚",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "方亨猷",
+    "t": "方兆揚",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84027
+  ],
+  "years": [
+   1910,
+   1910
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "方",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "吳右岩",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳吳氏",
+    "type": "woman",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "吳右岩",
+    "t": "陳吳氏",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84029
+  ],
+  "years": [
+   1918,
+   1918
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "吳",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "聖余",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "西房眾",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "聖余",
+    "t": "西房眾",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84030
+  ],
+  "years": [
+   1923,
+   1923
+  ],
+  "units": [
+   "永泰（永福）"
+  ],
+  "dominant_surname": "西",
+  "surname_share": 0.5
+ },
+ {
+  "nodes": [
+   {
+    "id": "陳兆和",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   },
+   {
+    "id": "陳兆濤",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "永泰（永福）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "陳兆和",
+    "t": "陳兆濤",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84033
+  ],
+  "years": [
+   1927,
+   1927
+  ],
+  "units": [
+   "永泰（永福）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "程楊春",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "程道魯",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "程楊春",
+    "t": "程道魯",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84034
+  ],
+  "years": [
+   1929,
+   1929
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "程",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "陳太記",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "陳宿漙",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "陳太記",
+    "t": "陳宿漙",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84035
+  ],
+  "years": [
+   1929,
+   1929
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "陳",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "劉人科",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   },
+   {
+    "id": "劉子知後裔",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩清"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "劉人科",
+    "t": "劉子知後裔",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84038
+  ],
+  "years": [
+   1935,
+   1935
+  ],
+  "units": [
+   "閩清"
+  ],
+  "dominant_surname": "劉",
+  "surname_share": 1.0
+ },
+ {
+  "nodes": [
+   {
+    "id": "王炳凱",
+    "type": "person",
+    "x": 55.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "buyer": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   },
+   {
+    "id": "王細細弟",
+    "type": "person",
+    "x": 145.0,
+    "y": 75.0,
+    "n_docs": 1,
+    "roles": {
+     "seller": 1
+    },
+    "units": [
+     "閩侯（閩縣・侯官・林森）"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "s": "王炳凱",
+    "t": "王細細弟",
+    "kind": "trade",
+    "w": 1
+   }
+  ],
+  "n": 2,
+  "n_docs": 1,
+  "docs": [
+   84040
+  ],
+  "years": [
+   1951,
+   1951
+  ],
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ],
+  "dominant_surname": "王",
+  "surname_share": 1.0
+ }
+]

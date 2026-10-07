@@ -1,0 +1,3306 @@
+[
+ {
+  "nid": 83791,
+  "role": "owner",
+  "name": "高恭地",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83792,
+  "role": "seller",
+  "name": "張學車",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83792,
+  "role": "buyer",
+  "name": "陳書寶",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83792,
+  "role": "buyer",
+  "name": "張學車",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83793,
+  "role": "owner",
+  "name": "林枝貴",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83794,
+  "role": "seller",
+  "name": "林春源",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83795,
+  "role": "seller",
+  "name": "张华富",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83796,
+  "role": "seller",
+  "name": "高天钏",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83796,
+  "role": "buyer",
+  "name": "郑祚龙",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83797,
+  "role": "seller",
+  "name": "王錦發",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83797,
+  "role": "buyer",
+  "name": "王錦枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83798,
+  "role": "seller",
+  "name": "吳開成",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83798,
+  "role": "buyer",
+  "name": "陳氏",
+  "type": "woman",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83799,
+  "role": "seller",
+  "name": "鄒允春",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83799,
+  "role": "buyer",
+  "name": "和意軒老人會",
+  "type": "institution",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83801,
+  "role": "seller",
+  "name": "陳燦祥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83801,
+  "role": "buyer",
+  "name": "吳",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83802,
+  "role": "seller",
+  "name": "王三妹",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83802,
+  "role": "buyer",
+  "name": "陳軍漢",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83803,
+  "role": "seller",
+  "name": "祿中",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83804,
+  "role": "seller",
+  "name": "許瓊栢",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83804,
+  "role": "buyer",
+  "name": "吳省忠",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83805,
+  "role": "owner",
+  "name": "黃毓扆",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83806,
+  "role": "seller",
+  "name": "藍維乾",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83806,
+  "role": "seller",
+  "name": "藍維坤",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83806,
+  "role": "buyer",
+  "name": "吳淮棉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83807,
+  "role": "seller",
+  "name": "維衜",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83808,
+  "role": "owner",
+  "name": "吳秉鑒",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83808,
+  "role": "seller",
+  "name": "吳秉鑒",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83808,
+  "role": "buyer",
+  "name": "謝先經",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83809,
+  "role": "seller",
+  "name": "方元慈",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83809,
+  "role": "buyer",
+  "name": "方潮濤",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83810,
+  "role": "seller",
+  "name": "劉振萬",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83810,
+  "role": "buyer",
+  "name": "劉紀臣",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83812,
+  "role": "seller",
+  "name": "張銓銓",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83812,
+  "role": "buyer",
+  "name": "鄒道明",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83813,
+  "role": "seller",
+  "name": "蘇章林",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83813,
+  "role": "buyer",
+  "name": "劉仕懋",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83814,
+  "role": "owner",
+  "name": "葉文怡",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83816,
+  "role": "owner",
+  "name": "林萬開",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83817,
+  "role": "seller",
+  "name": "劉盛章",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83817,
+  "role": "buyer",
+  "name": "劉咸安",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83817,
+  "role": "buyer",
+  "name": "劉道建",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83818,
+  "role": "owner",
+  "name": "劉咸安",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83819,
+  "role": "seller",
+  "name": "應梓龍",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83819,
+  "role": "buyer",
+  "name": "劉繼伍",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83820,
+  "role": "seller",
+  "name": "開保",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83821,
+  "role": "seller",
+  "name": "林應香",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83821,
+  "role": "buyer",
+  "name": "林萬開",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83822,
+  "role": "seller",
+  "name": "林為良",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83822,
+  "role": "buyer",
+  "name": "林可瓊",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83823,
+  "role": "owner",
+  "name": "林可昌",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83823,
+  "role": "owner",
+  "name": "林可淦",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83824,
+  "role": "seller",
+  "name": "楊兆通",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83824,
+  "role": "buyer",
+  "name": "林",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83825,
+  "role": "seller",
+  "name": "林可瓊",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83825,
+  "role": "buyer",
+  "name": "劉興國",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83826,
+  "role": "seller",
+  "name": "王聯鄧",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83826,
+  "role": "buyer",
+  "name": "林萬開",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83827,
+  "role": "seller",
+  "name": "林秋溥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83827,
+  "role": "buyer",
+  "name": "林萬開",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83828,
+  "role": "seller",
+  "name": "林萬利",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83828,
+  "role": "buyer",
+  "name": "官方政府",
+  "type": "government",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83829,
+  "role": "seller",
+  "name": "林久興",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83829,
+  "role": "seller",
+  "name": "林可鑒",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83829,
+  "role": "seller",
+  "name": "林久澍",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83830,
+  "role": "seller",
+  "name": "林應香",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83830,
+  "role": "buyer",
+  "name": "林萬開",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83832,
+  "role": "seller",
+  "name": "王兆熙出租",
+  "type": "person",
+  "agent": "",
+  "notes": "lease"
+ },
+ {
+  "nid": 83832,
+  "role": "buyer",
+  "name": "林",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83833,
+  "role": "seller",
+  "name": "林春發",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83833,
+  "role": "buyer",
+  "name": "林萬開",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83834,
+  "role": "seller",
+  "name": "王兆熙",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83834,
+  "role": "buyer",
+  "name": "林",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83835,
+  "role": "seller",
+  "name": "王兆熙",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83835,
+  "role": "buyer",
+  "name": "林",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83836,
+  "role": "seller",
+  "name": "楊鵬超出租",
+  "type": "person",
+  "agent": "",
+  "notes": "lease"
+ },
+ {
+  "nid": 83836,
+  "role": "buyer",
+  "name": "林",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83837,
+  "role": "seller",
+  "name": "趙守藻",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83837,
+  "role": "buyer",
+  "name": "林",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83838,
+  "role": "seller",
+  "name": "趙守藻",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83838,
+  "role": "buyer",
+  "name": "林有柱",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83839,
+  "role": "seller",
+  "name": "林世奕",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83839,
+  "role": "buyer",
+  "name": "林",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83840,
+  "role": "seller",
+  "name": "林萬開",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83840,
+  "role": "buyer",
+  "name": "林秋溥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83841,
+  "role": "owner",
+  "name": "林有柱",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83841,
+  "role": "buyer",
+  "name": "趙守藻",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83842,
+  "role": "owner",
+  "name": "黃鴻吉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83842,
+  "role": "seller",
+  "name": "熊長生",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83842,
+  "role": "buyer",
+  "name": "熊亨讀",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83843,
+  "role": "owner",
+  "name": "張蘭芬",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83843,
+  "role": "seller",
+  "name": "張昌暢",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83843,
+  "role": "buyer",
+  "name": "張邦昔",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83844,
+  "role": "owner",
+  "name": "張利禧",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83844,
+  "role": "seller",
+  "name": "鄭嬌姑",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83844,
+  "role": "buyer",
+  "name": "鄭淳氏",
+  "type": "woman",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83845,
+  "role": "seller",
+  "name": "徐幹通",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83845,
+  "role": "buyer",
+  "name": "熊孫",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83847,
+  "role": "seller",
+  "name": "李有定",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83847,
+  "role": "buyer",
+  "name": "謝氏",
+  "type": "woman",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83848,
+  "role": "seller",
+  "name": "陳裔煌",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83848,
+  "role": "buyer",
+  "name": "鄭璟",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83849,
+  "role": "seller",
+  "name": "輝煌",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83849,
+  "role": "buyer",
+  "name": "蘇坐標",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83850,
+  "role": "owner",
+  "name": "羅",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83851,
+  "role": "owner",
+  "name": "林元鼎",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83852,
+  "role": "seller",
+  "name": "張氏",
+  "type": "woman",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83852,
+  "role": "buyer",
+  "name": "林欽祥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83853,
+  "role": "owner",
+  "name": "盧亨雲",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83854,
+  "role": "owner",
+  "name": "雷汝知",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83855,
+  "role": "owner",
+  "name": "洪國慶",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83856,
+  "role": "seller",
+  "name": "陳如良",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83856,
+  "role": "buyer",
+  "name": "陈謀丁",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83857,
+  "role": "seller",
+  "name": "林履同",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83857,
+  "role": "buyer",
+  "name": "張炳源",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83858,
+  "role": "owner",
+  "name": "張傳珍",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83859,
+  "role": "seller",
+  "name": "郭宗仲",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83859,
+  "role": "buyer",
+  "name": "王齊發",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83860,
+  "role": "owner",
+  "name": "謝祀初",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83861,
+  "role": "owner",
+  "name": "余興泉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83863,
+  "role": "owner",
+  "name": "葉克培",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83864,
+  "role": "owner",
+  "name": "黃財業",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83864,
+  "role": "seller",
+  "name": "許春願",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83864,
+  "role": "buyer",
+  "name": "黃財業",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83865,
+  "role": "owner",
+  "name": "張道興",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83865,
+  "role": "seller",
+  "name": "余傳荃",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83865,
+  "role": "buyer",
+  "name": "張道興",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83866,
+  "role": "owner",
+  "name": "金寬英",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83866,
+  "role": "seller",
+  "name": "張文楚",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83866,
+  "role": "buyer",
+  "name": "金寬英",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83867,
+  "role": "owner",
+  "name": "劉景茂",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83868,
+  "role": "owner",
+  "name": "王元靄",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83868,
+  "role": "seller",
+  "name": "林春源",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83868,
+  "role": "buyer",
+  "name": "王元靄",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83869,
+  "role": "owner",
+  "name": "黃遠容",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83869,
+  "role": "owner",
+  "name": "黃同華",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83869,
+  "role": "owner",
+  "name": "黃同德",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83869,
+  "role": "owner",
+  "name": "黃國興",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83869,
+  "role": "owner",
+  "name": "黃國義",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83870,
+  "role": "owner",
+  "name": "黃乞容等",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83871,
+  "role": "owner",
+  "name": "黃國興",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83872,
+  "role": "owner",
+  "name": "林仁典等",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83873,
+  "role": "owner",
+  "name": "黃同華",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83874,
+  "role": "owner",
+  "name": "黃雲村",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83874,
+  "role": "owner",
+  "name": "黃汝勷",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83875,
+  "role": "owner",
+  "name": "陳明",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83876,
+  "role": "owner",
+  "name": "陳雅",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83876,
+  "role": "owner",
+  "name": "陳道書",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83876,
+  "role": "owner",
+  "name": "陳建璽",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83876,
+  "role": "owner",
+  "name": "陳成嘉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83878,
+  "role": "owner",
+  "name": "黃同德",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83879,
+  "role": "owner",
+  "name": "鄭其英",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83879,
+  "role": "owner",
+  "name": "沈齊",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83880,
+  "role": "owner",
+  "name": "黃汝勷",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83882,
+  "role": "seller",
+  "name": "陳欽隆",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83882,
+  "role": "buyer",
+  "name": "陳欽瑞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83883,
+  "role": "owner",
+  "name": "黃昌聲",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83883,
+  "role": "buyer",
+  "name": "陳智存",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83884,
+  "role": "seller",
+  "name": "黃隆貫",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83884,
+  "role": "buyer",
+  "name": "陳國遠",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83885,
+  "role": "seller",
+  "name": "劉嘉命",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83885,
+  "role": "buyer",
+  "name": "劉源森",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83886,
+  "role": "seller",
+  "name": "張國光",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83886,
+  "role": "buyer",
+  "name": "張國寶",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83887,
+  "role": "owner",
+  "name": "張國軒",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83888,
+  "role": "owner",
+  "name": "吳修晟",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83889,
+  "role": "owner",
+  "name": "黃克動",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83889,
+  "role": "owner",
+  "name": "黃生官",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83890,
+  "role": "owner",
+  "name": "王鐘鈞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83891,
+  "role": "owner",
+  "name": "王鐘鈞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83893,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83894,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83895,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83896,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83897,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83898,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83899,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83900,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83901,
+  "role": "owner",
+  "name": "林修枝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83902,
+  "role": "owner",
+  "name": "林氏",
+  "type": "woman",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83903,
+  "role": "seller",
+  "name": "德詮僧人",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83904,
+  "role": "owner",
+  "name": "林萬利",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83905,
+  "role": "seller",
+  "name": "林宜新",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83905,
+  "role": "buyer",
+  "name": "林久樹",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83906,
+  "role": "seller",
+  "name": "張寶詨",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83906,
+  "role": "buyer",
+  "name": "程長孫",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83907,
+  "role": "seller",
+  "name": "藍炳孫",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83907,
+  "role": "buyer",
+  "name": "程長孫",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83909,
+  "role": "seller",
+  "name": "程姑仔",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83909,
+  "role": "buyer",
+  "name": "金寶",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83910,
+  "role": "owner",
+  "name": "賴國才",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83911,
+  "role": "owner",
+  "name": "黃生官",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83912,
+  "role": "buyer",
+  "name": "錆啇百壽協廳軒",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83914,
+  "role": "seller",
+  "name": "黃維裕",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83914,
+  "role": "seller",
+  "name": "黃維岑",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83915,
+  "role": "seller",
+  "name": "林厚成",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83915,
+  "role": "seller",
+  "name": "林厚祿",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83915,
+  "role": "seller",
+  "name": "林厚祥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83915,
+  "role": "buyer",
+  "name": "葉成",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83916,
+  "role": "seller",
+  "name": "陸元規",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83916,
+  "role": "buyer",
+  "name": "陸元賜",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83917,
+  "role": "owner",
+  "name": "陳朝朋",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83918,
+  "role": "owner",
+  "name": "陳行典",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83919,
+  "role": "seller",
+  "name": "陳必清",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83919,
+  "role": "buyer",
+  "name": "陳必泉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83920,
+  "role": "seller",
+  "name": "吳開成",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83920,
+  "role": "buyer",
+  "name": "陳",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83921,
+  "role": "owner",
+  "name": "黃克動",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83922,
+  "role": "owner",
+  "name": "慎方",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83924,
+  "role": "seller",
+  "name": "林忠",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83924,
+  "role": "seller",
+  "name": "林榮",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83924,
+  "role": "buyer",
+  "name": "賴榮松",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83925,
+  "role": "seller",
+  "name": "吳秉鑒",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83925,
+  "role": "buyer",
+  "name": "謝",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83926,
+  "role": "seller",
+  "name": "林邦端",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83926,
+  "role": "buyer",
+  "name": "程利欲",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83926,
+  "role": "buyer",
+  "name": "程利霖",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83927,
+  "role": "owner",
+  "name": "黃生官",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83928,
+  "role": "owner",
+  "name": "黃克動",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83929,
+  "role": "owner",
+  "name": "黃森官等",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83930,
+  "role": "seller",
+  "name": "葉國佑",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83930,
+  "role": "buyer",
+  "name": "紳",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83931,
+  "role": "seller",
+  "name": "邱有本",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83931,
+  "role": "seller",
+  "name": "邱有炳",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83931,
+  "role": "seller",
+  "name": "邱傳學",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83932,
+  "role": "seller",
+  "name": "余德光",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83932,
+  "role": "buyer",
+  "name": "林聖魁",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83933,
+  "role": "seller",
+  "name": "文鳳",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83934,
+  "role": "seller",
+  "name": "劉孝良",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83934,
+  "role": "buyer",
+  "name": "林高滿",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83935,
+  "role": "seller",
+  "name": "黃懷周",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83935,
+  "role": "buyer",
+  "name": "邵李氏",
+  "type": "woman",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83936,
+  "role": "seller",
+  "name": "陳國遠",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83936,
+  "role": "buyer",
+  "name": "葉宜全保票人",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83937,
+  "role": "seller",
+  "name": "陳國遠",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83937,
+  "role": "buyer",
+  "name": "葉宜全保票人",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83938,
+  "role": "seller",
+  "name": "林明尊",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83938,
+  "role": "buyer",
+  "name": "陳功存",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83940,
+  "role": "seller",
+  "name": "道楷",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83940,
+  "role": "buyer",
+  "name": "咸宜",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83941,
+  "role": "seller",
+  "name": "昌宜",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83941,
+  "role": "buyer",
+  "name": "咸宜",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83942,
+  "role": "seller",
+  "name": "陳欽隆",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83942,
+  "role": "buyer",
+  "name": "陳欽瑞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83943,
+  "role": "seller",
+  "name": "陳老鳳",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83943,
+  "role": "buyer",
+  "name": "陳玉書",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83944,
+  "role": "seller",
+  "name": "康宗瑞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83944,
+  "role": "buyer",
+  "name": "陳連孫",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83945,
+  "role": "seller",
+  "name": "欽源",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83945,
+  "role": "buyer",
+  "name": "陳欽瑞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83946,
+  "role": "seller",
+  "name": "陳欽隆",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83946,
+  "role": "buyer",
+  "name": "陳欽瑞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83947,
+  "role": "seller",
+  "name": "陳欽隆",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83947,
+  "role": "buyer",
+  "name": "陳欽瑞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83948,
+  "role": "seller",
+  "name": "朝官",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83948,
+  "role": "buyer",
+  "name": "文鳳",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83949,
+  "role": "seller",
+  "name": "黃丁荃",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83949,
+  "role": "buyer",
+  "name": "黃花蘭租客",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83950,
+  "role": "seller",
+  "name": "黃隆貫",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83950,
+  "role": "buyer",
+  "name": "陳國龍",
+  "type": "person",
+  "agent": "陳國遠",
+  "notes": "agent"
+ },
+ {
+  "nid": 83951,
+  "role": "owner",
+  "name": "黃乞容",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83952,
+  "role": "owner",
+  "name": "黃乞容",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83953,
+  "role": "owner",
+  "name": "沈齊",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83955,
+  "role": "owner",
+  "name": "黃同華",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83956,
+  "role": "owner",
+  "name": "林宗",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83956,
+  "role": "owner",
+  "name": "吳淑珍",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83956,
+  "role": "owner",
+  "name": "林涯",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83956,
+  "role": "owner",
+  "name": "林貢",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83957,
+  "role": "owner",
+  "name": "劉德桂",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83957,
+  "role": "owner",
+  "name": "劉德輝",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83957,
+  "role": "owner",
+  "name": "劉如慶",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83957,
+  "role": "owner",
+  "name": "劉景星",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83958,
+  "role": "owner",
+  "name": "李銀山",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83959,
+  "role": "owner",
+  "name": "施性固",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83959,
+  "role": "owner",
+  "name": "顏蒜",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83959,
+  "role": "owner",
+  "name": "施能鎖",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83959,
+  "role": "owner",
+  "name": "施松柏",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83960,
+  "role": "seller",
+  "name": "陳佃",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83960,
+  "role": "buyer",
+  "name": "施至尚",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83961,
+  "role": "seller",
+  "name": "黃志林",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83961,
+  "role": "buyer",
+  "name": "劉子珜",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83962,
+  "role": "owner",
+  "name": "王萃延",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83963,
+  "role": "owner",
+  "name": "黃滑",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83963,
+  "role": "owner",
+  "name": "黃嚕",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83963,
+  "role": "owner",
+  "name": "黃世",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83963,
+  "role": "owner",
+  "name": "連芳",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83964,
+  "role": "seller",
+  "name": "劉欽達違",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83964,
+  "role": "buyer",
+  "name": "劉王建",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83965,
+  "role": "seller",
+  "name": "張國光",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83965,
+  "role": "buyer",
+  "name": "張國寶",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83966,
+  "role": "seller",
+  "name": "方圍九",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83966,
+  "role": "buyer",
+  "name": "林武",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83967,
+  "role": "seller",
+  "name": "林清",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83967,
+  "role": "buyer",
+  "name": "陳蕃薯",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83968,
+  "role": "seller",
+  "name": "姚望兌",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83968,
+  "role": "seller",
+  "name": "姚望駀",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83969,
+  "role": "seller",
+  "name": "林述璋",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83969,
+  "role": "buyer",
+  "name": "林學通",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83971,
+  "role": "seller",
+  "name": "陳佃",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83971,
+  "role": "buyer",
+  "name": "施至尚",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83972,
+  "role": "seller",
+  "name": "黃榮森",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83972,
+  "role": "buyer",
+  "name": "黃煌",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83973,
+  "role": "seller",
+  "name": "黃炮",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83973,
+  "role": "buyer",
+  "name": "沈秀清",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83974,
+  "role": "seller",
+  "name": "陳佃",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83974,
+  "role": "buyer",
+  "name": "施至尚",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83975,
+  "role": "owner",
+  "name": "林親顶",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83975,
+  "role": "seller",
+  "name": "陳佃",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83975,
+  "role": "buyer",
+  "name": "施至祥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83976,
+  "role": "seller",
+  "name": "王昌年",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83976,
+  "role": "buyer",
+  "name": "李學堃",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83977,
+  "role": "seller",
+  "name": "金輯和",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83977,
+  "role": "buyer",
+  "name": "金信江",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83978,
+  "role": "owner",
+  "name": "李文富",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83979,
+  "role": "owner",
+  "name": "李水旺",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83979,
+  "role": "owner",
+  "name": "陳連玉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83979,
+  "role": "owner",
+  "name": "李義妹",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83979,
+  "role": "owner",
+  "name": "李義草",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83980,
+  "role": "seller",
+  "name": "黃振發",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83980,
+  "role": "buyer",
+  "name": "高",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83981,
+  "role": "seller",
+  "name": "陳燦祥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83981,
+  "role": "buyer",
+  "name": "吳右嚴",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83982,
+  "role": "seller",
+  "name": "何金盛",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83982,
+  "role": "buyer",
+  "name": "何振華",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83984,
+  "role": "owner",
+  "name": "藍福良",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83986,
+  "role": "seller",
+  "name": "林定宗林登宗",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83986,
+  "role": "buyer",
+  "name": "余溪",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83987,
+  "role": "seller",
+  "name": "王志撥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83987,
+  "role": "buyer",
+  "name": "陳",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83988,
+  "role": "owner",
+  "name": "林施裕",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83989,
+  "role": "seller",
+  "name": "林祥德",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83989,
+  "role": "buyer",
+  "name": "張經炎",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83990,
+  "role": "seller",
+  "name": "范南山",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83991,
+  "role": "seller",
+  "name": "徐正耀",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83992,
+  "role": "seller",
+  "name": "黃奶壽",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83993,
+  "role": "seller",
+  "name": "朱發",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83994,
+  "role": "seller",
+  "name": "孫宗馨",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83995,
+  "role": "seller",
+  "name": "長忠",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83996,
+  "role": "owner",
+  "name": "嬌世范",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83997,
+  "role": "owner",
+  "name": "張炳財",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83998,
+  "role": "seller",
+  "name": "劉隹",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83998,
+  "role": "buyer",
+  "name": "沙延德",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83999,
+  "role": "owner",
+  "name": "葉成",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83999,
+  "role": "seller",
+  "name": "林厚成",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 83999,
+  "role": "buyer",
+  "name": "葉成",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84000,
+  "role": "owner",
+  "name": "陳亮",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84000,
+  "role": "owner",
+  "name": "李清",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84002,
+  "role": "seller",
+  "name": "王師禮",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84002,
+  "role": "buyer",
+  "name": "許大華",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84003,
+  "role": "seller",
+  "name": "熾原",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84003,
+  "role": "buyer",
+  "name": "尚堃",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84004,
+  "role": "seller",
+  "name": "可翅",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84005,
+  "role": "seller",
+  "name": "林與清",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84006,
+  "role": "owner",
+  "name": "陳傳京",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84006,
+  "role": "seller",
+  "name": "陈成餘",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84007,
+  "role": "owner",
+  "name": "黃生官",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84008,
+  "role": "seller",
+  "name": "陳士曾",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84009,
+  "role": "seller",
+  "name": "陳必清",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84009,
+  "role": "buyer",
+  "name": "陳必泉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84010,
+  "role": "seller",
+  "name": "陳必清",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84010,
+  "role": "buyer",
+  "name": "陳必泉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84011,
+  "role": "owner",
+  "name": "陳必泉",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84013,
+  "role": "seller",
+  "name": "陳潮寳",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84013,
+  "role": "buyer",
+  "name": "陳敦清",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84014,
+  "role": "seller",
+  "name": "陳敬侯",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84014,
+  "role": "buyer",
+  "name": "子秀",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84015,
+  "role": "owner",
+  "name": "義容",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84017,
+  "role": "owner",
+  "name": "楊世平",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84017,
+  "role": "owner",
+  "name": "陳道祥",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84019,
+  "role": "owner",
+  "name": "阮承苑",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84019,
+  "role": "seller",
+  "name": "黃象智",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84019,
+  "role": "seller",
+  "name": "劉貞文",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84019,
+  "role": "buyer",
+  "name": "劉貞文",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84019,
+  "role": "buyer",
+  "name": "陸元盛",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84020,
+  "role": "seller",
+  "name": "游振梅",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84020,
+  "role": "buyer",
+  "name": "楊坤貞",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84021,
+  "role": "seller",
+  "name": "吳開揚",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84021,
+  "role": "buyer",
+  "name": "陳世旺",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84022,
+  "role": "seller",
+  "name": "高金亮",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84022,
+  "role": "buyer",
+  "name": "林",
+  "type": "surname_only",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84023,
+  "role": "seller",
+  "name": "張銓銓",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84023,
+  "role": "buyer",
+  "name": "鄒道明",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84024,
+  "role": "seller",
+  "name": "鄒允春",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84024,
+  "role": "buyer",
+  "name": "秋意軒老人會",
+  "type": "institution",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84025,
+  "role": "seller",
+  "name": "郭成亮",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84025,
+  "role": "buyer",
+  "name": "王駿發",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84026,
+  "role": "seller",
+  "name": "郭宗仲",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84026,
+  "role": "buyer",
+  "name": "王齊發",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84027,
+  "role": "seller",
+  "name": "方兆揚",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84027,
+  "role": "buyer",
+  "name": "方亨猷",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84028,
+  "role": "owner",
+  "name": "陳琮細",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84029,
+  "role": "seller",
+  "name": "陳吳氏",
+  "type": "woman",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84029,
+  "role": "buyer",
+  "name": "吳右岩",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84030,
+  "role": "seller",
+  "name": "聖余",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84030,
+  "role": "buyer",
+  "name": "西房眾",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84031,
+  "role": "seller",
+  "name": "王三妹",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84031,
+  "role": "buyer",
+  "name": "陳軍漢",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84033,
+  "role": "seller",
+  "name": "陳兆濤",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84033,
+  "role": "buyer",
+  "name": "陳兆和",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84034,
+  "role": "seller",
+  "name": "程道魯",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84034,
+  "role": "buyer",
+  "name": "程楊春",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84035,
+  "role": "seller",
+  "name": "陳太記",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84035,
+  "role": "buyer",
+  "name": "陳宿漙",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84036,
+  "role": "seller",
+  "name": "陳宿康",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84036,
+  "role": "buyer",
+  "name": "陳桂修",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84037,
+  "role": "seller",
+  "name": "陳聖榜",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84037,
+  "role": "buyer",
+  "name": "陳桂修",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84038,
+  "role": "seller",
+  "name": "劉人科",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84038,
+  "role": "buyer",
+  "name": "劉子知後裔",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84039,
+  "role": "owner",
+  "name": "余挹岩",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84040,
+  "role": "seller",
+  "name": "王細細弟",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ },
+ {
+  "nid": 84040,
+  "role": "buyer",
+  "name": "王炳凱",
+  "type": "person",
+  "agent": "",
+  "notes": ""
+ }
+]

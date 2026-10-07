@@ -1,0 +1,146 @@
+[
+ {
+  "decade": 1580,
+  "government": 0,
+  "personal": 1,
+  "total": 1
+ },
+ {
+  "decade": 1650,
+  "government": 0,
+  "personal": 1,
+  "total": 1
+ },
+ {
+  "decade": 1670,
+  "government": 1,
+  "personal": 0,
+  "total": 1
+ },
+ {
+  "decade": 1760,
+  "government": 3,
+  "personal": 0,
+  "total": 3
+ },
+ {
+  "decade": 1770,
+  "government": 1,
+  "personal": 0,
+  "total": 1
+ },
+ {
+  "decade": 1780,
+  "government": 2,
+  "personal": 1,
+  "total": 3
+ },
+ {
+  "decade": 1790,
+  "government": 1,
+  "personal": 0,
+  "total": 1
+ },
+ {
+  "decade": 1800,
+  "government": 3,
+  "personal": 2,
+  "total": 5
+ },
+ {
+  "decade": 1810,
+  "government": 2,
+  "personal": 0,
+  "total": 2
+ },
+ {
+  "decade": 1820,
+  "government": 1,
+  "personal": 3,
+  "total": 4
+ },
+ {
+  "decade": 1830,
+  "government": 1,
+  "personal": 1,
+  "total": 2
+ },
+ {
+  "decade": 1840,
+  "government": 2,
+  "personal": 5,
+  "total": 7
+ },
+ {
+  "decade": 1850,
+  "government": 2,
+  "personal": 2,
+  "total": 4
+ },
+ {
+  "decade": 1860,
+  "government": 9,
+  "personal": 4,
+  "total": 13
+ },
+ {
+  "decade": 1870,
+  "government": 6,
+  "personal": 2,
+  "total": 8
+ },
+ {
+  "decade": 1880,
+  "government": 11,
+  "personal": 5,
+  "total": 16
+ },
+ {
+  "decade": 1890,
+  "government": 7,
+  "personal": 4,
+  "total": 11
+ },
+ {
+  "decade": 1900,
+  "government": 7,
+  "personal": 5,
+  "total": 12
+ },
+ {
+  "decade": 1910,
+  "government": 17,
+  "personal": 3,
+  "total": 20
+ },
+ {
+  "decade": 1920,
+  "government": 31,
+  "personal": 5,
+  "total": 36
+ },
+ {
+  "decade": 1930,
+  "government": 14,
+  "personal": 8,
+  "total": 22
+ },
+ {
+  "decade": 1940,
+  "government": 29,
+  "personal": 3,
+  "total": 33
+ },
+ {
+  "decade": 1950,
+  "government": 16,
+  "personal": 1,
+  "total": 17
+ },
+ {
+  "decade": 1970,
+  "government": 1,
+  "personal": 0,
+  "total": 1
+ }
+]

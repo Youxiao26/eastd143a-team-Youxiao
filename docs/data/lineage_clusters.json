@@ -1,0 +1,659 @@
+[
+ {
+  "surname": "林",
+  "generation": "可",
+  "label": "林氏「可」字輩",
+  "members": [
+   "林可昌",
+   "林可淦",
+   "林可瓊",
+   "林可鑒"
+  ],
+  "n_members": 4,
+  "docs": [
+   83822,
+   83823,
+   83825,
+   83829
+  ],
+  "n_docs": 4,
+  "year_min": 1906,
+  "year_max": 1932,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "張",
+  "generation": "國",
+  "label": "張氏「國」字輩",
+  "members": [
+   "張國光",
+   "張國寶",
+   "張國軒"
+  ],
+  "n_members": 3,
+  "docs": [
+   83886,
+   83887,
+   83965
+  ],
+  "n_docs": 3,
+  "year_min": 1928,
+  "year_max": 1935,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "林",
+  "generation": "久",
+  "label": "林氏「久」字輩",
+  "members": [
+   "林久樹",
+   "林久澍",
+   "林久興"
+  ],
+  "n_members": 3,
+  "docs": [
+   83829,
+   83905
+  ],
+  "n_docs": 2,
+  "year_min": 1915,
+  "year_max": 1924,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "林",
+  "generation": "厚",
+  "label": "林氏「厚」字輩",
+  "members": [
+   "林厚成",
+   "林厚祥",
+   "林厚祿"
+  ],
+  "n_members": 3,
+  "docs": [
+   83915,
+   83999
+  ],
+  "n_docs": 2,
+  "year_min": 1844,
+  "year_max": 1854,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "陸",
+  "generation": "元",
+  "label": "陸氏「元」字輩",
+  "members": [
+   "陸元盛",
+   "陸元規",
+   "陸元賜"
+  ],
+  "n_members": 3,
+  "docs": [
+   83916,
+   84019
+  ],
+  "n_docs": 2,
+  "year_min": 1869,
+  "year_max": 1888,
+  "units": [
+   "古田"
+  ]
+ },
+ {
+  "surname": "林",
+  "generation": "萬",
+  "label": "林氏「萬」字輩",
+  "members": [
+   "林萬利",
+   "林萬開"
+  ],
+  "n_members": 2,
+  "docs": [
+   83816,
+   83821,
+   83826,
+   83827,
+   83828,
+   83830,
+   83833,
+   83840,
+   83904
+  ],
+  "n_docs": 9,
+  "year_min": 1875,
+  "year_max": 1913,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "陳",
+  "generation": "欽",
+  "label": "陳氏「欽」字輩",
+  "members": [
+   "陳欽瑞",
+   "陳欽隆"
+  ],
+  "n_members": 2,
+  "docs": [
+   83882,
+   83942,
+   83945,
+   83946,
+   83947
+  ],
+  "n_docs": 5,
+  "year_min": 1932,
+  "year_max": 1936,
+  "units": [
+   "福清",
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "黃",
+  "generation": "同",
+  "label": "黃氏「同」字輩",
+  "members": [
+   "黃同德",
+   "黃同華"
+  ],
+  "n_members": 2,
+  "docs": [
+   83869,
+   83873,
+   83878,
+   83955
+  ],
+  "n_docs": 4,
+  "year_min": 1917,
+  "year_max": 1926,
+  "units": [
+   "永泰（永福）"
+  ]
+ },
+ {
+  "surname": "陳",
+  "generation": "國",
+  "label": "陳氏「國」字輩",
+  "members": [
+   "陳國遠",
+   "陳國龍"
+  ],
+  "n_members": 2,
+  "docs": [
+   83884,
+   83936,
+   83937,
+   83950
+  ],
+  "n_docs": 4,
+  "year_min": 1805,
+  "year_max": 1829,
+  "units": []
+ },
+ {
+  "surname": "陳",
+  "generation": "必",
+  "label": "陳氏「必」字輩",
+  "members": [
+   "陳必泉",
+   "陳必清"
+  ],
+  "n_members": 2,
+  "docs": [
+   83919,
+   84009,
+   84010,
+   84011
+  ],
+  "n_docs": 4,
+  "year_min": 1887,
+  "year_max": 1913,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "施",
+  "generation": "至",
+  "label": "施氏「至」字輩",
+  "members": [
+   "施至尚",
+   "施至祥"
+  ],
+  "n_members": 2,
+  "docs": [
+   83960,
+   83971,
+   83974,
+   83975
+  ],
+  "n_docs": 4,
+  "year_min": 1935,
+  "year_max": 1953,
+  "units": [
+   "晉江"
+  ]
+ },
+ {
+  "surname": "林",
+  "generation": "春",
+  "label": "林氏「春」字輩",
+  "members": [
+   "林春源",
+   "林春發"
+  ],
+  "n_members": 2,
+  "docs": [
+   83794,
+   83833,
+   83868
+  ],
+  "n_docs": 3,
+  "year_min": 1866,
+  "year_max": 1881,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "吳",
+  "generation": "開",
+  "label": "吳氏「開」字輩",
+  "members": [
+   "吳開成",
+   "吳開揚"
+  ],
+  "n_members": 2,
+  "docs": [
+   83798,
+   83920,
+   84021
+  ],
+  "n_docs": 3,
+  "year_min": 1864,
+  "year_max": 1890,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "王",
+  "generation": "兆",
+  "label": "王氏「兆」字輩",
+  "members": [
+   "王兆熙",
+   "王兆熙出租"
+  ],
+  "n_members": 2,
+  "docs": [
+   83832,
+   83834,
+   83835
+  ],
+  "n_docs": 3,
+  "year_min": 1893,
+  "year_max": 1894,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "黃",
+  "generation": "乞",
+  "label": "黃氏「乞」字輩",
+  "members": [
+   "黃乞容",
+   "黃乞容等"
+  ],
+  "n_members": 2,
+  "docs": [
+   83870,
+   83951,
+   83952
+  ],
+  "n_docs": 3,
+  "year_min": 1923,
+  "year_max": 1931,
+  "units": [
+   "永泰（永福）"
+  ]
+ },
+ {
+  "surname": "張",
+  "generation": "炳",
+  "label": "張氏「炳」字輩",
+  "members": [
+   "張炳源",
+   "張炳財"
+  ],
+  "n_members": 2,
+  "docs": [
+   83857,
+   83997
+  ],
+  "n_docs": 2,
+  "year_min": 1584,
+  "year_max": 1925,
+  "units": [
+   "古田",
+   "連城"
+  ]
+ },
+ {
+  "surname": "劉",
+  "generation": "景",
+  "label": "劉氏「景」字輩",
+  "members": [
+   "劉景星",
+   "劉景茂"
+  ],
+  "n_members": 2,
+  "docs": [
+   83867,
+   83957
+  ],
+  "n_docs": 2,
+  "year_min": 1867,
+  "year_max": 1935,
+  "units": [
+   "建陽"
+  ]
+ },
+ {
+  "surname": "黃",
+  "generation": "國",
+  "label": "黃氏「國」字輩",
+  "members": [
+   "黃國義",
+   "黃國興"
+  ],
+  "n_members": 2,
+  "docs": [
+   83869,
+   83871
+  ],
+  "n_docs": 2,
+  "year_min": 1917,
+  "year_max": 1926,
+  "units": [
+   "永泰（永福）"
+  ]
+ },
+ {
+  "surname": "陳",
+  "generation": "道",
+  "label": "陳氏「道」字輩",
+  "members": [
+   "陳道書",
+   "陳道祥"
+  ],
+  "n_members": 2,
+  "docs": [
+   83876,
+   84017
+  ],
+  "n_docs": 2,
+  "year_min": 1890,
+  "year_max": 1978,
+  "units": [
+   "閩侯（閩縣・侯官・林森）",
+   "順昌"
+  ]
+ },
+ {
+  "surname": "陳",
+  "generation": "連",
+  "label": "陳氏「連」字輩",
+  "members": [
+   "陳連孫",
+   "陳連玉"
+  ],
+  "n_members": 2,
+  "docs": [
+   83944,
+   83979
+  ],
+  "n_docs": 2,
+  "year_min": 1879,
+  "year_max": 1952,
+  "units": [
+   "邵武"
+  ]
+ },
+ {
+  "surname": "劉",
+  "generation": "子",
+  "label": "劉氏「子」字輩",
+  "members": [
+   "劉子珜",
+   "劉子知後裔"
+  ],
+  "n_members": 2,
+  "docs": [
+   83961,
+   84038
+  ],
+  "n_docs": 2,
+  "year_min": 1935,
+  "year_max": 1935,
+  "units": [
+   "閩清"
+  ]
+ },
+ {
+  "surname": "吳",
+  "generation": "右",
+  "label": "吳氏「右」字輩",
+  "members": [
+   "吳右嚴",
+   "吳右岩"
+  ],
+  "n_members": 2,
+  "docs": [
+   83981,
+   84029
+  ],
+  "n_docs": 2,
+  "year_min": 1918,
+  "year_max": 1918,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "陳",
+  "generation": "宿",
+  "label": "陳氏「宿」字輩",
+  "members": [
+   "陳宿康",
+   "陳宿漙"
+  ],
+  "n_members": 2,
+  "docs": [
+   84035,
+   84036
+  ],
+  "n_docs": 2,
+  "year_min": 1929,
+  "year_max": 1929,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "王",
+  "generation": "錦",
+  "label": "王氏「錦」字輩",
+  "members": [
+   "王錦枝",
+   "王錦發"
+  ],
+  "n_members": 2,
+  "docs": [
+   83797
+  ],
+  "n_docs": 1,
+  "year_min": 1887,
+  "year_max": 1887,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "藍",
+  "generation": "維",
+  "label": "藍氏「維」字輩",
+  "members": [
+   "藍維乾",
+   "藍維坤"
+  ],
+  "n_members": 2,
+  "docs": [
+   83806
+  ],
+  "n_docs": 1,
+  "year_min": 1940,
+  "year_max": 1940,
+  "units": []
+ },
+ {
+  "surname": "黃",
+  "generation": "維",
+  "label": "黃氏「維」字輩",
+  "members": [
+   "黃維岑",
+   "黃維裕"
+  ],
+  "n_members": 2,
+  "docs": [
+   83914
+  ],
+  "n_docs": 1,
+  "year_min": 1842,
+  "year_max": 1842,
+  "units": []
+ },
+ {
+  "surname": "程",
+  "generation": "利",
+  "label": "程氏「利」字輩",
+  "members": [
+   "程利欲",
+   "程利霖"
+  ],
+  "n_members": 2,
+  "docs": [
+   83926
+  ],
+  "n_docs": 1,
+  "year_min": 1868,
+  "year_max": 1868,
+  "units": [
+   "閩侯（閩縣・侯官・林森）"
+  ]
+ },
+ {
+  "surname": "邱",
+  "generation": "有",
+  "label": "邱氏「有」字輩",
+  "members": [
+   "邱有本",
+   "邱有炳"
+  ],
+  "n_members": 2,
+  "docs": [
+   83931
+  ],
+  "n_docs": 1,
+  "year_min": 1802,
+  "year_max": 1802,
+  "units": [
+   "閩清"
+  ]
+ },
+ {
+  "surname": "劉",
+  "generation": "德",
+  "label": "劉氏「德」字輩",
+  "members": [
+   "劉德桂",
+   "劉德輝"
+  ],
+  "n_members": 2,
+  "docs": [
+   83957
+  ],
+  "n_docs": 1,
+  "year_min": 1935,
+  "year_max": 1935,
+  "units": [
+   "建陽"
+  ]
+ },
+ {
+  "surname": "姚",
+  "generation": "望",
+  "label": "姚氏「望」字輩",
+  "members": [
+   "姚望兌",
+   "姚望駀"
+  ],
+  "n_members": 2,
+  "docs": [
+   83968
+  ],
+  "n_docs": 1,
+  "year_min": 1921,
+  "year_max": 1921,
+  "units": []
+ },
+ {
+  "surname": "李",
+  "generation": "義",
+  "label": "李氏「義」字輩",
+  "members": [
+   "李義妹",
+   "李義草"
+  ],
+  "n_members": 2,
+  "docs": [
+   83979
+  ],
+  "n_docs": 1,
+  "year_min": 1952,
+  "year_max": 1952,
+  "units": [
+   "邵武"
+  ]
+ },
+ {
+  "surname": "陳",
+  "generation": "兆",
+  "label": "陳氏「兆」字輩",
+  "members": [
+   "陳兆和",
+   "陳兆濤"
+  ],
+  "n_members": 2,
+  "docs": [
+   84033
+  ],
+  "n_docs": 1,
+  "year_min": 1927,
+  "year_max": 1927,
+  "units": [
+   "永泰（永福）"
+  ]
+ }
+]

@@ -1,0 +1,264 @@
+{
+ "periods": [
+  {
+   "code": "≤1795",
+   "label": "明末—乾隆"
+  },
+  {
+   "code": "1796–1874",
+   "label": "嘉道咸同"
+  },
+  {
+   "code": "1875–1911",
+   "label": "光緒—清末"
+  },
+  {
+   "code": "1912–1948",
+   "label": "民國"
+  },
+  {
+   "code": "1949–",
+   "label": "1949以後"
+  }
+ ],
+ "rows": [
+  {
+   "unit_id": "minhou",
+   "unit": "閩侯（閩縣・侯官・林森）",
+   "modern": "福州市闽侯县及市区",
+   "note": "閩縣＋侯官縣 →1913.3 閩侯縣 →1943.10 林森縣（纪念林森）→1950.4 復名閩侯縣",
+   "cells": [
+    0,
+    15,
+    26,
+    43,
+    3
+   ],
+   "total": 87
+  },
+  {
+   "unit_id": "yongtai",
+   "unit": "永泰（永福）",
+   "modern": "福州市永泰县",
+   "note": "唐766年置永泰縣 →北宋1102年避諱改永福縣 →民國3年(1914)因與廣西永福縣重名，復名永泰縣",
+   "cells": [
+    0,
+    0,
+    2,
+    17,
+    0
+   ],
+   "total": 19
+  },
+  {
+   "unit_id": "gutian",
+   "unit": "古田",
+   "modern": "宁德市古田县",
+   "note": "",
+   "cells": [
+    1,
+    6,
+    1,
+    9,
+    0
+   ],
+   "total": 17
+  },
+  {
+   "unit_id": "minqing",
+   "unit": "閩清",
+   "modern": "福州市闽清县",
+   "note": "",
+   "cells": [
+    2,
+    3,
+    0,
+    6,
+    0
+   ],
+   "total": 11
+  },
+  {
+   "unit_id": "jianyang",
+   "unit": "建陽",
+   "modern": "南平市建阳区",
+   "note": "",
+   "cells": [
+    1,
+    4,
+    2,
+    1,
+    0
+   ],
+   "total": 8
+  },
+  {
+   "unit_id": "dongshan",
+   "unit": "東山",
+   "modern": "漳州市东山县",
+   "note": "",
+   "cells": [
+    0,
+    0,
+    0,
+    2,
+    6
+   ],
+   "total": 8
+  },
+  {
+   "unit_id": "jinjiang",
+   "unit": "晉江",
+   "modern": "泉州市晋江市",
+   "note": "",
+   "cells": [
+    0,
+    0,
+    0,
+    2,
+    5
+   ],
+   "total": 7
+  },
+  {
+   "unit_id": "fuqing",
+   "unit": "福清",
+   "modern": "福州市福清市",
+   "note": "",
+   "cells": [
+    0,
+    0,
+    1,
+    2,
+    0
+   ],
+   "total": 3
+  },
+  {
+   "unit_id": "yongan",
+   "unit": "永安",
+   "modern": "三明市永安市",
+   "note": "",
+   "cells": [
+    0,
+    0,
+    3,
+    0,
+    0
+   ],
+   "total": 3
+  },
+  {
+   "unit_id": "pingnan",
+   "unit": "屏南",
+   "modern": "宁德市屏南县",
+   "note": "1734年析古田縣地置",
+   "cells": [
+    0,
+    2,
+    0,
+    1,
+    0
+   ],
+   "total": 3
+  },
+  {
+   "unit_id": "liancheng",
+   "unit": "連城",
+   "modern": "龙岩市连城县",
+   "note": "",
+   "cells": [
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "total": 2
+  },
+  {
+   "unit_id": "nanan",
+   "unit": "南安",
+   "modern": "泉州市南安市",
+   "note": "",
+   "cells": [
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   "total": 2
+  },
+  {
+   "unit_id": "yongding",
+   "unit": "永定",
+   "modern": "龙岩市永定区",
+   "note": "",
+   "cells": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 1
+  },
+  {
+   "unit_id": "nanping",
+   "unit": "南平",
+   "modern": "南平市延平区",
+   "note": "",
+   "cells": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "total": 1
+  },
+  {
+   "unit_id": "lianjiang",
+   "unit": "連江",
+   "modern": "福州市连江县",
+   "note": "",
+   "cells": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "total": 1
+  },
+  {
+   "unit_id": "shaowu",
+   "unit": "邵武",
+   "modern": "南平市邵武市",
+   "note": "",
+   "cells": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "total": 1
+  },
+  {
+   "unit_id": "shunchang",
+   "unit": "順昌",
+   "modern": "南平市顺昌县",
+   "note": "",
+   "cells": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "total": 1
+  }
+ ]
+}

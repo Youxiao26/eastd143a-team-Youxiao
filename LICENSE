@@ -1,0 +1,10 @@
+CC0 1.0 Universal (Public Domain Dedication)
+
+本倉庫中由本專案生成的衍生數據與程式碼（scripts/、docs/ 中除 data/raw_items.json 以外的檔案）置於公有領域，
+可自由複製、修改、散布與使用，無需署名。
+
+完整條款：https://creativecommons.org/publicdomain/zero/1.0/
+
+注意：docs/data/raw_items.json 為匹茲堡大學圖書館系統 API 的原始回應，
+其描述性元資料之權利歸屬該館；原館藏權利狀態標示為 Copyright Undetermined。
+本倉庫未包含任何館藏影像。

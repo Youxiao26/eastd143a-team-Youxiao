@@ -1,0 +1,37 @@
+[
+ {
+  "period": "明末—乾隆 ≤1795",
+  "government": 7,
+  "personal": 3,
+  "pct_gov": 70.0,
+  "n": 10
+ },
+ {
+  "period": "嘉道咸同 1796–1874",
+  "government": 25,
+  "personal": 18,
+  "pct_gov": 58.1,
+  "n": 43
+ },
+ {
+  "period": "光緒—清末 1875–1911",
+  "government": 30,
+  "personal": 16,
+  "pct_gov": 65.2,
+  "n": 46
+ },
+ {
+  "period": "民國 1912–1948",
+  "government": 83,
+  "personal": 18,
+  "pct_gov": 82.2,
+  "n": 102
+ },
+ {
+  "period": "1949以後 1949–",
+  "government": 22,
+  "personal": 1,
+  "pct_gov": 95.7,
+  "n": 23
+ }
+]
