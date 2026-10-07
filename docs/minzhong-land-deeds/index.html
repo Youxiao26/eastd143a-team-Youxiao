@@ -41,7 +41,7 @@ header.hero{border-bottom:1px solid var(--rule);background:var(--surface-1);padd
   font-family:ui-sans-serif,system-ui,-apple-system,"Helvetica Neue",sans-serif;margin:0 0 12px}
 h1{font-size:clamp(28px,5vw,42px);line-height:1.25;margin:0 0 10px;letter-spacing:-.01em}
 .sub{color:var(--text-secondary);font-size:17px;margin:0 0 26px;max-width:62ch}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:1px;
   background:var(--surface-1);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
 /* 線由每格自身的 1px 外框拼出，末行空位才不會露出一塊灰 */
 .stat{background:var(--surface-1);padding:16px 18px;box-shadow:0 0 0 1px var(--rule)}
@@ -71,8 +71,9 @@ text{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .val{font-size:11.5px;fill:var(--text-primary);font-weight:600}
 .pline{fill:none;stroke:var(--series-1);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
 .dot{fill:var(--series-1);stroke:var(--surface-1);stroke-width:2}
-.hit{fill:transparent}
-.bar .hit,.pt .hit,.node .hit{cursor:pointer}
+.hit{fill:transparent;stroke:none}
+.bar .hit,.pt .hit,.node .hit,.pdot .hit{cursor:pointer}
+.pdot:hover>:not(.hit),.pdot:focus>:not(.hit){stroke-width:3}
 .bar:hover rect:not(.hit),.bar:focus rect:not(.hit){opacity:.78}
 .legend{display:flex;flex-wrap:wrap;gap:16px;margin:0 0 14px;font-size:13px;
   font-family:ui-sans-serif,system-ui,sans-serif;color:var(--text-secondary)}
@@ -164,6 +165,7 @@ footer a{color:var(--text-secondary)}
     <div class="stat"><b>38 → 17</b><span>地名歸併後單元</span></div>
     <div class="stat"><b>304</b><span>可識別個人</span></div>
     <div class="stat"><b>32</b><span>字輩族群</span></div>
+    <div class="stat"><b>116</b><span>載價文書</span></div>
   </div>
 </div></header>
 
@@ -774,8 +776,411 @@ footer a{color:var(--text-secondary)}
 </tbody></table></div></div></details>
 </div></section>
 
+<section id="prices"><div class="wrap">
+  <h2><span class="num">五</span>貨幣與價格</h2>
+  <p class="lede">以上四節都只用了編目元資料。課程另行提供的 OCR 讓契約正文首次可以計算：
+  383 條金額陳述自 234 件文書中抽出，116 件可定主價格。
+  下面關心的不是地價高低——跨幣種、跨四百年的價格不可直接比較——而是<b>人們用什麼記帳</b>。</p>
+
+  <div class="finding"><p><b>計價本位在民國初年整體翻轉。</b>
+  清代 60 件載價文書中 56 件用銀兩或銅錢、僅 4 件用銀元；
+  民國 43 件中 31 件用元、僅 8 件仍用兩。
+  同一批鄉里契約，從「紋廣銀肆拾兩」改寫成「大洋貳佰貳拾員」。</p></div>
+
+  <figure>
+    <div class="legend">
+      <span><i style="background:var(--series-1)"></i>銀兩</span>
+      <span><i style="background:var(--series-2)"></i>銀元／圓</span>
+      <span><i style="background:var(--series-3)"></i>銅錢（文）</span>
+    </div>
+    <svg viewBox="0 0 660 220" role="img" class="chart" aria-label="各分期計價幣種構成橫條圖">
+<text class="ax sm" x="102" y="16" text-anchor="end">明末—乾隆</text>
+<text class="ax xs" x="102" y="29" text-anchor="end">≤1795</text>
+<g tabindex="0" data-tip="明末—乾隆（≤1795）　銀兩 7 件／共 7 件"><rect x="112.0" y="0" width="496.0" height="26" fill="var(--series-1)"/>
+<text class="val" x="360.0" y="17" text-anchor="middle" fill="#fff">7</text>
+</g>
+<text class="ax" x="616" y="17">7 件</text>
+<text class="ax sm" x="102" y="58" text-anchor="end">嘉道咸同</text>
+<text class="ax xs" x="102" y="71" text-anchor="end">1796–1874</text>
+<g tabindex="0" data-tip="嘉道咸同（1796–1874）　銀兩 18 件／共 24 件"><rect x="112.0" y="42" width="372.0" height="26" fill="var(--series-1)"/>
+<text class="val" x="298.0" y="59" text-anchor="middle" fill="#fff">18</text>
+</g>
+<g tabindex="0" data-tip="嘉道咸同（1796–1874）　銀元／圓 1 件／共 24 件"><rect x="484.0" y="42" width="20.7" height="26" fill="var(--series-2)"/>
+</g>
+<g tabindex="0" data-tip="嘉道咸同（1796–1874）　銅錢 5 件／共 24 件"><rect x="504.7" y="42" width="103.3" height="26" fill="var(--series-3)"/>
+<text class="val" x="556.3" y="59" text-anchor="middle" fill="#fff">5</text>
+</g>
+<text class="ax" x="616" y="59">24 件</text>
+<text class="ax sm" x="102" y="100" text-anchor="end">光緒—清末</text>
+<text class="ax xs" x="102" y="113" text-anchor="end">1875–1911</text>
+<g tabindex="0" data-tip="光緒—清末（1875–1911）　銀兩 21 件／共 29 件"><rect x="112.0" y="84" width="359.2" height="26" fill="var(--series-1)"/>
+<text class="val" x="291.6" y="101" text-anchor="middle" fill="#fff">21</text>
+</g>
+<g tabindex="0" data-tip="光緒—清末（1875–1911）　銀元／圓 3 件／共 29 件"><rect x="471.2" y="84" width="51.3" height="26" fill="var(--series-2)"/>
+<text class="val" x="496.8" y="101" text-anchor="middle" fill="#fff">3</text>
+</g>
+<g tabindex="0" data-tip="光緒—清末（1875–1911）　銅錢 5 件／共 29 件"><rect x="522.5" y="84" width="85.5" height="26" fill="var(--series-3)"/>
+<text class="val" x="565.2" y="101" text-anchor="middle" fill="#fff">5</text>
+</g>
+<text class="ax" x="616" y="101">29 件</text>
+<text class="ax sm" x="102" y="142" text-anchor="end">民國</text>
+<text class="ax xs" x="102" y="155" text-anchor="end">1912–1948</text>
+<g tabindex="0" data-tip="民國（1912–1948）　銀兩 8 件／共 43 件"><rect x="112.0" y="126" width="92.3" height="26" fill="var(--series-1)"/>
+<text class="val" x="158.1" y="143" text-anchor="middle" fill="#fff">8</text>
+</g>
+<g tabindex="0" data-tip="民國（1912–1948）　銀元／圓 31 件／共 43 件"><rect x="204.3" y="126" width="357.6" height="26" fill="var(--series-2)"/>
+<text class="val" x="383.1" y="143" text-anchor="middle" fill="#fff">31</text>
+</g>
+<g tabindex="0" data-tip="民國（1912–1948）　銅錢 4 件／共 43 件"><rect x="561.9" y="126" width="46.1" height="26" fill="var(--series-3)"/>
+<text class="val" x="584.9" y="143" text-anchor="middle" fill="#fff">4</text>
+</g>
+<text class="ax" x="616" y="143">43 件</text>
+<text class="ax sm" x="102" y="184" text-anchor="end">1949以後</text>
+<text class="ax xs" x="102" y="197" text-anchor="end">1949–</text>
+<g tabindex="0" data-tip="1949以後（1949–）　銀元／圓 6 件／共 6 件"><rect x="112.0" y="168" width="496.0" height="26" fill="var(--series-2)"/>
+<text class="val" x="360.0" y="185" text-anchor="middle" fill="#fff">6</text>
+</g>
+<text class="ax" x="616" y="185">6 件</text>
+</svg>
+    <figcaption>各分期載價文書的計價幣種構成。每條等長，分段為該期各幣種所占比例；右側為該期載價件數。</figcaption>
+  </figure>
+
+  <figure>
+    <div class="legend">
+      <span><i style="background:var(--series-1);border-radius:50%"></i>銀兩</span>
+      <span><i class="dia" style="background:var(--series-2)"></i>銀元／圓</span>
+      <span><i style="background:var(--series-3);clip-path:polygon(50% 0,100% 100%,0 100%)"></i>銅錢</span>
+      <span style="color:var(--text-muted)">空心＝數字串可疑（OCR）</span>
+    </div>
+    <svg viewBox="0 0 680 330" role="img" class="chart" aria-label="契載金額隨年份分布散點圖，縱軸為對數刻度">
+<line class="grid" x1="56" y1="290.0" x2="670" y2="290.0"/>
+<text class="ax" x="48" y="294.0" text-anchor="end">1</text>
+<line class="grid" x1="56" y1="245.5" x2="670" y2="245.5"/>
+<text class="ax" x="48" y="249.5" text-anchor="end">10</text>
+<line class="grid" x1="56" y1="201.0" x2="670" y2="201.0"/>
+<text class="ax" x="48" y="205.0" text-anchor="end">100</text>
+<line class="grid" x1="56" y1="156.5" x2="670" y2="156.5"/>
+<text class="ax" x="48" y="160.5" text-anchor="end">1,000</text>
+<line class="grid" x1="56" y1="111.9" x2="670" y2="111.9"/>
+<text class="ax" x="48" y="115.9" text-anchor="end">1萬</text>
+<line class="grid" x1="56" y1="67.4" x2="670" y2="67.4"/>
+<text class="ax" x="48" y="71.4" text-anchor="end">10萬</text>
+<line class="grid" x1="56" y1="22.9" x2="670" y2="22.9"/>
+<text class="ax" x="48" y="26.9" text-anchor="end">100萬</text>
+<text class="ax" x="86.4" y="307" text-anchor="middle">1600</text>
+<line class="grid" x1="86.4" y1="290.0" x2="86.4" y2="295.0"/>
+<text class="ax xs" x="162.4" y="307" text-anchor="middle"></text>
+<line class="grid" x1="162.4" y1="290.0" x2="162.4" y2="295.0"/>
+<text class="ax" x="238.4" y="307" text-anchor="middle">1700</text>
+<line class="grid" x1="238.4" y1="290.0" x2="238.4" y2="295.0"/>
+<text class="ax xs" x="314.4" y="307" text-anchor="middle"></text>
+<line class="grid" x1="314.4" y1="290.0" x2="314.4" y2="295.0"/>
+<text class="ax" x="390.4" y="307" text-anchor="middle">1800</text>
+<line class="grid" x1="390.4" y1="290.0" x2="390.4" y2="295.0"/>
+<text class="ax xs" x="466.4" y="307" text-anchor="middle"></text>
+<line class="grid" x1="466.4" y1="290.0" x2="466.4" y2="295.0"/>
+<text class="ax" x="542.4" y="307" text-anchor="middle">1900</text>
+<line class="grid" x1="542.4" y1="290.0" x2="542.4" y2="295.0"/>
+<text class="ax xs" x="618.4" y="307" text-anchor="middle"></text>
+<line class="grid" x1="618.4" y1="290.0" x2="618.4" y2="295.0"/>
+<line class="grid" x1="560.6" y1="14" x2="560.6" y2="290.0" stroke-dasharray="4 4" stroke="var(--rule-strong)"/>
+<text class="ax xs" x="565.6" y="24">1912</text>
+<g class="pdot" tabindex="0" data-tip="1946　1,800,000元（銀元／圓）　賣價　人民幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="612.3" cy="11.5" r="10"/><rect x="608.1" y="7.3" width="8.4" height="8.4" transform="rotate(45 612.3 11.5)"/></g>
+<g class="pdot" tabindex="0" data-tip="1866　12兩（銀兩）　賣價　足色" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="490.7" cy="242.0" r="10"/><circle cx="490.7" cy="242.0" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1862　8,500文（銅錢）　賣價　銅錢" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="484.6" cy="115.1" r="10"/><polygon points="484.6,110.1 489.2,118.5 480.0,118.5"/></g>
+<g class="pdot" tabindex="0" data-tip="1887　75兩（銀兩）　賣價　足色・大錠" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="522.6" cy="206.5" r="10"/><circle cx="522.6" cy="206.5" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1890　68兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="527.2" cy="208.4" r="10"/><circle cx="527.2" cy="208.4" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1900　44兩（銀兩）　賣價　庫平" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="542.4" cy="216.8" r="10"/><circle cx="542.4" cy="216.8" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1918　700元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="569.8" cy="163.3" r="10"/><rect x="565.6" y="159.1" width="8.4" height="8.4" transform="rotate(45 569.8 163.3)"/></g>
+<g class="pdot" tabindex="0" data-tip="1924　125元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="578.9" cy="196.7" r="10"/><rect x="574.7" y="192.5" width="8.4" height="8.4" transform="rotate(45 578.9 196.7)"/></g>
+<g class="pdot" tabindex="0" data-tip="1876　17元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="505.9" cy="235.2" r="10"/><rect x="501.7" y="231.0" width="8.4" height="8.4" transform="rotate(45 505.9 235.2)"/></g>
+<g class="pdot" tabindex="0" data-tip="1761　30兩（銀兩）　賣價　九四・星色" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="331.1" cy="224.2" r="10"/><circle cx="331.1" cy="224.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1760　63兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="329.6" cy="209.9" r="10"/><circle cx="329.6" cy="209.9" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1940　110元（銀元／圓）　賣價　國幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="603.2" cy="199.1" r="10"/><rect x="599.0" y="194.9" width="8.4" height="8.4" transform="rotate(45 603.2 199.1)"/></g>
+<g class="pdot" tabindex="0" data-tip="1917　27元（銀元／圓）　賣價　番銀" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="568.2" cy="226.3" r="10"/><rect x="564.0" y="222.1" width="8.4" height="8.4" transform="rotate(45 568.2 226.3)"/></g>
+<g class="pdot" tabindex="0" data-tip="1871　1,500元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="498.3" cy="148.6" r="10"/><rect x="494.1" y="144.4" width="8.4" height="8.4" transform="rotate(45 498.3 148.6)"/></g>
+<g class="pdot" tabindex="0" data-tip="1932　14元（銀元／圓）　賣價　大洋" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="591.0" cy="239.0" r="10"/><rect x="586.8" y="234.8" width="8.4" height="8.4" transform="rotate(45 591.0 239.0)"/></g>
+<g class="pdot" tabindex="0" data-tip="1925　40兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="580.4" cy="218.7" r="10"/><circle cx="580.4" cy="218.7" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1898　32兩（銀兩）　賣價　紋銀" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="539.4" cy="223.0" r="10"/><circle cx="539.4" cy="223.0" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1891　100兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="528.7" cy="201.0" r="10"/><circle cx="528.7" cy="201.0" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1798　8兩（銀兩）　賣價　紋銀" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="387.4" cy="249.8" r="10"/><circle cx="387.4" cy="249.8" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1782　17兩（銀兩）　賣價　紋銀" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="363.0" cy="235.2" r="10"/><circle cx="363.0" cy="235.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1910　10元（銀元／圓）　賣價　番銀" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="557.6" cy="245.5" r="10"/><rect x="553.4" y="241.3" width="8.4" height="8.4" transform="rotate(45 557.6 245.5)"/></g>
+<g class="pdot" tabindex="0" data-tip="1906　30兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="551.5" cy="224.2" r="10"/><circle cx="551.5" cy="224.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1862　283.5兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="484.6" cy="180.8" r="10"/><circle cx="484.6" cy="180.8" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1913　130兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="562.2" cy="195.9" r="10"/><circle cx="562.2" cy="195.9" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1884　44兩（銀兩）　賣價　庫錫・大錠" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="518.1" cy="216.8" r="10"/><circle cx="518.1" cy="216.8" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1893　850文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="531.8" cy="159.6" r="10"/><polygon points="531.8,154.6 536.4,163.0 527.2,163.0"/></g>
+<g class="pdot" tabindex="0" data-tip="1881　110,000文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="513.5" cy="65.6" r="10"/><polygon points="513.5,60.6 518.1,69.0 508.9,69.0"/></g>
+<g class="pdot" tabindex="0" data-tip="1894　2,000文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="533.3" cy="143.1" r="10"/><polygon points="533.3,138.1 537.9,146.5 528.7,146.5"/></g>
+<g class="pdot" tabindex="0" data-tip="1866　29.75兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="490.7" cy="224.4" r="10"/><circle cx="490.7" cy="224.4" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1805　14兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="398.0" cy="239.0" r="10"/><circle cx="398.0" cy="239.0" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1850　200兩（銀兩）　賣價　九七・平戥" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="466.4" cy="187.6" r="10"/><circle cx="466.4" cy="187.6" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1913　14兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="562.2" cy="239.0" r="10"/><circle cx="562.2" cy="239.0" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1784　19兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="366.1" cy="233.1" r="10"/><circle cx="366.1" cy="233.1" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1870　15兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="496.8" cy="237.6" r="10"/><circle cx="496.8" cy="237.6" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1864　50兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="487.7" cy="214.4" r="10"/><circle cx="487.7" cy="214.4" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1779　2.5兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="358.5" cy="272.3" r="10"/><circle cx="358.5" cy="272.3" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1872　47.5兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="499.8" cy="215.4" r="10"/><circle cx="499.8" cy="215.4" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1869　41,600文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="495.3" cy="84.4" r="10"/><polygon points="495.3,79.4 499.9,87.8 490.7,87.8"/></g>
+<g class="pdot" tabindex="0" data-tip="1920　32元（銀元／圓）　賣價　台伏" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="572.8" cy="223.0" r="10"/><rect x="568.6" y="218.8" width="8.4" height="8.4" transform="rotate(45 572.8 223.0)"/></g>
+<g class="pdot" tabindex="0" data-tip="1915　42兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="565.2" cy="217.7" r="10"/><circle cx="565.2" cy="217.7" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1925　50元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="580.4" cy="214.4" r="10"/><rect x="576.2" y="210.2" width="8.4" height="8.4" transform="rotate(45 580.4 214.4)"/></g>
+<g class="pdot" tabindex="0" data-tip="1904　60元（銀元／圓）　賣價　大洋" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="548.5" cy="210.8" r="10"/><rect x="544.3" y="206.6" width="8.4" height="8.4" transform="rotate(45 548.5 210.8)"/></g>
+<g class="pdot" tabindex="0" data-tip="1942　250元（銀元／圓）　賣價　國幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="606.2" cy="183.3" r="10"/><rect x="602.0" y="179.1" width="8.4" height="8.4" transform="rotate(45 606.2 183.3)"/></g>
+<g class="pdot" tabindex="0" data-tip="1903　15兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="547.0" cy="237.6" r="10"/><circle cx="547.0" cy="237.6" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1869　10兩（銀兩）　賣價　足色" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="495.3" cy="245.5" r="10"/><circle cx="495.3" cy="245.5" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1936　60元（銀元／圓）　賣價　大洋・國幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="597.1" cy="210.8" r="10"/><rect x="592.9" y="206.6" width="8.4" height="8.4" transform="rotate(45 597.1 210.8)"/></g>
+<g class="pdot" tabindex="0" data-tip="1910　8.25兩（銀兩）　賣價　洋銀" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="557.6" cy="249.2" r="10"/><circle cx="557.6" cy="249.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1928　2,150元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="585.0" cy="141.7" r="10"/><rect x="580.8" y="137.5" width="8.4" height="8.4" transform="rotate(45 585.0 141.7)"/></g>
+<g class="pdot" tabindex="0" data-tip="1935　920元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="595.6" cy="158.1" r="10"/><rect x="591.4" y="153.9" width="8.4" height="8.4" transform="rotate(45 595.6 158.1)"/></g>
+<g class="pdot" tabindex="0" data-tip="1937　18元（銀元／圓）　賣價　法幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="598.6" cy="234.1" r="10"/><rect x="594.4" y="229.9" width="8.4" height="8.4" transform="rotate(45 598.6 234.1)"/></g>
+<g class="pdot" tabindex="0" data-tip="1866　18兩（銀兩）　賣價　足色" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="490.7" cy="234.1" r="10"/><circle cx="490.7" cy="234.1" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1890　2.25兩（銀兩）　賣價　洋銀" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="527.2" cy="274.3" r="10"/><circle cx="527.2" cy="274.3" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1890　4兩（銀兩）　賣價　洋銀" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="527.2" cy="263.2" r="10"/><circle cx="527.2" cy="263.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1870　12兩（銀兩）　賣價　洋銀" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="496.8" cy="242.0" r="10"/><circle cx="496.8" cy="242.0" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1842　350文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="454.2" cy="176.7" r="10"/><polygon points="454.2,171.7 458.8,180.1 449.6,180.1"/></g>
+<g class="pdot" tabindex="0" data-tip="1844　100兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="457.3" cy="201.0" r="10"/><circle cx="457.3" cy="201.0" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1888　36兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="524.2" cy="220.7" r="10"/><circle cx="524.2" cy="220.7" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1915　10元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="565.2" cy="245.5" r="10"/><rect x="561.0" y="241.3" width="8.4" height="8.4" transform="rotate(45 565.2 245.5)"/></g>
+<g class="pdot" tabindex="0" data-tip="1868　56兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="493.8" cy="212.2" r="10"/><circle cx="493.8" cy="212.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1839　65兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="449.7" cy="209.3" r="10"/><circle cx="449.7" cy="209.3" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1802　22兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="393.4" cy="230.2" r="10"/><circle cx="393.4" cy="230.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1913　17,500兩（銀兩）　賣價　【數字可疑】" style="fill:none;stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="562.2" cy="101.1" r="10"/><circle cx="562.2" cy="101.1" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1927　198元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="583.4" cy="187.8" r="10"/><rect x="579.2" y="183.6" width="8.4" height="8.4" transform="rotate(45 583.4 187.8)"/></g>
+<g class="pdot" tabindex="0" data-tip="1840　11,500文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="451.2" cy="109.2" r="10"/><polygon points="451.2,104.2 455.8,112.6 446.6,112.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1936　60元（銀元／圓）　賣價　大洋" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="597.1" cy="210.8" r="10"/><rect x="592.9" y="206.6" width="8.4" height="8.4" transform="rotate(45 597.1 210.8)"/></g>
+<g class="pdot" tabindex="0" data-tip="1879　11兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="510.5" cy="243.6" r="10"/><circle cx="510.5" cy="243.6" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1932　170元（銀元／圓）　賣價　洋銀" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="591.0" cy="190.7" r="10"/><rect x="586.8" y="186.5" width="8.4" height="8.4" transform="rotate(45 591.0 190.7)"/></g>
+<g class="pdot" tabindex="0" data-tip="1936　115元（銀元／圓）　賣價　大洋・國幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="597.1" cy="198.3" r="10"/><rect x="592.9" y="194.1" width="8.4" height="8.4" transform="rotate(45 597.1 198.3)"/></g>
+<g class="pdot" tabindex="0" data-tip="1936　115元（銀元／圓）　賣價　大洋" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="597.1" cy="198.3" r="10"/><rect x="592.9" y="194.1" width="8.4" height="8.4" transform="rotate(45 597.1 198.3)"/></g>
+<g class="pdot" tabindex="0" data-tip="1926　198元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="581.9" cy="187.8" r="10"/><rect x="577.7" y="183.6" width="8.4" height="8.4" transform="rotate(45 581.9 187.8)"/></g>
+<g class="pdot" tabindex="0" data-tip="1928　220元（銀元／圓）　賣價　大洋" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="585.0" cy="185.7" r="10"/><rect x="580.8" y="181.5" width="8.4" height="8.4" transform="rotate(45 585.0 185.7)"/></g>
+<g class="pdot" tabindex="0" data-tip="1954　800,000元（銀元／圓）　典價　人民幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="624.5" cy="27.2" r="10"/><rect x="620.3" y="23.0" width="8.4" height="8.4" transform="rotate(45 624.5 27.2)"/></g>
+<g class="pdot" tabindex="0" data-tip="1934　200元（銀元／圓）　賣價　大洋" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="594.1" cy="187.6" r="10"/><rect x="589.9" y="183.4" width="8.4" height="8.4" transform="rotate(45 594.1 187.6)"/></g>
+<g class="pdot" tabindex="0" data-tip="1953　25元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="623.0" cy="227.8" r="10"/><rect x="618.8" y="223.6" width="8.4" height="8.4" transform="rotate(45 623.0 227.8)"/></g>
+<g class="pdot" tabindex="0" data-tip="1947　1,000,000元（銀元／圓）　賣價　國幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="613.8" cy="22.9" r="10"/><rect x="609.6" y="18.7" width="8.4" height="8.4" transform="rotate(45 613.8 22.9)"/></g>
+<g class="pdot" tabindex="0" data-tip="1943　500元（銀元／圓）　賣價　國幣" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="607.8" cy="169.9" r="10"/><rect x="603.6" y="165.7" width="8.4" height="8.4" transform="rotate(45 607.8 169.9)"/></g>
+<g class="pdot" tabindex="0" data-tip="1953　27元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="623.0" cy="226.3" r="10"/><rect x="618.8" y="222.1" width="8.4" height="8.4" transform="rotate(45 623.0 226.3)"/></g>
+<g class="pdot" tabindex="0" data-tip="1935　69元（銀元／圓）　賣價　大洋・洋銀" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="595.6" cy="208.1" r="10"/><rect x="591.4" y="203.9" width="8.4" height="8.4" transform="rotate(45 595.6 208.1)"/></g>
+<g class="pdot" tabindex="0" data-tip="1910　90,000文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="557.6" cy="69.5" r="10"/><polygon points="557.6,64.5 562.2,72.9 553.0,72.9"/></g>
+<g class="pdot" tabindex="0" data-tip="1925　150兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="580.4" cy="193.1" r="10"/><circle cx="580.4" cy="193.1" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1889　10兩（銀兩）　賣價　足色・大錠" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="525.7" cy="245.5" r="10"/><circle cx="525.7" cy="245.5" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1949　30元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="616.9" cy="224.2" r="10"/><rect x="612.7" y="220.0" width="8.4" height="8.4" transform="rotate(45 616.9 224.2)"/></g>
+<g class="pdot" tabindex="0" data-tip="1939　60,600文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="601.7" cy="77.1" r="10"/><polygon points="601.7,72.1 606.3,80.5 597.1,80.5"/></g>
+<g class="pdot" tabindex="0" data-tip="1678　18兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="205.0" cy="234.1" r="10"/><circle cx="205.0" cy="234.1" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1869　8兩（銀兩）　賣價　洋銀" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="495.3" cy="249.8" r="10"/><circle cx="495.3" cy="249.8" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1952　27,000元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="621.4" cy="92.7" r="10"/><rect x="617.2" y="88.5" width="8.4" height="8.4" transform="rotate(45 621.4 92.7)"/></g>
+<g class="pdot" tabindex="0" data-tip="1916　10,000文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="566.7" cy="111.9" r="10"/><polygon points="566.7,106.9 571.3,115.3 562.1,115.3"/></g>
+<g class="pdot" tabindex="0" data-tip="1949　752,000元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="616.9" cy="28.4" r="10"/><rect x="612.7" y="24.2" width="8.4" height="8.4" transform="rotate(45 616.9 28.4)"/></g>
+<g class="pdot" tabindex="0" data-tip="1854　100兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="472.5" cy="201.0" r="10"/><circle cx="472.5" cy="201.0" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1886　65兩（銀兩）　賣價　紋廣" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="521.1" cy="209.3" r="10"/><circle cx="521.1" cy="209.3" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1909　20兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="556.1" cy="232.1" r="10"/><circle cx="556.1" cy="232.1" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1782　10兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="363.0" cy="245.5" r="10"/><circle cx="363.0" cy="245.5" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1903　45兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="547.0" cy="216.4" r="10"/><circle cx="547.0" cy="216.4" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1929　30元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="586.5" cy="224.2" r="10"/><rect x="582.3" y="220.0" width="8.4" height="8.4" transform="rotate(45 586.5 224.2)"/></g>
+<g class="pdot" tabindex="0" data-tip="1858　130,000文（銅錢）　賣價　銅錢" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="478.6" cy="62.3" r="10"/><polygon points="478.6,57.3 483.2,65.7 474.0,65.7"/></g>
+<g class="pdot" tabindex="0" data-tip="1887　200兩（銀兩）　賣價　足色" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="522.6" cy="187.6" r="10"/><circle cx="522.6" cy="187.6" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1888　98兩（銀兩）　賣價　足色・大錠" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="524.2" cy="201.4" r="10"/><circle cx="524.2" cy="201.4" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1913　302兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="562.2" cy="179.6" r="10"/><circle cx="562.2" cy="179.6" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1924　20兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="578.9" cy="232.1" r="10"/><circle cx="578.9" cy="232.1" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1889　4兩（銀兩）　賣價" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="525.7" cy="263.2" r="10"/><circle cx="525.7" cy="263.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1900　4兩（銀兩）　賣價　庫平" style="fill:var(--series-1);stroke:var(--series-1);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="542.4" cy="263.2" r="10"/><circle cx="542.4" cy="263.2" r="4.6"/></g>
+<g class="pdot" tabindex="0" data-tip="1910　148,000文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="557.6" cy="59.8" r="10"/><polygon points="557.6,54.8 562.2,63.2 553.0,63.2"/></g>
+<g class="pdot" tabindex="0" data-tip="1918　2文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="569.8" cy="276.6" r="10"/><polygon points="569.8,271.6 574.4,280.0 565.2,280.0"/></g>
+<g class="pdot" tabindex="0" data-tip="1923　64,500文（銅錢）　賣價" style="fill:var(--series-3);stroke:var(--series-3);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="577.4" cy="75.9" r="10"/><polygon points="577.4,70.9 582.0,79.3 572.8,79.3"/></g>
+<g class="pdot" tabindex="0" data-tip="1927　28元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="583.4" cy="225.6" r="10"/><rect x="579.2" y="221.4" width="8.4" height="8.4" transform="rotate(45 583.4 225.6)"/></g>
+<g class="pdot" tabindex="0" data-tip="1929　10元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="586.5" cy="245.5" r="10"/><rect x="582.3" y="241.3" width="8.4" height="8.4" transform="rotate(45 586.5 245.5)"/></g>
+<g class="pdot" tabindex="0" data-tip="1929　15元（銀元／圓）　賣價　大洋" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="586.5" cy="237.6" r="10"/><rect x="582.3" y="233.4" width="8.4" height="8.4" transform="rotate(45 586.5 237.6)"/></g>
+<g class="pdot" tabindex="0" data-tip="1929　62元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="586.5" cy="210.2" r="10"/><rect x="582.3" y="206.0" width="8.4" height="8.4" transform="rotate(45 586.5 210.2)"/></g>
+<g class="pdot" tabindex="0" data-tip="1932　30元（銀元／圓）　賣價" style="fill:var(--series-2);stroke:var(--series-2);stroke-width:1.5;fill-opacity:.72"><circle class="hit" cx="591.0" cy="224.2" r="10"/><rect x="586.8" y="220.0" width="8.4" height="8.4" transform="rotate(45 591.0 224.2)"/></g>
+<text class="axlab" x="56" y="324">年份（文書起始年）</text>
+<text class="axlab" x="10" y="18" transform="rotate(-90 10 18)" text-anchor="end">金額（原幣種單位，對數刻度）</text>
+</svg>
+    <figcaption>每件文書的主價格。縱軸為對數刻度，<b>三種幣值不可跨色比較</b>：
+    銅錢（綠）整體高出銀兩（藍）兩三個數量級，那是單位之差而非價差——契內自載的折算率多在 800–1,000 文／兩。
+    1945 年以後銀元（紅）向上衝出兩個數量級，那是法幣與舊人民幣的通脹，不是地價上漲
+    （舊人民幣 1955 年以一萬比一折新幣）。空心者為數字串可疑、僅供參考的一件。</figcaption>
+  </figure>
+
+  <div class="tablescroll"><table style="min-width:540px"><thead><tr><th>分期</th><th class="num">銀兩</th><th class="num">銀元</th><th class="num">銅錢</th><th class="num">合計</th><th class="num">銀兩價中位</th></tr></thead><tbody>
+<tr><td>明末—乾隆 <span class="tag">≤1795</span></td><td class="num">7</td><td class="num">·</td><td class="num">·</td><td class="num">7</td><td class="num">18 兩</td></tr>
+<tr><td>嘉道咸同 <span class="tag">1796–1874</span></td><td class="num">18</td><td class="num">1</td><td class="num">5</td><td class="num">24</td><td class="num">25.88 兩</td></tr>
+<tr><td>光緒—清末 <span class="tag">1875–1911</span></td><td class="num">21</td><td class="num">3</td><td class="num">5</td><td class="num">29</td><td class="num">32 兩</td></tr>
+<tr><td>民國 <span class="tag">1912–1948</span></td><td class="num">8</td><td class="num">31</td><td class="num">4</td><td class="num">43</td><td class="num">42 兩</td></tr>
+<tr><td>1949以後 <span class="tag">1949–</span></td><td class="num">·</td><td class="num">6</td><td class="num">·</td><td class="num">6</td><td class="num">—</td></tr>
+</tbody></table></div>
+
+  <div class="finding"><p><b>銀兩契約自報成色，銀元契約不報。</b>
+  清契的銀數幾乎都跟著成色或平砝說明——紋銀、紋廣、庫平、足色、九四星色、平戥九七色、大錠庫錫，
+  共 38 處見於 25 件；番銀還要標單枚重量（「每員陸錢叁分重」）。
+  民國的大洋、國幣則不再附註，因為鑄幣已把成色鎖死在幣面上——
+  <b>信用從當事人議定的成色，轉移到了發行者</b>。</p></div>
+
+  <h3>契內自帶的折算率 <span class="tag">11 條</span></h3>
+  <p>銀兩與銅錢並行的年代，契約常自己寫明折算：「每兩一捌百文」「每兩銀折銅錢柒百伍拾文」。
+  這是<b>當事人用的</b>折算率而非市場牌價，但它給了跨幣種比較的內部依據。
+  可用的 10 條落在 750–1,800 文／兩之間。</p>
+  <div class="tablescroll"><table style="min-width:600px"><thead><tr><th class="num">年</th><th class="num">折算率</th><th>原文</th></tr></thead><tbody>
+<tr><td class="num">—</td><td class="num" style="white-space:nowrap">1,000 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">註係字古字共成肆字再標照舊 而約贖屋之日每兩折成【壹千文】概用下杭街錢店銀票標照舊</td></tr>
+<tr><td class="num">1784</td><td class="num" style="white-space:nowrap">800 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">即日同中三面言議時值價銀壹拾玖兩 廣正每兩的錢【捌百文】正即日收訖其田 隨手退典</td></tr>
+<tr><td class="num">1805</td><td class="num" style="white-space:nowrap">850 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">之約參年為限俟限滿之日聽備價照契面銀兩每兩折 鈔【捌伍拾文】美取贖銀主不得抵買未取贖</td></tr>
+<tr><td class="num">1862</td><td class="num" style="white-space:nowrap">750 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">為限俟限滿之日听備價照契向銀 兩取贖每兩銀折銅錢【柒百伍拾文】算如未 取贖仍听照舊管業</td></tr>
+<tr><td class="num">1866</td><td class="num" style="white-space:nowrap">150 文／兩 <span class="tag">疑誤</span></td><td style="font-size:13px;color:var(--text-secondary)">今欵有憑立撥繳曲郭壹為照 面約贖田之日每兩銀折錢【壹伍拾文】再傳道例收稅其稅銀若干贖</td></tr>
+<tr><td class="num">1868</td><td class="num" style="white-space:nowrap">850 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">年為限事至限滿之日听端備價照契面銀兩每兩銀折銅錢【捌百伍拾文】算依期取贖款不得執番此上</td></tr>
+<tr><td class="num">1872</td><td class="num" style="white-space:nowrap">840 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">內歸已完納其限面約伍冬滿足外任煌備办價銀每兩折錢【捌百肆拾文】算贖回如無力任璟收租管業</td></tr>
+<tr><td class="num">1884</td><td class="num" style="white-space:nowrap">850 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">限俟至限滿之日 听 備價照契面銀兩每兩銀折銅錢票【捌百伍拾文】 算贖回如未取贖仍听照舊</td></tr>
+<tr><td class="num">1888</td><td class="num" style="white-space:nowrap">830 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">限言約五冬滿足外任從 規 办典契價銀贖回每兩折錢【捌百叁拾文】算且 賜 亦不得攔留兩家</td></tr>
+<tr><td class="num">1906</td><td class="num" style="white-space:nowrap">1,800 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">弟可瓊永遠向業一面議定賣斷田價銀壹百 叁拾兩每兩【一捌百文】即日收足其田聽 業完課良</td></tr>
+<tr><td class="num">1925</td><td class="num" style="white-space:nowrap">800 文／兩</td><td style="font-size:13px;color:var(--text-secondary)">遠為實業三面言議時值價銀壹佰伍拾兩 正每兩年折錢【捌佰文】扣其銀即日交訖其底面全之</td></tr>
+</tbody></table></div>
+
+  <h3>金額的用途分類</h3>
+  <p>同一張契紙上的數字並不都是地價：既有稅銀與紙價，也有中人的酬金，
+  還有印在官製契紙上的章程條文（「處五元以上五十元以下之罰金」）。
+  抽取時以金額<b>前方最近、最長</b>的線索詞定其用途，並把法規條文單獨標出——
+  383 條中有 84 條屬此類，一概不計入成交價。</p>
+  <div class="tablescroll"><table style="min-width:460px"><thead><tr><th>用途</th><th class="num">條</th><th>說明</th></tr></thead><tbody>
+<tr><td><b>賣價</b> <code>price_sale</code></td><td class="num">206</td><td style="font-size:13px;color:var(--text-secondary)">賣斷、絕賣、時值契價</td></tr>
+<tr><td><b>規費</b> <code>fee</code></td><td class="num">90</td><td style="font-size:13px;color:var(--text-secondary)">紙價、工本費、中用（中人酬）、罰金</td></tr>
+<tr><td><b>稅</b> <code>tax</code></td><td class="num">32</td><td style="font-size:13px;color:var(--text-secondary)">契稅、稅銀、完糧、地丁</td></tr>
+<tr><td><b>折算率</b> <code>rate</code></td><td class="num">22</td><td style="font-size:13px;color:var(--text-secondary)">每兩折錢若干、每員重若干</td></tr>
+<tr><td><b>未判</b> <code>other</code></td><td class="num">10</td><td style="font-size:13px;color:var(--text-secondary)">語境不足以判定</td></tr>
+<tr><td><b>找價／湊價</b> <code>price_supplement</code></td><td class="num">8</td><td style="font-size:13px;color:var(--text-secondary)">增找、湊斷、杜斷的補價</td></tr>
+<tr><td><b>典價</b> <code>price_pawn</code></td><td class="num">5</td><td style="font-size:13px;color:var(--text-secondary)">典與、轉典的典價</td></tr>
+<tr><td><b>租</b> <code>rent</code></td><td class="num">5</td><td style="font-size:13px;color:var(--text-secondary)">地租、厝租、租錢</td></tr>
+<tr><td><b>贖價</b> <code>redemption</code></td><td class="num">4</td><td style="font-size:13px;color:var(--text-secondary)">約定的取贖之數</td></tr>
+<tr><td><b>借貸</b> <code>loan</code></td><td class="num">1</td><td style="font-size:13px;color:var(--text-secondary)">借本與利息</td></tr>
+</tbody></table></div>
+
+  <details><summary>全部 116 件載價文書（可逐條回查原文）</summary>
+  <div class="dwrap"><div class="tablescroll"><table style="min-width:760px"><thead><tr><th class="num">年</th><th>文書</th><th>類型</th><th class="num">金額</th><th>幣稱</th><th>用途</th><th>原文</th></tr></thead><tbody>
+<tr><td class="num">—</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237466">31735066237466</a></td><td style="font-size:13px">典契</td><td class="num">40元</td><td style="font-size:13px">—</td><td style="font-size:13px">典價</td><td style="font-size:12.5px;color:var(--text-secondary)">本保 祖 謀丁處為業三面言議特得典價 划足重銀番【肆拾員】正其銀良全中親收足訖無</td></tr>
+<tr><td class="num">—</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266465">31735066266465</a></td><td style="font-size:13px">典契</td><td class="num">32,000文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">吳秉鑑全母王氏胞弟秉鈞於嘉慶二年間承父在日用價錢【叁拾貳千文】典得 鄭家厝屋壹櫚五柱坐</td></tr>
+<tr><td class="num">—</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266606">31735066266606</a></td><td style="font-size:13px">—</td><td class="num">11,500文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">合送与 侄咸宜為建築廚房三面言說即日得記價後壹 【拾壹仟伍百文】正其錢隨手交足其他中 付</td></tr>
+<tr><td class="num">—</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266614">31735066266614</a></td><td style="font-size:13px">—</td><td class="num">20,000文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">壹斗伍合正今送與 弟咸宜處建築廚房三面議定田價錢【貳拾千文】正 其錢隨手交足其地即付</td></tr>
+<tr><td class="num">—</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267448">31735066267448</a></td><td style="font-size:13px">—</td><td class="num">3兩</td><td style="font-size:13px">洋銀</td><td style="font-size:13px">找價／湊價</td><td style="font-size:12.5px;color:var(--text-secondary)">錢應用自己復托原中勸諭向買主劉子祥名下增我字洋銀【叁兩】正戒字之日 壹併交足未久</td></tr>
+<tr><td class="num">—</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267638">31735066267638</a></td><td style="font-size:13px">典契</td><td class="num">721元</td><td style="font-size:13px">台伏</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">本日出牆屋價台伏柒百員正外加修理銀水貳拾壹員合共【柒百貳拾壹員】正其 伏即日親手全弟姪在</td></tr>
+<tr><td class="num">—</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267687">31735066267687</a></td><td style="font-size:13px">典契</td><td class="num">310兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">本日得訖屋價銀貳百兩正改廣外加修理銀壹拾兩共成銀【叁百壹拾兩】正改廣其銀即日當場收足其</td></tr>
+<tr><td class="num">1678</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267729">31735066267729</a></td><td style="font-size:13px">賣契</td><td class="num">18兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">拘抵還自願私中將破屋竹山統賣與 楊元吉等賣銀價銀【拾捌兩】正其銀水九 五色頂九五平</td></tr>
+<tr><td class="num">1760</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607546">31735064607546</a></td><td style="font-size:13px">典契</td><td class="num">63兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">下今因乏用 托中典與 葉處為葉三向言議得訖田價銀【陸拾叁兩】正紋廣 其銀即日收足其田</td></tr>
+<tr><td class="num">1761</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607538">31735064607538</a></td><td style="font-size:13px">賣契</td><td class="num">30兩</td><td style="font-size:13px">九四・星色</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">首承買當日 憑中三向言斷時值山埔土審價銀九四星色【叁拾兩】正其銀即日隨契交訖不欠分</td></tr>
+<tr><td class="num">1779</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237375">31735066237375</a></td><td style="font-size:13px">—</td><td class="num">2.5兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">土名俱載在原契內明白今因乏用托友向 謝處嗟出價銀【貳兩五錢】正其田所謝任田管業 面約</td></tr>
+<tr><td class="num">1782</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607678">31735064607678</a></td><td style="font-size:13px">—</td><td class="num">17兩</td><td style="font-size:13px">紋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">新契字人應梓龍為照 本日寔收得增我杜新契內價紋銀【壹拾柒兩】正再照。 外用中見札銀伍</td></tr>
+<tr><td class="num">1782</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267844">31735066267844</a></td><td style="font-size:13px">典契</td><td class="num">10兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">用將此根面全田繳典與 姪欽密 處三面言議典出價銀【拾兩】正收其 銀即日交足其田所</td></tr>
+<tr><td class="num">1784</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237334">31735066237334</a></td><td style="font-size:13px">賣契</td><td class="num">19兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">堂侄亨讀處入首承買為業 即日同中三面言議時值價銀【壹拾玖兩】 廣正每兩的錢捌百文正即</td></tr>
+<tr><td class="num">1798</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607652">31735064607652</a></td><td style="font-size:13px">找契</td><td class="num">8兩</td><td style="font-size:13px">紋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">本族 道成安 名下增找 得杜斷朽房屋基價白系紋銀【捌兩】正成增契之日 壹併交足不</td></tr>
+<tr><td class="num">1802</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266523">31735066266523</a></td><td style="font-size:13px">典契</td><td class="num">22兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">分明今因造壅嗣祖妣吉用托中 向在 傳 處畫出價銀【貳拾貳兩】正紋廣其銀隨契交訖其田聽</td></tr>
+<tr><td class="num">1805</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607843">31735064607843</a></td><td style="font-size:13px">典契</td><td class="num">14兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">今因別用林 中結典典 處為業三向言議者日得記價銀【壹拾肆兩】止其銀即日收足其田即聽銀</td></tr>
+<tr><td class="num">1839</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266515">31735066266515</a></td><td style="font-size:13px">典契</td><td class="num">65兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">統付為憑 外有中用錢捌百文正 今領上項交閱田價銀【陸拾伍兩】紋廣整 道光拾玖年十壹月</td></tr>
+<tr><td class="num">1840</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266556">31735066266556</a></td><td style="font-size:13px">典契</td><td class="num">11,500文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">杉什木筭竹桐茶賣中 林高滿處為業三面言議賣出價伐【壹拾壹仟伍百文】 正其伐即日交足其兩号山</td></tr>
+<tr><td class="num">1842</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266366">31735066266366</a></td><td style="font-size:13px">—</td><td class="num">350文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">池主寄在田中田主不得言說 外再買池土半埭公估價銀【叁百伍拾文】池主不得半途翻異其池土枯</td></tr>
+<tr><td class="num">1844</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266374">31735066266374</a></td><td style="font-size:13px">找契</td><td class="num">100兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">葉慶為業三面言議本日湊斷得店屋價銀叁拾兩正共成【壹百兩】正其銀正紋廣九 七色其銀</td></tr>
+<tr><td class="num">1850</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607868">31735064607868</a></td><td style="font-size:13px">賣契</td><td class="num">200兩</td><td style="font-size:13px">九七・平戥</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">此田統賣與 林 虜為業三面言議本日賣出田根價銀 【貳百兩】正平戥九七色其銀即日收足</td></tr>
+<tr><td class="num">1854</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267802">31735066267802</a></td><td style="font-size:13px">稅單／執照</td><td class="num">100兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">後照 止以省 業戶等 實林厚成等店屋坐落 用價銀【壹百兩】 納銀參兩 布 百玖號右</td></tr>
+<tr><td class="num">1858</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267885">31735066267885</a></td><td style="font-size:13px">賣契</td><td class="num">130,000文</td><td style="font-size:13px">銅錢</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">參鄉賣與與堂兄 士慶處永遠為業三面議定南衙銅錢票【壹百叁拾千文】正其錢即 日收足其田永听</td></tr>
+<tr><td class="num">1862</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607454">31735064607454</a></td><td style="font-size:13px">賣契</td><td class="num">8,500文</td><td style="font-size:13px">銅錢</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">說今欲有憑故立賣 斷契為照 當日實交得賣斷價銅錢【捌仟伍百文】正足訖 所有上手契卷一時</td></tr>
+<tr><td class="num">1862</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607728">31735064607728</a></td><td style="font-size:13px">典契</td><td class="num">283.5兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">田根 典與 林 處為業三面言议本日以訖田根價銀 【貳百捌拾叁兩伍錢】正其銀即日收足其田 根听</td></tr>
+<tr><td class="num">1864</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237359">31735066237359</a></td><td style="font-size:13px">—</td><td class="num">50兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">指做項仍將該田托中 向在夫妻不大鈞靈會貽畫出價銀【伍拾兩】正 其銀各兩共銀拾兩 文</td></tr>
+<tr><td class="num">1866</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607447">31735064607447</a></td><td style="font-size:13px">賣契</td><td class="num">12兩</td><td style="font-size:13px">足色</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">王 處為業參面言議本日賣斷得地屋價足色鏡銀庫砵 【壹拾貳兩】正其銀即日隨券收清其地屋</td></tr>
+<tr><td class="num">1866</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607835">31735064607835</a></td><td style="font-size:13px">—</td><td class="num">29.75兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">半號民田面繳曲與 林處為業三面言議本日得訖田價銀【貳拾玖兩柒錢伍分】正紋廣其銀即日收足其田面</td></tr>
+<tr><td class="num">1866</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266267">31735066266267</a></td><td style="font-size:13px">賣契</td><td class="num">18兩</td><td style="font-size:13px">足色</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">與 林 處永遠為業三面言議本日賣斷出田面價 鏡銀【壹拾捌兩】正庫陶足色其銀即日收足其</td></tr>
+<tr><td class="num">1868</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266473">31735066266473</a></td><td style="font-size:13px">典契</td><td class="num">56兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">下墩根面全之田典與 程利啟處為業三面言議典出價銀【伍拾陸兩】正紋廣其銀即日收足其上下</td></tr>
+<tr><td class="num">1869</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237391">31735066237391</a></td><td style="font-size:13px">—</td><td class="num">41,600文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">向在根主作標送入頭承根為業今中言議 時值根價伐【肆拾壹千陸百文】正其伐親收 足訖無少隻文</td></tr>
+<tr><td class="num">1869</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237573">31735066237573</a></td><td style="font-size:13px">賣契</td><td class="num">10兩</td><td style="font-size:13px">足色</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">托中賣斷與 王慶為業三而言議賣斷得屋價足色庫磁銀【拾兩】正 其銀即日全中隨券立其</td></tr>
+<tr><td class="num">1869</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267737">31735066267737</a></td><td style="font-size:13px">賣契</td><td class="num">8兩</td><td style="font-size:13px">洋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">程金寶名下邊為業當日三面言議賣得土風時直契價洋銀【捌兩】正足 成契之日一頓交足不</td></tr>
+<tr><td class="num">1870</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237342">31735066237342</a></td><td style="font-size:13px">典契</td><td class="num">15兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">四至明白歷言無異托中 送典邦昔承受為業出價銀貳 【拾伍兩】正契立銀收足訖無掛分厘</td></tr>
+<tr><td class="num">1870</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266317">31735066266317</a></td><td style="font-size:13px">賣契</td><td class="num">12兩</td><td style="font-size:13px">洋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">翁金寶名下為業當日三面言議賣得土風時直新契價洋銀【拾貳兩】正足成契之日一頓交足未欠</td></tr>
+<tr><td class="num">1871</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607587">31735064607587</a></td><td style="font-size:13px">賣契</td><td class="num">1,500元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">千六 業主姓名 潮 青 中人姓名 潮 青 契價 【一千五百元】 其他 此契係 1917</td></tr>
+<tr><td class="num">1872</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237383">31735066237383</a></td><td style="font-size:13px">典契</td><td class="num">47.5兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">本墩鄭處正璟邊入頭承買收租為業三面言議時值契價銀【肆拾柒兩伍錢】數廣正其銀立契之日是煌兄</td></tr>
+<tr><td class="num">1876</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607520">31735064607520</a></td><td style="font-size:13px">賣契</td><td class="num">17元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">面時值盡骨併帶飯糧花押酒 席一應在內共成六兌價銀【壹拾柒員】正其係隨 字交付足額載今</td></tr>
+<tr><td class="num">1879</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266648">31735066266648</a></td><td style="font-size:13px">賣契</td><td class="num">11兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">今教 有憑立畫根契壹紙存燒 本日實收交閱契內銀念【拾壹兩】廣戰正足訖 中見人莊世空</td></tr>
+<tr><td class="num">1881</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607801">31735064607801</a></td><td style="font-size:13px">賣契</td><td class="num">110,000文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">賣斷與 族叔萬開承遠為業三面言議賣斷田根 價錢【壹百壹拾千文】即日收足其田根聽 叔永遠</td></tr>
+<tr><td class="num">1884</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607751">31735064607751</a></td><td style="font-size:13px">典契</td><td class="num">44兩</td><td style="font-size:13px">庫錫・大錠</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">撥 典與 堂兄萬開處為業三面言議本日得訖田面價銀【肆拾肆兩】正 大錠庫錫其銀即日收足</td></tr>
+<tr><td class="num">1886</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267828">31735066267828</a></td><td style="font-size:13px">賣契</td><td class="num">65兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">賣斷與 許大華處永遠為業三面言議本日得訖賣斷價銀【陸拾伍兩】正其紋廣銀即日收足其田根</td></tr>
+<tr><td class="num">1887</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607470">31735064607470</a></td><td style="font-size:13px">賣契</td><td class="num">75兩</td><td style="font-size:13px">足色・大錠</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">堂兄 錦枝處永遠為業三面言議本日賣斷得店屋價錠銀【柒拾伍兩】正庫砵大錠白足色足兌其銀</td></tr>
+<tr><td class="num">1887</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267893">31735066267893</a></td><td style="font-size:13px">典契</td><td class="num">200兩</td><td style="font-size:13px">足色</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">中情息典與 陳必清為業三面言議今日典出牆屋價贖銀【貳百兩】正 庫底大礙白足色足兌其</td></tr>
+<tr><td class="num">1888</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266382">31735066266382</a></td><td style="font-size:13px">典契</td><td class="num">36兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">兄元賜 兄弟邊入頭受典營業 全中三面言議時得價銀【叁拾陸兩】紋廣 正其銀立契即日是</td></tr>
+<tr><td class="num">1888</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267901">31735066267901</a></td><td style="font-size:13px">典契</td><td class="num">98兩</td><td style="font-size:13px">足色・大錠</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">泉處永遠為業二面言議今日永遠賣斷出屋 牆厝價鏡銀【玖拾捌兩】正庫法大錠白足色足兌其</td></tr>
+<tr><td class="num">1889</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267620">31735066267620</a></td><td style="font-size:13px">賣契</td><td class="num">10兩</td><td style="font-size:13px">足色・大錠</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">與 高 處永遠為業三面言議本日賣斷得屋地價鏡銀 【壹拾兩】正庫磁大錠白足色足兌其銀</td></tr>
+<tr><td class="num">1889</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223308">31735068223308</a></td><td style="font-size:13px">賣契</td><td class="num">4兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">與 鄧道明愛永遠為業三面言議即日得訖賣西厝屋 於【肆兩】正級黃其銀即日收足其厝屋</td></tr>
+<tr><td class="num">1890</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607488">31735064607488</a></td><td style="font-size:13px">典契</td><td class="num">68兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">白憑中統賣斷契 陳 處永遠為業三言議賣斷出屋價銀【陸拾捌兩】正庫大 銀四其銀即日經成</td></tr>
+<tr><td class="num">1890</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266291">31735066266291</a></td><td style="font-size:13px">賣契</td><td class="num">2.25兩</td><td style="font-size:13px">洋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">斷與程長孫名下當日三面言議賣 得土風時值契價洋銀【貳兩貳錢伍分】正成契之日一色現交不敢少</td></tr>
+<tr><td class="num">1890</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266309">31735066266309</a></td><td style="font-size:13px">賣契</td><td class="num">4兩</td><td style="font-size:13px">洋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">斷與程長孫名下為業當日三面言議 土風時值契價洋銀【肆兩】正足成契之日一頭交足未欠</td></tr>
+<tr><td class="num">1891</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607645">31735064607645</a></td><td style="font-size:13px">典契</td><td class="num">100兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">半田底 一田湖尾土名豬蹄坵根面全壹畝叁分 典契價【壹百兩】又借貳拾兩 糧色立在三十</td></tr>
+<tr><td class="num">1893</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607793">31735064607793</a></td><td style="font-size:13px">典契</td><td class="num">850文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">田日租壹 派過甲入戶完納 不拘年限所憑照契 本錢【捌百五十文】其 照舊業但此 自已份下</td></tr>
+<tr><td class="num">1894</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607827">31735064607827</a></td><td style="font-size:13px">找契</td><td class="num">2,000文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">與本鄉 林處永遠為業三面言據本日湊斷 出田面價錢【貳千文】公其錢即日收 足其田面所</td></tr>
+<tr><td class="num">1898</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607629">31735064607629</a></td><td style="font-size:13px">賣契</td><td class="num">32兩</td><td style="font-size:13px">紋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">布村 劉仕懋名下邊為業當日三面議土風時值契價紋銀【叁拾貳兩】正足成契之日一頓現交未欠</td></tr>
+<tr><td class="num">1900</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607496">31735064607496</a></td><td style="font-size:13px">賣契</td><td class="num">44兩</td><td style="font-size:13px">庫平</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">軒老人會處永遠為業本日三面言議賣斷 得厝價庫平銀【肆拾肆兩】正即日隨契收足其 屋所憑</td></tr>
+<tr><td class="num">1900</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223316">31735068223316</a></td><td style="font-size:13px">賣契</td><td class="num">4兩</td><td style="font-size:13px">庫平</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">舍處永遠為業 有日三面言像賣與等 屋供庫平銀事於【肆兩】正即日隨契收足其厝所憑</td></tr>
+<tr><td class="num">1903</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237557">31735066237557</a></td><td style="font-size:13px">賣契</td><td class="num">15兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">托中送賣前金寬奕處為業三 面言議時值價銀正紋廣銀【壹拾五兩】正其紋良即日收 訖其底面</td></tr>
+<tr><td class="num">1903</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267851">31735066267851</a></td><td style="font-size:13px">典契</td><td class="num">45兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">併荒田 統繳典與 程貞雨處為業三面言議繳典出價銀【肆拾伍兩】正攷廣其銀 即日收足其田</td></tr>
+<tr><td class="num">1904</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237532">31735066237532</a></td><td style="font-size:13px">賣契</td><td class="num">60元</td><td style="font-size:13px">大洋</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">斷與 黃財業安永遠為業三面言議本日得訖田價 大洋【陸拾員】正其銀隨契交足其田所黃另</td></tr>
+<tr><td class="num">1906</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607702">31735064607702</a></td><td style="font-size:13px">找契</td><td class="num">30兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">抄此 族弟可瓊永遠向業一面議定賣斷田價銀壹百 【叁拾兩】每兩一捌百文即日收足其田</td></tr>
+<tr><td class="num">1909</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267836">31735066267836</a></td><td style="font-size:13px">賣契</td><td class="num">20兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">中引到 胞弟尚 然 處諸面言議賣斷得出田價紋唐銀【貳拾兩】正其 銀即日親手收足其日</td></tr>
+<tr><td class="num">1910</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607686">31735064607686</a></td><td style="font-size:13px">典契</td><td class="num">10元</td><td style="font-size:13px">番銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">今因要用 托中引到 叔祖朝朋慶諸面議典得出價番銀【拾員】正每 員陸錢叁分重其銀即</td></tr>
+<tr><td class="num">1910</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237730">31735066237730</a></td><td style="font-size:13px">賣契</td><td class="num">8.25兩</td><td style="font-size:13px">洋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">源森名下承買為業當日三面言議時值土風斷契價 洋銀【捌兩貳錢伍分】正足成契之日一頓交足未久</td></tr>
+<tr><td class="num">1910</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267588">31735066267588</a></td><td style="font-size:13px">賣契</td><td class="num">90,000文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">賣斷 李學子壹實為業三面言議本日賣斷出 田根價錢【玖拾仟文】正其錢即日收足其 其田永</td></tr>
+<tr><td class="num">1910</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223357">31735068223357</a></td><td style="font-size:13px">典契</td><td class="num">148,000文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">氏 弟輝揚 方子啟處為業三面言議本日典出田根價錢【壹百肆拾捌千文】其錢即日全中見收清其田即</td></tr>
+<tr><td class="num">1913</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607736">31735064607736</a></td><td style="font-size:13px">—</td><td class="num">130兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">至 坐向 橫 丈 尺直 丈 尺中 證劉興國原價銀【壹百叁拾兩】中銀壹百八肆元原未稅遵章</td></tr>
+<tr><td class="num">1913</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607884">31735064607884</a></td><td style="font-size:13px">—</td><td class="num">14兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">至 坐向 橫 丈 尺直 丈 尺中 證楊海武原價銀【拾肆兩】中銀貳拾元原契已稅遵章依</td></tr>
+<tr><td class="num">1913</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266531">31735066266531</a></td><td style="font-size:13px">—</td><td class="num">17,500兩 <span class="tag">數字可疑</span></td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">至 坐向 橫 大 尺直 大 尺中 證范尔声原價銀【壹柒千伍百兩】申銀 壹拾柒 元原契未稅</td></tr>
+<tr><td class="num">1913</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267919">31735066267919</a></td><td style="font-size:13px">賣契</td><td class="num">302兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">地方東至西至北至坐向橫大尺直大尺中證劉志潮原價銀【叁百零貳兩】申銀肆百肆拾肆元原契已稅</td></tr>
+<tr><td class="num">1915</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237441">31735066237441</a></td><td style="font-size:13px">—</td><td class="num">42兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">坐 向 橫 業已 尺邀同中證 于受 議定價銀 【肆拾貳兩】 依限投稅應納稅銀 貳元</td></tr>
+<tr><td class="num">1915</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266390">31735066266390</a></td><td style="font-size:13px">典契</td><td class="num">10元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">向橫 丈 尺直 丈 尺邀 同中證陳端率議定價銀 【拾元】 依限投稅應納稅銀 拾元</td></tr>
+<tr><td class="num">1916</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267760">31735066267760</a></td><td style="font-size:13px">典契</td><td class="num">10,000文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">托中典與 兄長忠處為業三面言議即日得訖田價錢伍 【拾仟文】正其錢隨契交足其田听兄離</td></tr>
+<tr><td class="num">1917</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607561">31735064607561</a></td><td style="font-size:13px">賣契</td><td class="num">27元</td><td style="font-size:13px">番銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">因要用托中引到 贈叔祖公勳懷諸面議賣斷得出價番銀【貳拾柒員】正 每員陸份捌分重其銀即</td></tr>
+<tr><td class="num">1918</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607504">31735064607504</a></td><td style="font-size:13px">典契</td><td class="num">700元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">要 承典人姓名 吳 不動產種類 牆屋 典 價 【柒百元】 應納稅額 貳拾壹元 原</td></tr>
+<tr><td class="num">1918</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223373">31735068223373</a></td><td style="font-size:13px">典契</td><td class="num">2文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">不涉吳家之事兩相允息各無翻悔今欲有憑立湊賣斷契 【貳文】四尺零橫潤四丈柒尺零湊接</td></tr>
+<tr><td class="num">1920</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237425">31735066237425</a></td><td style="font-size:13px">賣契</td><td class="num">32元</td><td style="font-size:13px">台伏</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">夫伯欽祥震永遠為業三面言議今日賣新示價錢 台伏【叁拾貳元】正其錢即日收足其田听買主</td></tr>
+<tr><td class="num">1923</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223381">31735068223381</a></td><td style="font-size:13px">賣契</td><td class="num">64,500文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">願託中將此佃田賣出 西房平處為業三面言議時值價銀【陸拾肆仟零伍佰文】正其價即日交足其佃田即付</td></tr>
+<tr><td class="num">1924</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607512">31735064607512</a></td><td style="font-size:13px">典契</td><td class="num">125元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">中將 該屋典與 陳軍漢處為業三面議定典價銀台 伏【壹佰貳拾伍元】正又貼修理費壹 拾元合共</td></tr>
+<tr><td class="num">1924</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267943">31735066267943</a></td><td style="font-size:13px">典契</td><td class="num">20兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">元正 買主姓名 子秀 不動產種類 民田 賣 價 【貳拾兩】正 應納稅額 叁元 原與</td></tr>
+<tr><td class="num">1925</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607611">31735064607611</a></td><td style="font-size:13px">賣契</td><td class="num">40兩</td><td style="font-size:13px">紋廣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">鄒道明處永遠為業三面言議即日得訖賣與 王之重價銀【肆拾兩】正紋廣其銀即日收足其屋</td></tr>
+<tr><td class="num">1925</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237474">31735066237474</a></td><td style="font-size:13px">典契</td><td class="num">50元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">年正月 買主姓名 張炳源 不動產種類 祀田 價 【伍拾元】 應納稅額 叁元 原契幾</td></tr>
+<tr><td class="num">1925</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267596">31735066267596</a></td><td style="font-size:13px">賣契</td><td class="num">150兩</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">全之田送賣與 金信江慶永遠為實業三面言議時值價銀【壹佰伍拾兩】 正每兩年折錢捌佰文扣其</td></tr>
+<tr><td class="num">1926</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266689">31735066266689</a></td><td style="font-size:13px">—</td><td class="num">198元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">中寄與 兄文鳳處為業三面言議即日得訖田 根價先番【壹百玖拾捌員】正其銀隨 契交足其田听兄</td></tr>
+<tr><td class="num">1927</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266549">31735066266549</a></td><td style="font-size:13px">典契</td><td class="num">198元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">契 承典人 姓名 文鳳 不動產種類 民田 價 【壹百玖拾捌元】 應納稅額 捌元柒角伍占</td></tr>
+<tr><td class="num">1927</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223407">31735068223407</a></td><td style="font-size:13px">典契</td><td class="num">28元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">政廳 給證事查得 鄉業戶陳兆和由陳兆清得 分產價【貳拾捌元】其契 馬耳地方 屋 號葉</td></tr>
+<tr><td class="num">1928</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237748">31735066237748</a></td><td style="font-size:13px">賣契</td><td class="num">2,150元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">中白到堂 兄國寶處三面言議今日將此田賣斷出價 銀【貳仟壹百伍拾元】正其銀即日隨契交足其 田</td></tr>
+<tr><td class="num">1928</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267489">31735066267489</a></td><td style="font-size:13px">賣契</td><td class="num">220元</td><td style="font-size:13px">大洋</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">國寶處經三面言議本日將此兩號之 田賣斷出價銀大洋【貳佰貳拾員】正其 銀即日隨契交足其田</td></tr>
+<tr><td class="num">1929</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267869">31735066267869</a></td><td style="font-size:13px">賣契</td><td class="num">30元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">月日 民國十八年十月 上手原契幾張 該產價銀 書【叁拾元】 該契稅銀 叁元玖角 廳</td></tr>
+<tr><td class="num">1929</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223415">31735068223415</a></td><td style="font-size:13px">稅單／執照</td><td class="num">10元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">〇 釐 等 則 賦 額 地丁 糧米 產 價 銀【拾元】正 出典主姓名 程道魯</td></tr>
+<tr><td class="num">1929</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223423">31735068223423</a></td><td style="font-size:13px">賣契</td><td class="num">15元</td><td style="font-size:13px">大洋</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">中向到 本族陳宿清 處三向言議賣斷本日 價錢大洋【拾伍員】正其錢即日交足 其田庚午</td></tr>
+<tr><td class="num">1929</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223431">31735068223431</a></td><td style="font-size:13px">稅單／執照</td><td class="num">62元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">畝 分 釐 等 則 賦 額 地丁 糧米 產 價 【陸拾貳元】 出典主姓名 陳宿康 中</td></tr>
+<tr><td class="num">1932</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607595">31735064607595</a></td><td style="font-size:13px">賣契</td><td class="num">14元</td><td style="font-size:13px">大洋</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">劉紀臣處永遠為業三面言改即日約記田斷價 大洋律【拾肆員】正其銀隨契交足其田下聽臣</td></tr>
+<tr><td class="num">1932</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266655">31735066266655</a></td><td style="font-size:13px">找契</td><td class="num">170元</td><td style="font-size:13px">洋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">業三面商議時值定便畫根並找價新賣出洋銀大 龍番厘【佰柒拾員】正計每元柒錢貳分伍厘重其</td></tr>
+<tr><td class="num">1932</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735068223449">31735068223449</a></td><td style="font-size:13px">賣契</td><td class="num">30元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">畝分 畝分 壹 等則 賦額 地丁 糧米 產價 【叁拾員】 業主姓名 陳聖榜 中證</td></tr>
+<tr><td class="num">1934</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267521">31735066267521</a></td><td style="font-size:13px">賣契</td><td class="num">200元</td><td style="font-size:13px">大洋</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">林學通處永遠為業三面言議本日賣買斷出田價銀 大洋【貳百員】正其銀即日全中隨契璋親手</td></tr>
+<tr><td class="num">1935</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237755">31735066237755</a></td><td style="font-size:13px">稅單／執照</td><td class="num">920元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">畝等 分則 畝分 釐 賦額 地丁 糧米 產價 【九佰貳拾元】 出典主姓名 張國光 中</td></tr>
+<tr><td class="num">1935</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267570">31735066267570</a></td><td style="font-size:13px">稅單／執照</td><td class="num">69元</td><td style="font-size:13px">大洋・洋銀</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">據遺失奉催驗契不敢隱匿特 此契按照時價估值大洋銀【陸拾九元】正遵章投驗如有偽冒不 實</td></tr>
+<tr><td class="num">1936</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237706">31735066237706</a></td><td style="font-size:13px">找契</td><td class="num">60元</td><td style="font-size:13px">大洋・國幣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">從弟欽瑞處為三面商議將值實價畫根找價賣出國幣大洋【陸拾員】正其銀即日全中企申當面交</td></tr>
+<tr><td class="num">1936</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266622">31735066266622</a></td><td style="font-size:13px">找契</td><td class="num">60元</td><td style="font-size:13px">大洋</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">從弟欽瑞處為三面高議時值實價盡根找價共賣出大洋番【陸拾圓】正其銀即日全中當面交足此</td></tr>
+<tr><td class="num">1936</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266663">31735066266663</a></td><td style="font-size:13px">找契</td><td class="num">115元</td><td style="font-size:13px">大洋・國幣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">欽瑞處為三面商議時值實價盡根並找價共賣出國幣大洋【壹佰壹拾伍員】正其銀即日全中當面交足本</td></tr>
+<tr><td class="num">1936</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066266671">31735066266671</a></td><td style="font-size:13px">找契</td><td class="num">115元</td><td style="font-size:13px">大洋</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">欽瑞處為三面商議時值實價盡根並 找價共賣出大洋番【壹佰壹拾伍員】正其銀 即日全中當面交足</td></tr>
+<tr><td class="num">1937</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237763">31735066237763</a></td><td style="font-size:13px">典契</td><td class="num">18元</td><td style="font-size:13px">法幣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">契原因 年湮代遠 四鄰證人姓名 屋貳 產價 法幣【壹拾捌元】正 應納稅銀 法幣叁角陸</td></tr>
+<tr><td class="num">1939</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267695">31735066267695</a></td><td style="font-size:13px">賣契</td><td class="num">60,600文</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">今因乏用托中送賣吊 林施裕處為業三面言議時值價錢【陸拾仟陸佰文】正其 錢即日交訖其底面全</td></tr>
+<tr><td class="num">1940</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607553">31735064607553</a></td><td style="font-size:13px">賣契</td><td class="num">110元</td><td style="font-size:13px">國幣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">用托中引引 吳淮棉處三面言說賣契以示國所國幣銀書【佰壹拾員】正 其銀即日親手收足其山</td></tr>
+<tr><td class="num">1942</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066237540">31735066237540</a></td><td style="font-size:13px">賣契</td><td class="num">250元</td><td style="font-size:13px">國幣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">興處永遠為業三面三像 去日清訖賣謝田 根價彈國幣【貳佰伍拾元】正其款即日交足其田 張永</td></tr>
+<tr><td class="num">1943</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267554">31735066267554</a></td><td style="font-size:13px">典契</td><td class="num">500元</td><td style="font-size:13px">國幣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">，招得本縣沈秀清，就頭承典，三面言議，甘出國幣銀【伍佰員】正，其銀即日全中親收足訖</td></tr>
+<tr><td class="num">1946</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607421">31735064607421</a></td><td style="font-size:13px">賣契</td><td class="num">1,800,000元</td><td style="font-size:13px">人民幣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">產種類 姓名 承受人 人民幣壹拾萬捌仟九 人民幣【壹佰捌拾萬元】 坐西向東五柱二棚樓屋直</td></tr>
+<tr><td class="num">1947</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267547">31735066267547</a></td><td style="font-size:13px">典契</td><td class="num">1,000,000元</td><td style="font-size:13px">國幣</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">外 托中招得族叔黃煌就頭承典三面言議甘出時價國幣【壹佰萬元】正其幣即日 全中親收足訖</td></tr>
+<tr><td class="num">1949</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267679">31735066267679</a></td><td style="font-size:13px">—</td><td class="num">30元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">外即托中格得奔東山余龜溪款頭承曲三面言議甘出大銀【叁拾圓】正其銀即日全中親收足訖此</td></tr>
+<tr><td class="num">1949</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267794">31735066267794</a></td><td style="font-size:13px">賣契</td><td class="num">752,000元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">房共牆 平房壹間并半樓另配天井水井公用 人幣零億【零千零百柒拾五萬貳千元】 人幣零千零百零貳萬貳千</td></tr>
+<tr><td class="num">1952</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267745">31735066267745</a></td><td style="font-size:13px">典契</td><td class="num">27,000元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">人 人 幣零億零千零百九拾零萬零千元 人 人 幣【零千零百零拾貳萬柒千零百零拾元】 人 人 幣零千零百零拾</td></tr>
+<tr><td class="num">1953</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267539">31735066267539</a></td><td style="font-size:13px">—</td><td class="num">25元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">路 北仔路 立 契 日 期 五十八 屋 貳 價 【貳拾伍元】 監 證 人 簽 名 蓋</td></tr>
+<tr><td class="num">1953</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267562">31735066267562</a></td><td style="font-size:13px">—</td><td class="num">27元</td><td style="font-size:13px">—</td><td style="font-size:13px">賣價</td><td style="font-size:12.5px;color:var(--text-secondary)">人 簽 名 蓋 章 石之軍 施性德 屋 貳 價 【貳拾柒元】 監 證 人 簽 名 蓋</td></tr>
+<tr><td class="num">1954</td><td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735066267505">31735066267505</a></td><td style="font-size:13px">典契</td><td class="num">800,000元</td><td style="font-size:13px">人民幣</td><td style="font-size:13px">典價</td><td style="font-size:12.5px;color:var(--text-secondary)">議典與本家 陳蕃舊同志就頭永典兩面言議典價人民幣【捌拾萬元】整該費即日親收足訖其等隨</td></tr>
+</tbody></table></div></div></details>
+
+  <div class="finding caveat"><p><b>未抽到價，不等於文書未載價。</b>
+  這批 OCR 品質不均：部分頁面整段退化重複，人名、數字錯訛不少。
+  119 件未能定價中，42 件是本就不載價的稅單、執照與契證，
+  其餘多為影像殘損或僅存契尾。價格部分因此是<b>有召回損失的</b>，
+  不宜據以計算「多少比例的交易有記價」。</p></div>
+</div></section>
 <section><div class="wrap">
-  <h2><span class="num">五</span>方法與局限</h2>
+  <h2><span class="num">六</span>方法與局限</h2>
   <h3>資料來源</h3>
   <p>全部元資料取自匹茲堡大學 ULS 數位館藏的公開 <code>JSON:API</code>（平台為 Islandora 2 / Drupal 11），
   未解析 HTML 頁面。館藏節點 UUID 為 <code>6985ef8a-1fe9-4b46-91ee-e14ba00d0822</code>，
@@ -793,11 +1198,23 @@ footer a{color:var(--text-secondary)}
   <code>Seller: 藍炳孫 [LAN Bingsun] -- Buyer: 程長孫 [CHENG Changsun] -- Personal</code>。
   本頁的全部結構化欄位由此解析而來，並按類型區分為個人、女性（以「氏」稱）、法人、官方與不可識別五類。</p>
 
+  <h3>正文的抽取</h3>
+  <p>價格一節的輸入是課程提供的 OCR（HTML，每件 1–N 頁）。抽取時先壓掉 OCR 的退化重複，
+  再以「數字＋單位」連寫式掃出金額（<code>兩/錢/分/厘</code>、<code>元/員/圓/角/毫</code>、
+  <code>文/千文/貫</code>），大寫數字與常見混淆（壺→壹、式→貳）一併歸一。
+  一處需要特別處理：<b>錢文的「千」是單位而非位值</b>——「壹百壹拾伍千文」為 115,000 文、
+  「肆拾壹千陸百文」為 41,600 文，按通常中文數字規則會分別誤讀為 5,110 與 1,640。</p>
+
   <h3>必須說明的限制</h3>
   <ul>
-    <li><b>沒有全文。</b>該館藏未提供 OCR 或釋文（<code>media--extracted_text</code> 為空），
-      契約正文僅存在於影像中。本頁所有分析均<b>基於編目元資料，而非文書本身</b>，
-      因此無法涉及田地面積、價銀、稅率等正文信息。</li>
+    <li><b>館方不提供全文。</b>該館藏的 <code>media--extracted_text</code> 為空，
+      契約正文僅存在於影像中。第一至四節的分析均<b>基於編目元資料，而非文書本身</b>。
+      第五節的價格另據課程提供的 OCR（407 頁，覆蓋 234 件），抽取流程與誤差見該節。</li>
+    <li><b>OCR 品質不均，價格有召回損失。</b>部分頁面有整段退化重複與數字錯訛；
+      235 件中僅 116 件可定主價格，其中數字可疑者已單獨標出。
+      未抽到不等於文書未載價。</li>
+    <li><b>價格不作跨幣種換算。</b>兩、元、文並存，成色與平砝各異，
+      本頁僅按幣種分列；契內自載的折算率另表供參，但那是當事人的約定而非市場牌價。</li>
     <li><b>年代以起始年歸入。</b>67 件的日期為區間（如 <code>1946/1951</code>，代表一冊跨年文書），
       統計時取起始年；11 件無日期。</li>
     <li><b>地名為編目者所記，未必是文書當時的行政名。</b>部分 1913 年前的文書已被標為「閩侯縣」，
@@ -813,7 +1230,7 @@ footer a{color:var(--text-secondary)}
 </div></section>
 
 <section><div class="wrap">
-  <h2><span class="num">六</span>數據下載</h2>
+  <h2><span class="num">七</span>數據下載</h2>
   <p class="lede">全部衍生數據以 CC0 釋出，可自由用於教學與研究；原始元資料之權利歸屬匹茲堡大學。</p>
   <div class="dl">
     <a href="data/chinese_land_records_235.csv" download><b>records.csv</b><span>235 件 · 結構化主表</span></a>
@@ -823,6 +1240,8 @@ footer a{color:var(--text-secondary)}
     <a href="data/lineage_clusters.json" download><b>lineage_clusters.json</b><span>32 組字輩族群</span></a>
     <a href="data/county_normalization.json" download><b>county_normalization.json</b><span>歷史政區歸併表</span></a>
     <a href="data/spacetime.json" download><b>spacetime.json</b><span>時空矩陣</span></a>
+    <a href="data/prices_mentions.csv" download><b>prices_mentions.csv</b><span>383 條金額陳述（含原文脈絡）</span></a>
+    <a href="data/prices_records.csv" download><b>prices_records.csv</b><span>逐件主價格與幣種</span></a>
     <a href="data/raw_items.json" download><b>raw_items.json</b><span>未經處理的 API 原始回應</span></a>
   </div>
   <p style="font-size:14px;color:var(--text-secondary)">每件文書的 <code>url</code> 欄位可回到館方條目頁，

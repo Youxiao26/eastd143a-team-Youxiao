@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """从分析结果生成静态站点 index.html。"""
-import json, os, sys, html, collections
+import json, os, sys, html, math, collections
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 P = os.path.join(REPO, "docs", "minzhong-land-deeds", "data")
@@ -179,7 +179,7 @@ header.hero{border-bottom:1px solid var(--rule);background:var(--surface-1);padd
   font-family:ui-sans-serif,system-ui,-apple-system,"Helvetica Neue",sans-serif;margin:0 0 12px}
 h1{font-size:clamp(28px,5vw,42px);line-height:1.25;margin:0 0 10px;letter-spacing:-.01em}
 .sub{color:var(--text-secondary);font-size:17px;margin:0 0 26px;max-width:62ch}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:1px;
   background:var(--surface-1);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
 /* 線由每格自身的 1px 外框拼出，末行空位才不會露出一塊灰 */
 .stat{background:var(--surface-1);padding:16px 18px;box-shadow:0 0 0 1px var(--rule)}
@@ -209,8 +209,9 @@ text{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .val{font-size:11.5px;fill:var(--text-primary);font-weight:600}
 .pline{fill:none;stroke:var(--series-1);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
 .dot{fill:var(--series-1);stroke:var(--surface-1);stroke-width:2}
-.hit{fill:transparent}
-.bar .hit,.pt .hit,.node .hit{cursor:pointer}
+.hit{fill:transparent;stroke:none}
+.bar .hit,.pt .hit,.node .hit,.pdot .hit{cursor:pointer}
+.pdot:hover>:not(.hit),.pdot:focus>:not(.hit){stroke-width:3}
 .bar:hover rect:not(.hit),.bar:focus rect:not(.hit){opacity:.78}
 .legend{display:flex;flex-wrap:wrap;gap:16px;margin:0 0 14px;font-size:13px;
   font-family:ui-sans-serif,system-ui,sans-serif;color:var(--text-secondary)}
@@ -359,6 +360,282 @@ def decade_table():
     o.append('</tbody></table>')
     return '<div class="tablescroll">' + "\n".join(o) + '</div>'
 
+# ================= 5. 貨幣與價格（基於 OCR）=================
+PRICES = os.path.join(P, "prices.json")
+has_prices = os.path.exists(PRICES)
+if has_prices:
+    pdata   = L("prices.json")
+    pm      = pdata["mentions"]
+    prec    = pdata["records"]
+    pr_all  = [r for r in prec if r["price_value"] != ""]
+    FAM     = [("tael", "銀兩", "兩", "var(--series-1)"),
+               ("dollar", "銀元／圓", "元", "var(--series-2)"),
+               ("cash", "銅錢", "文", "var(--series-3)")]
+    FAMNAME = {k: n for k, n, _, _ in FAM}
+    FAMUNIT = {k: u for k, _, u, _ in FAM}
+    FAMCOL  = {k: c for k, _, _, c in FAM}
+    PPER    = [("≤1795", "明末—乾隆", lambda y: y <= 1795),
+               ("1796–1874", "嘉道咸同", lambda y: 1796 <= y <= 1874),
+               ("1875–1911", "光緒—清末", lambda y: 1875 <= y <= 1911),
+               ("1912–1948", "民國",     lambda y: 1912 <= y <= 1948),
+               ("1949–", "1949以後",     lambda y: y >= 1949)]
+
+    def _med(v):
+        v = sorted(v)
+        if not v: return None
+        n = len(v)
+        return v[n//2] if n % 2 else (v[n//2-1]+v[n//2])/2
+
+    cur_rows = []
+    for code, lab, f in PPER:
+        g = [r for r in pr_all if r["year_start"] and f(int(r["year_start"]))]
+        tl = [r["price_value"] for r in g
+              if r["price_family"] == "tael" and r["price_confidence"] == "ok"]
+        cur_rows.append({"code": code, "label": lab, "n": len(g),
+                         "cells": [sum(1 for r in g if r["price_family"] == k) for k, _, _, _ in FAM],
+                         "med_tael": _med(tl), "n_tael_ok": len(tl)})
+
+    n_priced   = len(pr_all)
+    n_mentions = len(pm)
+    n_reg      = sum(1 for m in pm if m["scope"] == "regulation")
+    FINE = {"紋銀","紋廣","庫平","足色","大錠","庫錫","九四","九七","星色","平戥","足錢"}
+    fine_ct = collections.Counter(q for m in pm if m["scope"] == "deed"
+                                  for q in m["currency"].split("|") if q in FINE)
+    fine_docs = len({m["pid"] for m in pm if m["scope"] == "deed"
+                     and set(m["currency"].split("|")) & FINE})
+    fine_n  = sum(fine_ct.values())
+    qing    = [r for r in pr_all if r["year_start"] and int(r["year_start"]) < 1912]
+    minguo  = [r for r in pr_all if r["year_start"] and 1912 <= int(r["year_start"]) < 1949]
+    qing_silver = sum(1 for r in qing if r["price_family"] in ("tael", "cash"))
+    qing_dollar = sum(1 for r in qing if r["price_family"] == "dollar")
+    mg_dollar   = sum(1 for r in minguo if r["price_family"] == "dollar")
+    mg_tael     = sum(1 for r in minguo if r["price_family"] == "tael")
+
+    import re as _re
+    _plain = lambda t: t.replace("【", "").replace("】", "")
+    rate_rows = [m for m in pm if m["unit_label"] == "文"
+                 and _re.search(r'每[兩两](銀|年)?\s*(折|的|一)|每[兩两]折|折\s*成', _plain(m["context"]))]
+    rate_rows.sort(key=lambda m: m["value"])
+    rate_ok = [m["value"] for m in rate_rows if m["value"] >= 500]
+
+    CAT = {"price_sale":"賣價","price_pawn":"典價","price_supplement":"找價／湊價",
+           "redemption":"贖價","tax":"稅","fee":"規費","rent":"租","rate":"折算率",
+           "loan":"借貸","other":"未判"}
+    DT  = {"sale":"賣契","pawn":"典契","supplement":"找契","taxdoc":"稅單／執照",
+           "division":"分家","lease":"租佃","":"—"}
+    cat_ct = collections.Counter(m["category"] for m in pm)
+
+    def fmt_money(v, unit):
+        s = f'{v:,.0f}' if abs(v - round(v)) < 1e-6 else f'{v:,.4g}'
+        return s + unit
+
+    # ---------- SVG：各期計價幣種 ----------
+    def currency_svg():
+        LB, BH, GAP, W, RB = 112, 26, 16, 660, 52
+        rows = [r for r in cur_rows if r["n"]]
+        H = len(rows)*(BH+GAP) + 10
+        o = [f'<svg viewBox="0 0 {W} {H}" role="img" class="chart" '
+             f'aria-label="各分期計價幣種構成橫條圖">']
+        span = W - LB - RB
+        for i, r in enumerate(rows):
+            y = i*(BH+GAP)
+            o.append(f'<text class="ax sm" x="{LB-10}" y="{y+BH*0.62:.0f}" text-anchor="end">{e(r["label"])}</text>')
+            o.append(f'<text class="ax xs" x="{LB-10}" y="{y+BH*0.62+13:.0f}" text-anchor="end">{e(r["code"])}</text>')
+            x = LB
+            for j, (k, name, unit, col) in enumerate(FAM):
+                c = r["cells"][j]
+                if not c: continue
+                w = span*c/r["n"]
+                t = f'{r["label"]}（{r["code"]}）　{name} {c} 件／共 {r["n"]} 件'
+                o.append(f'<g {tip(t)}><rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="{BH}" fill="{col}"/>')
+                if w > 26:
+                    o.append(f'<text class="val" x="{x+w/2:.1f}" y="{y+BH*0.66:.0f}" '
+                             f'text-anchor="middle" fill="#fff">{c}</text>')
+                o.append('</g>')
+                x += w
+            o.append(f'<text class="ax" x="{W-RB+8}" y="{y+BH*0.66:.0f}">{r["n"]} 件</text>')
+        o.append('</svg>')
+        return "\n".join(o)
+
+    # ---------- SVG：金額散點（對數刻度）----------
+    def price_scatter():
+        W, Hh, PL, PB, PT = 680, 330, 56, 40, 14
+        X0, X1 = 1580, 1980
+        pts = [r for r in pr_all if r["year_start"]]
+        def sx(y): return PL + (W-PL-16)*((y-X0)/(X1-X0))
+        def sy(v): return Hh-PB - (math.log10(max(v, 1))/6.2)*(Hh-PB-PT)
+        o = [f'<svg viewBox="0 0 {W} {Hh}" role="img" class="chart" '
+             f'aria-label="契載金額隨年份分布散點圖，縱軸為對數刻度">']
+        for p10, lab in ((0,"1"),(1,"10"),(2,"100"),(3,"1,000"),(4,"1萬"),(5,"10萬"),(6,"100萬")):
+            y = Hh-PB - (p10/6.2)*(Hh-PB-PT)
+            o.append(f'<line class="grid" x1="{PL}" y1="{y:.1f}" x2="{W-10}" y2="{y:.1f}"/>')
+            o.append(f'<text class="ax" x="{PL-8}" y="{y+4:.1f}" text-anchor="end">{lab}</text>')
+        for yr in range(1600, 1981, 50):
+            x = sx(yr)
+            o.append(f'<text class="ax{"" if yr % 100 == 0 else " xs"}" x="{x:.1f}" '
+                     f'y="{Hh-PB+17:.0f}" text-anchor="middle">{yr if yr % 100 == 0 else ""}</text>')
+            o.append(f'<line class="grid" x1="{x:.1f}" y1="{Hh-PB:.1f}" x2="{x:.1f}" y2="{Hh-PB+5:.1f}"/>')
+        o.append(f'<line class="grid" x1="{sx(1912):.1f}" y1="{PT}" x2="{sx(1912):.1f}" y2="{Hh-PB:.1f}" '
+                 f'stroke-dasharray="4 4" stroke="var(--rule-strong)"/>')
+        o.append(f'<text class="ax xs" x="{sx(1912)+5:.1f}" y="{PT+10}">1912</text>')
+        for r in pts:
+            x, y = sx(int(r["year_start"])), sy(r["price_value"])
+            fam = r["price_family"]; col = FAMCOL[fam]
+            lo  = r["price_confidence"] == "low"
+            fill = "none" if lo else col
+            t = (f'{r["year_start"]}　{fmt_money(r["price_value"], FAMUNIT[fam])}'
+                 f'（{FAMNAME[fam]}）　{CAT.get(r["price_category"], "")}'
+                 + (f'　{r["price_currency"].replace("|", "・")}' if r["price_currency"] else "")
+                 + ("　【數字可疑】" if lo else ""))
+            if fam == "tael":
+                shp = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.6"/>'
+            elif fam == "dollar":
+                shp = f'<rect x="{x-4.2:.1f}" y="{y-4.2:.1f}" width="8.4" height="8.4" transform="rotate(45 {x:.1f} {y:.1f})"/>'
+            else:
+                shp = f'<polygon points="{x:.1f},{y-5:.1f} {x+4.6:.1f},{y+3.4:.1f} {x-4.6:.1f},{y+3.4:.1f}"/>'
+            o.append(f'<g class="pdot" {tip(t)} style="fill:{fill};stroke:{col};stroke-width:1.5;fill-opacity:.72">'
+                     f'<circle class="hit" cx="{x:.1f}" cy="{y:.1f}" r="10"/>{shp}</g>')
+        o.append(f'<text class="axlab" x="{PL}" y="{Hh-6}">年份（文書起始年）</text>')
+        o.append(f'<text class="axlab" x="{PL-46}" y="{PT+4}" transform="rotate(-90 {PL-46} {PT+4})" '
+                 f'text-anchor="end">金額（原幣種單位，對數刻度）</text>')
+        o.append('</svg>')
+        return "\n".join(o)
+
+    # ---------- 表：各期中位價 ----------
+    def price_period_table():
+        o = ['<table style="min-width:540px"><thead><tr><th>分期</th><th class="num">銀兩</th><th class="num">銀元</th>'
+             '<th class="num">銅錢</th><th class="num">合計</th><th class="num">銀兩價中位</th></tr></thead><tbody>']
+        for r in cur_rows:
+            md = f'{r["med_tael"]:,.4g} 兩' if r["med_tael"] else "—"
+            o.append(f'<tr><td>{e(r["label"])} <span class="tag">{e(r["code"])}</span></td>'
+                     + "".join(f'<td class="num">{c or "·"}</td>' for c in r["cells"])
+                     + f'<td class="num">{r["n"]}</td><td class="num">{md}</td></tr>')
+        o.append('</tbody></table>')
+        return '<div class="tablescroll">' + "\n".join(o) + '</div>'
+
+    # ---------- 表：契內折算率 ----------
+    SUS = ' <span class="tag">疑誤</span>'
+    def rate_table():
+        o = ['<table style="min-width:600px"><thead><tr><th class="num">年</th><th class="num">折算率</th>'
+             '<th>原文</th></tr></thead><tbody>']
+        for m in sorted(rate_rows, key=lambda m: (m["year_start"] or "0")):
+            o.append(f'<tr><td class="num">{e(m["year_start"] or "—")}</td>'
+                     f'<td class="num" style="white-space:nowrap">{m["value"]:,.0f} 文／兩{SUS if m["value"] < 500 else ""}</td>'
+                     f'<td style="font-size:13px;color:var(--text-secondary)">{e(m["context"])}</td></tr>')
+        o.append('</tbody></table>')
+        return '<div class="tablescroll">' + "\n".join(o) + '</div>'
+
+    # ---------- 表：全部載價文書 ----------
+    def priced_table():
+        o = ['<table style="min-width:760px"><thead><tr><th class="num">年</th><th>文書</th><th>類型</th>'
+             '<th class="num">金額</th><th>幣稱</th><th>用途</th><th>原文</th></tr></thead><tbody>']
+        for r in sorted(pr_all, key=lambda r: (r["year_start"] or "0")):
+            lo = ' <span class="tag">數字可疑</span>' if r["price_confidence"] == "low" else ""
+            o.append(f'<tr><td class="num">{e(r["year_start"] or "—")}</td>'
+                     f'<td style="font-size:13px"><a href="https://digital.library.pitt.edu/islandora/object/{e(r["pid"])}">'
+                     f'{e(r["pid"].split(":")[-1])}</a></td>'
+                     f'<td style="font-size:13px">{e(DT.get(r["deed_type"], r["deed_type"]))}</td>'
+                     f'<td class="num">{e(fmt_money(r["price_value"], FAMUNIT[r["price_family"]]))}{lo}</td>'
+                     f'<td style="font-size:13px">{e(r["price_currency"].replace("|", "・") or "—")}</td>'
+                     f'<td style="font-size:13px">{e(CAT.get(r["price_category"], ""))}</td>'
+                     f'<td style="font-size:12.5px;color:var(--text-secondary)">{e(r["price_context"])}</td></tr>')
+        o.append('</tbody></table>')
+        return '<div class="tablescroll">' + "\n".join(o) + '</div>'
+
+    def cat_table():
+        o = ['<table style="min-width:460px"><thead><tr><th>用途</th><th class="num">條</th><th>說明</th></tr></thead><tbody>']
+        EXP = {"price_sale":"賣斷、絕賣、時值契價","price_pawn":"典與、轉典的典價",
+               "price_supplement":"增找、湊斷、杜斷的補價","redemption":"約定的取贖之數",
+               "tax":"契稅、稅銀、完糧、地丁","fee":"紙價、工本費、中用（中人酬）、罰金",
+               "rent":"地租、厝租、租錢","rate":"每兩折錢若干、每員重若干","loan":"借本與利息",
+               "other":"語境不足以判定"}
+        for k, n in cat_ct.most_common():
+            o.append(f'<tr><td><b>{e(CAT.get(k, k))}</b> <code>{e(k)}</code></td>'
+                     f'<td class="num">{n}</td>'
+                     f'<td style="font-size:13px;color:var(--text-secondary)">{e(EXP.get(k, ""))}</td></tr>')
+        o.append('</tbody></table>')
+        return '<div class="tablescroll">' + "\n".join(o) + '</div>'
+
+
+    ocr_cov          = sum(1 for r in prec if r["ocr_pages"])
+    n_qing, n_minguo = len(qing), len(minguo)
+    n_rates          = len(rate_rows)
+    n_rates_ok       = len(rate_ok)
+    rate_lo, rate_hi = (min(rate_ok), max(rate_ok)) if rate_ok else (0, 0)
+    n_nopri          = len(prec) - n_priced
+    n_taxdoc_nopri   = sum(1 for r in prec if r["price_value"] == "" and r["deed_type"] == "taxdoc")
+
+    PRICE_SECTION = f"""<section id="prices"><div class="wrap">
+  <h2><span class="num">五</span>貨幣與價格</h2>
+  <p class="lede">以上四節都只用了編目元資料。課程另行提供的 OCR 讓契約正文首次可以計算：
+  {n_mentions} 條金額陳述自 {ocr_cov} 件文書中抽出，{n_priced} 件可定主價格。
+  下面關心的不是地價高低——跨幣種、跨四百年的價格不可直接比較——而是<b>人們用什麼記帳</b>。</p>
+
+  <div class="finding"><p><b>計價本位在民國初年整體翻轉。</b>
+  清代 {n_qing} 件載價文書中 {qing_silver} 件用銀兩或銅錢、僅 {qing_dollar} 件用銀元；
+  民國 {n_minguo} 件中 {mg_dollar} 件用元、僅 {mg_tael} 件仍用兩。
+  同一批鄉里契約，從「紋廣銀肆拾兩」改寫成「大洋貳佰貳拾員」。</p></div>
+
+  <figure>
+    <div class="legend">
+      <span><i style="background:var(--series-1)"></i>銀兩</span>
+      <span><i style="background:var(--series-2)"></i>銀元／圓</span>
+      <span><i style="background:var(--series-3)"></i>銅錢（文）</span>
+    </div>
+    {currency_svg()}
+    <figcaption>各分期載價文書的計價幣種構成。每條等長，分段為該期各幣種所占比例；右側為該期載價件數。</figcaption>
+  </figure>
+
+  <figure>
+    <div class="legend">
+      <span><i style="background:var(--series-1);border-radius:50%"></i>銀兩</span>
+      <span><i class="dia" style="background:var(--series-2)"></i>銀元／圓</span>
+      <span><i style="background:var(--series-3);clip-path:polygon(50% 0,100% 100%,0 100%)"></i>銅錢</span>
+      <span style="color:var(--text-muted)">空心＝數字串可疑（OCR）</span>
+    </div>
+    {price_scatter()}
+    <figcaption>每件文書的主價格。縱軸為對數刻度，<b>三種幣值不可跨色比較</b>：
+    銅錢（綠）整體高出銀兩（藍）兩三個數量級，那是單位之差而非價差——契內自載的折算率多在 800–1,000 文／兩。
+    1945 年以後銀元（紅）向上衝出兩個數量級，那是法幣與舊人民幣的通脹，不是地價上漲
+    （舊人民幣 1955 年以一萬比一折新幣）。空心者為數字串可疑、僅供參考的一件。</figcaption>
+  </figure>
+
+  {price_period_table()}
+
+  <div class="finding"><p><b>銀兩契約自報成色，銀元契約不報。</b>
+  清契的銀數幾乎都跟著成色或平砝說明——紋銀、紋廣、庫平、足色、九四星色、平戥九七色、大錠庫錫，
+  共 {fine_n} 處見於 {fine_docs} 件；番銀還要標單枚重量（「每員陸錢叁分重」）。
+  民國的大洋、國幣則不再附註，因為鑄幣已把成色鎖死在幣面上——
+  <b>信用從當事人議定的成色，轉移到了發行者</b>。</p></div>
+
+  <h3>契內自帶的折算率 <span class="tag">{n_rates} 條</span></h3>
+  <p>銀兩與銅錢並行的年代，契約常自己寫明折算：「每兩一捌百文」「每兩銀折銅錢柒百伍拾文」。
+  這是<b>當事人用的</b>折算率而非市場牌價，但它給了跨幣種比較的內部依據。
+  可用的 {n_rates_ok} 條落在 {rate_lo:,.0f}–{rate_hi:,.0f} 文／兩之間。</p>
+  {rate_table()}
+
+  <h3>金額的用途分類</h3>
+  <p>同一張契紙上的數字並不都是地價：既有稅銀與紙價，也有中人的酬金，
+  還有印在官製契紙上的章程條文（「處五元以上五十元以下之罰金」）。
+  抽取時以金額<b>前方最近、最長</b>的線索詞定其用途，並把法規條文單獨標出——
+  {n_mentions} 條中有 {n_reg} 條屬此類，一概不計入成交價。</p>
+  {cat_table()}
+
+  <details><summary>全部 {n_priced} 件載價文書（可逐條回查原文）</summary>
+  <div class="dwrap">{priced_table()}</div></details>
+
+  <div class="finding caveat"><p><b>未抽到價，不等於文書未載價。</b>
+  這批 OCR 品質不均：部分頁面整段退化重複，人名、數字錯訛不少。
+  {n_nopri} 件未能定價中，{n_taxdoc_nopri} 件是本就不載價的稅單、執照與契證，
+  其餘多為影像殘損或僅存契尾。價格部分因此是<b>有召回損失的</b>，
+  不宜據以計算「多少比例的交易有記價」。</p></div>
+</div></section>
+"""
+else:
+    PRICE_SECTION = ""
+
+NM, ND = ("六", "七") if has_prices else ("五", "六")
+
 gov_tot=sum(p["government"] for p in per); per_tot=sum(p["personal"] for p in per)
 early=per[1]; late=per[4]; rep=per[3]
 
@@ -387,6 +664,7 @@ HTML = f"""<!doctype html>
     <div class="stat"><b>{raw_places} → {n_units}</b><span>地名歸併後單元</span></div>
     <div class="stat"><b>{len(persons)}</b><span>可識別個人</span></div>
     <div class="stat"><b>{len(lin)}</b><span>字輩族群</span></div>
+    <div class="stat"><b>{n_priced if has_prices else "—"}</b><span>載價文書</span></div>
   </div>
 </div></header>
 
@@ -501,8 +779,8 @@ HTML = f"""<!doctype html>
   <details><summary>分年代數據表</summary><div class="dwrap">{decade_table()}</div></details>
 </div></section>
 
-<section><div class="wrap">
-  <h2><span class="num">五</span>方法與局限</h2>
+{PRICE_SECTION}<section><div class="wrap">
+  <h2><span class="num">{NM}</span>方法與局限</h2>
   <h3>資料來源</h3>
   <p>全部元資料取自匹茲堡大學 ULS 數位館藏的公開 <code>JSON:API</code>（平台為 Islandora 2 / Drupal 11），
   未解析 HTML 頁面。館藏節點 UUID 為 <code>6985ef8a-1fe9-4b46-91ee-e14ba00d0822</code>，
@@ -520,11 +798,23 @@ HTML = f"""<!doctype html>
   <code>Seller: 藍炳孫 [LAN Bingsun] -- Buyer: 程長孫 [CHENG Changsun] -- Personal</code>。
   本頁的全部結構化欄位由此解析而來，並按類型區分為個人、女性（以「氏」稱）、法人、官方與不可識別五類。</p>
 
+  <h3>正文的抽取</h3>
+  <p>價格一節的輸入是課程提供的 OCR（HTML，每件 1–N 頁）。抽取時先壓掉 OCR 的退化重複，
+  再以「數字＋單位」連寫式掃出金額（<code>兩/錢/分/厘</code>、<code>元/員/圓/角/毫</code>、
+  <code>文/千文/貫</code>），大寫數字與常見混淆（壺→壹、式→貳）一併歸一。
+  一處需要特別處理：<b>錢文的「千」是單位而非位值</b>——「壹百壹拾伍千文」為 115,000 文、
+  「肆拾壹千陸百文」為 41,600 文，按通常中文數字規則會分別誤讀為 5,110 與 1,640。</p>
+
   <h3>必須說明的限制</h3>
   <ul>
-    <li><b>沒有全文。</b>該館藏未提供 OCR 或釋文（<code>media--extracted_text</code> 為空），
-      契約正文僅存在於影像中。本頁所有分析均<b>基於編目元資料，而非文書本身</b>，
-      因此無法涉及田地面積、價銀、稅率等正文信息。</li>
+    <li><b>館方不提供全文。</b>該館藏的 <code>media--extracted_text</code> 為空，
+      契約正文僅存在於影像中。第一至四節的分析均<b>基於編目元資料，而非文書本身</b>。
+      第五節的價格另據課程提供的 OCR（407 頁，覆蓋 234 件），抽取流程與誤差見該節。</li>
+    <li><b>OCR 品質不均，價格有召回損失。</b>部分頁面有整段退化重複與數字錯訛；
+      235 件中僅 {n_priced if has_prices else 0} 件可定主價格，其中數字可疑者已單獨標出。
+      未抽到不等於文書未載價。</li>
+    <li><b>價格不作跨幣種換算。</b>兩、元、文並存，成色與平砝各異，
+      本頁僅按幣種分列；契內自載的折算率另表供參，但那是當事人的約定而非市場牌價。</li>
     <li><b>年代以起始年歸入。</b>67 件的日期為區間（如 <code>1946/1951</code>，代表一冊跨年文書），
       統計時取起始年；11 件無日期。</li>
     <li><b>地名為編目者所記，未必是文書當時的行政名。</b>部分 1913 年前的文書已被標為「閩侯縣」，
@@ -540,7 +830,7 @@ HTML = f"""<!doctype html>
 </div></section>
 
 <section><div class="wrap">
-  <h2><span class="num">六</span>數據下載</h2>
+  <h2><span class="num">{ND}</span>數據下載</h2>
   <p class="lede">全部衍生數據以 CC0 釋出，可自由用於教學與研究；原始元資料之權利歸屬匹茲堡大學。</p>
   <div class="dl">
     <a href="data/chinese_land_records_235.csv" download><b>records.csv</b><span>235 件 · 結構化主表</span></a>
@@ -550,6 +840,8 @@ HTML = f"""<!doctype html>
     <a href="data/lineage_clusters.json" download><b>lineage_clusters.json</b><span>{len(lin)} 組字輩族群</span></a>
     <a href="data/county_normalization.json" download><b>county_normalization.json</b><span>歷史政區歸併表</span></a>
     <a href="data/spacetime.json" download><b>spacetime.json</b><span>時空矩陣</span></a>
+    <a href="data/prices_mentions.csv" download><b>prices_mentions.csv</b><span>{n_mentions if has_prices else 0} 條金額陳述（含原文脈絡）</span></a>
+    <a href="data/prices_records.csv" download><b>prices_records.csv</b><span>逐件主價格與幣種</span></a>
     <a href="data/raw_items.json" download><b>raw_items.json</b><span>未經處理的 API 原始回應</span></a>
   </div>
   <p style="font-size:14px;color:var(--text-secondary)">每件文書的 <code>url</code> 欄位可回到館方條目頁，
