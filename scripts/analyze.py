@@ -147,13 +147,17 @@ def components(nodes, edges):
         while stack:
             x = stack.pop()
             if x in c: continue
-            c.add(x); seen.add(x); stack.extend(adj[x] - c)
+            c.add(x); seen.add(x); stack.extend(sorted(adj[x] - c))
         comps.append(c)
     return comps, adj
 
 
 def layout(comp, adj, W=200, H=150, iters=600):
-    """确定性 Fruchterman-Reingold；种子固定，便于复现。"""
+    """确定性 Fruchterman-Reingold。
+
+    种子固定，且所有集合迭代均先排序——集合顺序随 PYTHONHASHSEED 变化，
+    而浮点加法不满足结合律，不排序会使同一份数据每次产出不同坐标。
+    """
     random.seed(42)
     ns = sorted(comp)
     pos = {n: [W / 2 + 40 * math.cos(2 * math.pi * i / len(ns)),
@@ -172,7 +176,7 @@ def layout(comp, adj, W=200, H=150, iters=600):
                 disp[a][0] += dx / d * f; disp[a][1] += dy / d * f
                 disp[b][0] -= dx / d * f; disp[b][1] -= dy / d * f
         for a in ns:
-            for b in adj[a]:
+            for b in sorted(adj[a]):
                 if b not in comp or b <= a: continue
                 dx, dy = pos[a][0] - pos[b][0], pos[a][1] - pos[b][1]
                 d = math.hypot(dx, dy) or .01; f = d * d / k
@@ -219,7 +223,7 @@ def main():
         sur = collections.Counter(n[0] for n in c if nodes[n]["type"] == "person")
         dom, domn = sur.most_common(1)[0] if sur else ("", 0)
         es = [{"s": a, "t": b, "kind": ew[(a, b)]["kind"], "w": ew[(a, b)]["weight"]}
-              for a in sorted(c) for b in adj[a] if b in c and b > a and (a, b) in ew]
+              for a in sorted(c) for b in sorted(adj[a]) if b in c and b > a and (a, b) in ew]
         out.append({"nodes": [{"id": n, "type": nodes[n]["type"], "x": round(pos[n][0], 1),
                                "y": round(pos[n][1], 1), "n_docs": len(nodes[n]["docs"]),
                                "roles": dict(nodes[n]["roles"]), "units": sorted(nodes[n]["units"])}

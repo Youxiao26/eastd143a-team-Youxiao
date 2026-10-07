@@ -180,8 +180,9 @@ header.hero{border-bottom:1px solid var(--rule);background:var(--surface-1);padd
 h1{font-size:clamp(28px,5vw,42px);line-height:1.25;margin:0 0 10px;letter-spacing:-.01em}
 .sub{color:var(--text-secondary);font-size:17px;margin:0 0 26px;max-width:62ch}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;
-  background:var(--rule);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
-.stat{background:var(--surface-1);padding:16px 18px}
+  background:var(--surface-1);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+/* 線由每格自身的 1px 外框拼出，末行空位才不會露出一塊灰 */
+.stat{background:var(--surface-1);padding:16px 18px;box-shadow:0 0 0 1px var(--rule)}
 .stat b{display:block;font-size:26px;line-height:1.15;letter-spacing:-.02em}
 .stat span{display:block;font-size:12.5px;color:var(--text-muted);margin-top:4px;
   font-family:ui-sans-serif,system-ui,sans-serif}
@@ -215,6 +216,15 @@ text{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
   font-family:ui-sans-serif,system-ui,sans-serif;color:var(--text-secondary)}
 .legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
 .legend .dia{transform:rotate(45deg);border-radius:1px}
+/* 寬表在窄屏自行橫向滾動，避免整頁橫向滾動 */
+.tablescroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;
+  background:linear-gradient(to right,var(--surface-1) 30%,transparent),
+             linear-gradient(to left,var(--surface-1) 30%,transparent) 100% 0,
+             radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.12),transparent),
+             radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.12),transparent) 100% 0;
+  background-repeat:no-repeat;background-size:40px 100%,40px 100%,14px 100%,14px 100%;
+  background-attachment:local,local,scroll,scroll}
+.tablescroll table{margin:0}
 table{border-collapse:collapse;width:100%;font-size:14px;margin:14px 0}
 th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
 th{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px;color:var(--text-muted);
@@ -285,7 +295,7 @@ def merge_table():
         r.append(f'<tr><td><b>{e(m["unit"])}</b>{note}</td><td>{vs}</td>'
                  f'<td class="num">{m["total"]}</td><td style="color:var(--text-secondary);font-size:13px">{e(m["modern"])}</td></tr>')
     r.append('</tbody></table>')
-    return "\n".join(r)
+    return '<div class="tablescroll">' + "\n".join(r) + '</div>'
 
 def heatmap():
     o=['<table class="hm"><thead><tr><th></th>']
@@ -298,7 +308,7 @@ def heatmap():
             o.append(f'<td class="c" style="background:{ramp(v)};color:{ink(v)}" {tip(t)}>{v or "·"}</td>')
         o.append(f'<td class="num" style="font-weight:600">{row["total"]}</td></tr>')
     o.append('</tbody></table>')
-    return "\n".join(o)
+    return '<div class="tablescroll">' + "\n".join(o) + '</div>'
 
 def netcards(n=12):
     o=['<div class="netgrid">']
@@ -320,7 +330,7 @@ def lineage_table(n=16):
                  f'<td style="font-size:13px;color:var(--text-secondary)">{e("、".join(c["units"]) or "—")}</td>'
                  f'<td style="font-size:13px">{e("、".join(c["members"]))}</td></tr>')
     o.append('</tbody></table>')
-    return "\n".join(o)
+    return '<div class="tablescroll">' + "\n".join(o) + '</div>'
 
 top_people = sorted([n for n in net["nodes"] if n["type"]=="person"], key=lambda n:-n["n_docs"])[:12]
 def people_table():
@@ -333,7 +343,7 @@ def people_table():
         o.append(f'<tr><td><b>{e(n["id"])}</b></td><td class="num">{n["n_docs"]}</td><td>{e(rs)}</td>'
                  f'<td class="num">{e(yr)}</td><td style="font-size:13px;color:var(--text-secondary)">{e("、".join(n["units"]) or "—")}</td></tr>')
     o.append('</tbody></table>')
-    return "\n".join(o)
+    return '<div class="tablescroll">' + "\n".join(o) + '</div>'
 
 def decade_table():
     o=['<table><thead><tr><th class="num">年代</th><th class="num">官契</th><th class="num">民契</th>'
@@ -344,7 +354,7 @@ def decade_table():
         o.append(f'<tr><td class="num">{d["decade"]}s</td><td class="num">{d["government"]}</td>'
                  f'<td class="num">{d["personal"]}</td><td class="num">{t}</td><td class="num">{pc}</td></tr>')
     o.append('</tbody></table>')
-    return "\n".join(o)
+    return '<div class="tablescroll">' + "\n".join(o) + '</div>'
 
 gov_tot=sum(p["government"] for p in per); per_tot=sum(p["personal"] for p in per)
 early=per[1]; late=per[4]; rep=per[3]

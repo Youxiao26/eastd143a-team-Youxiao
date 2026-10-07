@@ -122,8 +122,8 @@
    {
     "id": "黃同德",
     "type": "person",
-    "x": 128.7,
-    "y": 76.3,
+    "x": 130.4,
+    "y": 74.2,
     "n_docs": 2,
     "roles": {
      "owner": 2
@@ -135,8 +135,8 @@
    {
     "id": "黃同華",
     "type": "person",
-    "x": 108.5,
-    "y": 104.1,
+    "x": 110.1,
+    "y": 102.1,
     "n_docs": 3,
     "roles": {
      "owner": 3
@@ -148,8 +148,8 @@
    {
     "id": "黃國義",
     "type": "person",
-    "x": 75.7,
-    "y": 93.5,
+    "x": 77.6,
+    "y": 91.5,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -161,8 +161,8 @@
    {
     "id": "黃國興",
     "type": "person",
-    "x": 75.8,
-    "y": 59.1,
+    "x": 77.6,
+    "y": 56.9,
     "n_docs": 2,
     "roles": {
      "owner": 2
@@ -174,8 +174,8 @@
    {
     "id": "黃遠容",
     "type": "person",
-    "x": 108.5,
-    "y": 48.5,
+    "x": 110.1,
+    "y": 46.4,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -186,6 +186,12 @@
    }
   ],
   "edges": [
+   {
+    "s": "黃同德",
+    "t": "黃同華",
+    "kind": "co_party",
+    "w": 1
+   },
    {
     "s": "黃同德",
     "t": "黃國義",
@@ -201,12 +207,6 @@
    {
     "s": "黃同德",
     "t": "黃遠容",
-    "kind": "co_party",
-    "w": 1
-   },
-   {
-    "s": "黃同德",
-    "t": "黃同華",
     "kind": "co_party",
     "w": 1
    },
@@ -356,7 +356,7 @@
     "id": "林厚成",
     "type": "person",
     "x": 128.6,
-    "y": 75.0,
+    "y": 75.1,
     "n_docs": 2,
     "roles": {
      "seller": 2
@@ -368,7 +368,7 @@
    {
     "id": "林厚祥",
     "type": "person",
-    "x": 100.0,
+    "x": 100.1,
     "y": 103.6,
     "n_docs": 1,
     "roles": {
@@ -382,7 +382,7 @@
     "id": "林厚祿",
     "type": "person",
     "x": 71.4,
-    "y": 75.0,
+    "y": 74.9,
     "n_docs": 1,
     "roles": {
      "seller": 1
@@ -394,7 +394,7 @@
    {
     "id": "葉成",
     "type": "person",
-    "x": 100.0,
+    "x": 99.9,
     "y": 46.4,
     "n_docs": 2,
     "roles": {
@@ -415,12 +415,18 @@
    },
    {
     "s": "林厚成",
+    "t": "林厚祿",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林厚成",
     "t": "葉成",
     "kind": "trade",
     "w": 2
    },
    {
-    "s": "林厚成",
+    "s": "林厚祥",
     "t": "林厚祿",
     "kind": "co_party",
     "w": 1
@@ -429,12 +435,6 @@
     "s": "林厚祥",
     "t": "葉成",
     "kind": "trade",
-    "w": 1
-   },
-   {
-    "s": "林厚祥",
-    "t": "林厚祿",
-    "kind": "co_party",
     "w": 1
    },
    {
@@ -518,13 +518,13 @@
   "edges": [
    {
     "s": "陳建璽",
-    "t": "陳道書",
+    "t": "陳成嘉",
     "kind": "co_party",
     "w": 1
    },
    {
     "s": "陳建璽",
-    "t": "陳成嘉",
+    "t": "陳道書",
     "kind": "co_party",
     "w": 1
    },
@@ -573,8 +573,8 @@
    {
     "id": "吳淑珍",
     "type": "person",
-    "x": 128.5,
-    "y": 75.0,
+    "x": 128.6,
+    "y": 75.1,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -586,8 +586,8 @@
    {
     "id": "林宗",
     "type": "person",
-    "x": 100.0,
-    "y": 103.5,
+    "x": 100.1,
+    "y": 103.6,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -599,8 +599,8 @@
    {
     "id": "林涯",
     "type": "person",
-    "x": 71.5,
-    "y": 75.0,
+    "x": 71.4,
+    "y": 74.9,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -612,8 +612,8 @@
    {
     "id": "林貢",
     "type": "person",
-    "x": 100.0,
-    "y": 46.5,
+    "x": 99.9,
+    "y": 46.4,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -626,24 +626,18 @@
   "edges": [
    {
     "s": "吳淑珍",
-    "t": "林涯",
-    "kind": "co_party",
-    "w": 1
-   },
-   {
-    "s": "吳淑珍",
-    "t": "林貢",
-    "kind": "co_party",
-    "w": 1
-   },
-   {
-    "s": "吳淑珍",
     "t": "林宗",
     "kind": "co_party",
     "w": 1
    },
    {
-    "s": "林宗",
+    "s": "吳淑珍",
+    "t": "林涯",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "吳淑珍",
     "t": "林貢",
     "kind": "co_party",
     "w": 1
@@ -651,6 +645,12 @@
    {
     "s": "林宗",
     "t": "林涯",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "林宗",
+    "t": "林貢",
     "kind": "co_party",
     "w": 1
    },
@@ -681,8 +681,8 @@
    {
     "id": "劉如慶",
     "type": "person",
-    "x": 128.5,
-    "y": 75.0,
+    "x": 128.6,
+    "y": 75.1,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -694,8 +694,8 @@
    {
     "id": "劉德桂",
     "type": "person",
-    "x": 100.0,
-    "y": 103.5,
+    "x": 100.1,
+    "y": 103.6,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -707,8 +707,8 @@
    {
     "id": "劉德輝",
     "type": "person",
-    "x": 71.5,
-    "y": 75.0,
+    "x": 71.4,
+    "y": 74.9,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -720,8 +720,8 @@
    {
     "id": "劉景星",
     "type": "person",
-    "x": 100.0,
-    "y": 46.5,
+    "x": 99.9,
+    "y": 46.4,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -734,24 +734,18 @@
   "edges": [
    {
     "s": "劉如慶",
-    "t": "劉德輝",
-    "kind": "co_party",
-    "w": 1
-   },
-   {
-    "s": "劉如慶",
-    "t": "劉景星",
-    "kind": "co_party",
-    "w": 1
-   },
-   {
-    "s": "劉如慶",
     "t": "劉德桂",
     "kind": "co_party",
     "w": 1
    },
    {
-    "s": "劉德桂",
+    "s": "劉如慶",
+    "t": "劉德輝",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉如慶",
     "t": "劉景星",
     "kind": "co_party",
     "w": 1
@@ -759,6 +753,12 @@
    {
     "s": "劉德桂",
     "t": "劉德輝",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "劉德桂",
+    "t": "劉景星",
     "kind": "co_party",
     "w": 1
    },
@@ -790,7 +790,7 @@
     "id": "施性固",
     "type": "person",
     "x": 128.6,
-    "y": 75.0,
+    "y": 75.1,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -802,7 +802,7 @@
    {
     "id": "施松柏",
     "type": "person",
-    "x": 100.0,
+    "x": 100.1,
     "y": 103.6,
     "n_docs": 1,
     "roles": {
@@ -816,7 +816,7 @@
     "id": "施能鎖",
     "type": "person",
     "x": 71.4,
-    "y": 75.0,
+    "y": 74.9,
     "n_docs": 1,
     "roles": {
      "owner": 1
@@ -828,7 +828,7 @@
    {
     "id": "顏蒜",
     "type": "person",
-    "x": 100.0,
+    "x": 99.9,
     "y": 46.4,
     "n_docs": 1,
     "roles": {
@@ -848,18 +848,12 @@
    },
    {
     "s": "施性固",
-    "t": "顏蒜",
+    "t": "施能鎖",
     "kind": "co_party",
     "w": 1
    },
    {
     "s": "施性固",
-    "t": "施能鎖",
-    "kind": "co_party",
-    "w": 1
-   },
-   {
-    "s": "施松柏",
     "t": "顏蒜",
     "kind": "co_party",
     "w": 1
@@ -867,6 +861,12 @@
    {
     "s": "施松柏",
     "t": "施能鎖",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "施松柏",
+    "t": "顏蒜",
     "kind": "co_party",
     "w": 1
    },
@@ -950,6 +950,12 @@
   "edges": [
    {
     "s": "連芳",
+    "t": "黃世",
+    "kind": "co_party",
+    "w": 1
+   },
+   {
+    "s": "連芳",
     "t": "黃嚕",
     "kind": "co_party",
     "w": 1
@@ -957,12 +963,6 @@
    {
     "s": "連芳",
     "t": "黃滑",
-    "kind": "co_party",
-    "w": 1
-   },
-   {
-    "s": "連芳",
-    "t": "黃世",
     "kind": "co_party",
     "w": 1
    },
@@ -1058,13 +1058,13 @@
   "edges": [
    {
     "s": "李水旺",
-    "t": "李義草",
+    "t": "李義妹",
     "kind": "co_party",
     "w": 1
    },
    {
     "s": "李水旺",
-    "t": "李義妹",
+    "t": "李義草",
     "kind": "co_party",
     "w": 1
    },
@@ -1603,7 +1603,7 @@
   ],
   "years": null,
   "units": [],
-  "dominant_surname": "昌",
+  "dominant_surname": "咸",
   "surname_share": 0.33
  },
  {
@@ -1683,7 +1683,7 @@
    {
     "id": "吳淮棉",
     "type": "person",
-    "x": 127.3,
+    "x": 127.4,
     "y": 75.0,
     "n_docs": 1,
     "roles": {
@@ -1717,13 +1717,13 @@
   "edges": [
    {
     "s": "吳淮棉",
-    "t": "藍維坤",
+    "t": "藍維乾",
     "kind": "trade",
     "w": 1
    },
    {
     "s": "吳淮棉",
-    "t": "藍維乾",
+    "t": "藍維坤",
     "kind": "trade",
     "w": 1
    },
@@ -2044,7 +2044,7 @@
    {
     "id": "劉貞文",
     "type": "person",
-    "x": 127.3,
+    "x": 127.4,
     "y": 75.0,
     "n_docs": 1,
     "roles": {
@@ -2085,13 +2085,13 @@
   "edges": [
    {
     "s": "劉貞文",
-    "t": "黃象智",
+    "t": "陸元盛",
     "kind": "co_party",
     "w": 1
    },
    {
     "s": "劉貞文",
-    "t": "陸元盛",
+    "t": "黃象智",
     "kind": "co_party",
     "w": 1
    },
@@ -2114,7 +2114,7 @@
   "units": [
    "古田"
   ],
-  "dominant_surname": "陸",
+  "dominant_surname": "黃",
   "surname_share": 0.33
  },
  {
@@ -2337,7 +2337,7 @@
   "units": [
    "閩侯（閩縣・侯官・林森）"
   ],
-  "dominant_surname": "王",
+  "dominant_surname": "林",
   "surname_share": 0.5
  },
  {
@@ -2603,7 +2603,7 @@
   "units": [
    "閩侯（閩縣・侯官・林森）"
   ],
-  "dominant_surname": "張",
+  "dominant_surname": "鄒",
   "surname_share": 0.5
  },
  {
@@ -3328,7 +3328,7 @@
   "units": [
    "建陽"
   ],
-  "dominant_surname": "劉",
+  "dominant_surname": "應",
   "surname_share": 0.5
  },
  {
@@ -3944,7 +3944,7 @@
   "units": [
    "閩侯（閩縣・侯官・林森）"
   ],
-  "dominant_surname": "黃",
+  "dominant_surname": "許",
   "surname_share": 0.5
  },
  {
@@ -4050,7 +4050,7 @@
   "units": [
    "永泰（永福）"
   ],
-  "dominant_surname": "金",
+  "dominant_surname": "張",
   "surname_share": 0.5
  },
  {
@@ -4200,7 +4200,7 @@
    1870
   ],
   "units": [],
-  "dominant_surname": "金",
+  "dominant_surname": "程",
   "surname_share": 0.5
  },
  {
@@ -4402,7 +4402,7 @@
   "units": [
    "閩清"
   ],
-  "dominant_surname": "劉",
+  "dominant_surname": "林",
   "surname_share": 0.5
  },
  {
@@ -4500,7 +4500,7 @@
    1945
   ],
   "units": [],
-  "dominant_surname": "林",
+  "dominant_surname": "陳",
   "surname_share": 0.5
  },
  {
@@ -4681,7 +4681,7 @@
   ],
   "years": null,
   "units": [],
-  "dominant_surname": "劉",
+  "dominant_surname": "黃",
   "surname_share": 0.5
  },
  {
@@ -4785,7 +4785,7 @@
   "units": [
    "東山"
   ],
-  "dominant_surname": "林",
+  "dominant_surname": "方",
   "surname_share": 0.5
  },
  {
@@ -4837,7 +4837,7 @@
   "units": [
    "東山"
   ],
-  "dominant_surname": "陳",
+  "dominant_surname": "林",
   "surname_share": 0.5
  },
  {
@@ -5039,7 +5039,7 @@
   "units": [
    "東山"
   ],
-  "dominant_surname": "黃",
+  "dominant_surname": "沈",
   "surname_share": 0.5
  },
  {
@@ -5091,7 +5091,7 @@
   "units": [
    "閩侯（閩縣・侯官・林森）"
   ],
-  "dominant_surname": "李",
+  "dominant_surname": "王",
   "surname_share": 0.5
  },
  {
@@ -5247,7 +5247,7 @@
   "units": [
    "東山"
   ],
-  "dominant_surname": "林",
+  "dominant_surname": "余",
   "surname_share": 0.5
  },
  {
@@ -5397,7 +5397,7 @@
    1892
   ],
   "units": [],
-  "dominant_surname": "李",
+  "dominant_surname": "陳",
   "surname_share": 0.5
  },
  {
@@ -5449,7 +5449,7 @@
   "units": [
    "閩侯（閩縣・侯官・林森）"
   ],
-  "dominant_surname": "許",
+  "dominant_surname": "王",
   "surname_share": 0.5
  },
  {
@@ -5495,7 +5495,7 @@
    1909
   ],
   "units": [],
-  "dominant_surname": "尚",
+  "dominant_surname": "熾",
   "surname_share": 0.5
  },
  {
@@ -5807,7 +5807,7 @@
   "units": [
    "閩侯（閩縣・侯官・林森）"
   ],
-  "dominant_surname": "王",
+  "dominant_surname": "郭",
   "surname_share": 0.5
  },
  {

@@ -42,8 +42,9 @@ header.hero{border-bottom:1px solid var(--rule);background:var(--surface-1);padd
 h1{font-size:clamp(28px,5vw,42px);line-height:1.25;margin:0 0 10px;letter-spacing:-.01em}
 .sub{color:var(--text-secondary);font-size:17px;margin:0 0 26px;max-width:62ch}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;
-  background:var(--rule);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
-.stat{background:var(--surface-1);padding:16px 18px}
+  background:var(--surface-1);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+/* 線由每格自身的 1px 外框拼出，末行空位才不會露出一塊灰 */
+.stat{background:var(--surface-1);padding:16px 18px;box-shadow:0 0 0 1px var(--rule)}
 .stat b{display:block;font-size:26px;line-height:1.15;letter-spacing:-.02em}
 .stat span{display:block;font-size:12.5px;color:var(--text-muted);margin-top:4px;
   font-family:ui-sans-serif,system-ui,sans-serif}
@@ -77,6 +78,15 @@ text{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
   font-family:ui-sans-serif,system-ui,sans-serif;color:var(--text-secondary)}
 .legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
 .legend .dia{transform:rotate(45deg);border-radius:1px}
+/* 寬表在窄屏自行橫向滾動，避免整頁橫向滾動 */
+.tablescroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;
+  background:linear-gradient(to right,var(--surface-1) 30%,transparent),
+             linear-gradient(to left,var(--surface-1) 30%,transparent) 100% 0,
+             radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.12),transparent),
+             radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.12),transparent) 100% 0;
+  background-repeat:no-repeat;background-size:40px 100%,40px 100%,14px 100%,14px 100%;
+  background-attachment:local,local,scroll,scroll}
+.tablescroll table{margin:0}
 table{border-collapse:collapse;width:100%;font-size:14px;margin:14px 0}
 th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
 th{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12.5px;color:var(--text-muted);
@@ -174,7 +184,7 @@ footer a{color:var(--text-secondary)}
   </figure>
 
   <h3>歸併對照表</h3>
-  <table><thead><tr><th>歸併後地理單元</th><th>原編目寫法（件數）</th><th class="num">合計</th><th>今屬</th></tr></thead><tbody>
+  <div class="tablescroll"><table><thead><tr><th>歸併後地理單元</th><th>原編目寫法（件數）</th><th class="num">合計</th><th>今屬</th></tr></thead><tbody>
 <tr><td><b>閩侯（閩縣・侯官・林森）</b><br><small style="color:var(--text-muted);font-size:12px">閩縣＋侯官縣 →1913.3 閩侯縣 →1943.10 林森縣（纪念林森）→1950.4 復名閩侯縣</small></td><td>福建省閩侯縣 <span class="tag">37</span>　福建省林森縣 <span class="tag">18</span>　福建省閩縣 <span class="tag">14</span>　福建省侯官縣 <span class="tag">11</span>　福建省閩邑 <span class="tag">3</span>　福建閩侯縣 <span class="tag">2</span>　福建省閩邑縣 <span class="tag">2</span>　福建聲閩侯縣 <span class="tag">1</span>　福建省福州市 <span class="tag">1</span>　福建省閩侯縣和侯官縣 <span class="tag">1</span></td><td class="num">87</td><td style="color:var(--text-secondary);font-size:13px">福州市闽侯县及市区</td></tr>
 <tr><td><b>永泰（永福）</b><br><small style="color:var(--text-muted);font-size:12px">唐766年置永泰縣 →北宋1102年避諱改永福縣 →民國3年(1914)因與廣西永福縣重名，復名永泰縣</small></td><td>福建省永泰縣 <span class="tag">18</span></td><td class="num">19</td><td style="color:var(--text-secondary);font-size:13px">福州市永泰县</td></tr>
 <tr><td><b>古田</b></td><td>福建省古田縣 <span class="tag">17</span></td><td class="num">17</td><td style="color:var(--text-secondary);font-size:13px">宁德市古田县</td></tr>
@@ -192,7 +202,7 @@ footer a{color:var(--text-secondary)}
 <tr><td><b>連江</b></td><td>福建省連江縣 <span class="tag">1</span></td><td class="num">1</td><td style="color:var(--text-secondary);font-size:13px">福州市连江县</td></tr>
 <tr><td><b>邵武</b></td><td>福建邵武縣 <span class="tag">1</span></td><td class="num">1</td><td style="color:var(--text-secondary);font-size:13px">南平市邵武市</td></tr>
 <tr><td><b>順昌</b></td><td>福建省順昌縣 <span class="tag">1</span></td><td class="num">1</td><td style="color:var(--text-secondary);font-size:13px">南平市顺昌县</td></tr>
-</tbody></table>
+</tbody></table></div>
 
   <div class="finding caveat"><p><b>未歸併者。</b>
   「福建省(清源縣?)」2 件——問號為館方原有，近代福建無清源縣建制（清源為唐代泉州郡名），不予歸併；
@@ -231,21 +241,21 @@ footer a{color:var(--text-secondary)}
 <g class="node t-person" tabindex="0" data-tip="王聯鄧　1件　賣1" style="fill:var(--series-1)"><circle class="hit" cx="54.7" cy="22" r="15"/><circle cx="54.7" cy="22" r="5"/><text class="nlab" x="54.7" y="39.0" text-anchor="middle">王聯鄧</text></g>
 </svg></div>
 <div class="netcard"><h4>黃氏等 5 人</h4><p class="meta">5 件 · 1917–1926<br>永泰（永福）</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
-<line class="edge co" x1="128.7" y1="76.3" x2="75.7" y2="93.5"/>
-<line class="edge co" x1="128.7" y1="76.3" x2="75.8" y2="59.1"/>
-<line class="edge co" x1="128.7" y1="76.3" x2="108.5" y2="48.5"/>
-<line class="edge co" x1="128.7" y1="76.3" x2="108.5" y2="104.1"/>
-<line class="edge co" x1="108.5" y1="104.1" x2="75.7" y2="93.5"/>
-<line class="edge co" x1="108.5" y1="104.1" x2="75.8" y2="59.1"/>
-<line class="edge co" x1="108.5" y1="104.1" x2="108.5" y2="48.5"/>
-<line class="edge co" x1="75.7" y1="93.5" x2="75.8" y2="59.1"/>
-<line class="edge co" x1="75.7" y1="93.5" x2="108.5" y2="48.5"/>
-<line class="edge co" x1="75.8" y1="59.1" x2="108.5" y2="48.5"/>
-<g class="node t-person" tabindex="0" data-tip="黃同德　2件　業主2" style="fill:var(--series-1)"><circle class="hit" cx="128.7" cy="76.3" r="15"/><circle cx="128.7" cy="76.3" r="6"/><text class="nlab" x="128.7" y="64.3" text-anchor="middle">黃同德</text></g>
-<g class="node t-person" tabindex="0" data-tip="黃同華　3件　業主3" style="fill:var(--series-1)"><circle class="hit" cx="108.5" cy="104.1" r="15"/><circle cx="108.5" cy="104.1" r="7"/><text class="nlab" x="108.5" y="91.1" text-anchor="middle">黃同華</text></g>
-<g class="node t-person" tabindex="0" data-tip="黃國義　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="75.7" cy="93.5" r="15"/><circle cx="75.7" cy="93.5" r="5"/><text class="nlab" x="75.7" y="82.5" text-anchor="middle">黃國義</text></g>
-<g class="node t-person" tabindex="0" data-tip="黃國興　2件　業主2" style="fill:var(--series-1)"><circle class="hit" cx="75.8" cy="59.1" r="15"/><circle cx="75.8" cy="59.1" r="6"/><text class="nlab" x="75.8" y="77.1" text-anchor="middle">黃國興</text></g>
-<g class="node t-person" tabindex="0" data-tip="黃遠容　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="108.5" cy="48.5" r="15"/><circle cx="108.5" cy="48.5" r="5"/><text class="nlab" x="108.5" y="65.5" text-anchor="middle">黃遠容</text></g>
+<line class="edge co" x1="130.4" y1="74.2" x2="110.1" y2="102.1"/>
+<line class="edge co" x1="130.4" y1="74.2" x2="77.6" y2="91.5"/>
+<line class="edge co" x1="130.4" y1="74.2" x2="77.6" y2="56.9"/>
+<line class="edge co" x1="130.4" y1="74.2" x2="110.1" y2="46.4"/>
+<line class="edge co" x1="110.1" y1="102.1" x2="77.6" y2="91.5"/>
+<line class="edge co" x1="110.1" y1="102.1" x2="77.6" y2="56.9"/>
+<line class="edge co" x1="110.1" y1="102.1" x2="110.1" y2="46.4"/>
+<line class="edge co" x1="77.6" y1="91.5" x2="77.6" y2="56.9"/>
+<line class="edge co" x1="77.6" y1="91.5" x2="110.1" y2="46.4"/>
+<line class="edge co" x1="77.6" y1="56.9" x2="110.1" y2="46.4"/>
+<g class="node t-person" tabindex="0" data-tip="黃同德　2件　業主2" style="fill:var(--series-1)"><circle class="hit" cx="130.4" cy="74.2" r="15"/><circle cx="130.4" cy="74.2" r="6"/><text class="nlab" x="130.4" y="92.2" text-anchor="middle">黃同德</text></g>
+<g class="node t-person" tabindex="0" data-tip="黃同華　3件　業主3" style="fill:var(--series-1)"><circle class="hit" cx="110.1" cy="102.1" r="15"/><circle cx="110.1" cy="102.1" r="7"/><text class="nlab" x="110.1" y="89.1" text-anchor="middle">黃同華</text></g>
+<g class="node t-person" tabindex="0" data-tip="黃國義　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="77.6" cy="91.5" r="15"/><circle cx="77.6" cy="91.5" r="5"/><text class="nlab" x="77.6" y="80.5" text-anchor="middle">黃國義</text></g>
+<g class="node t-person" tabindex="0" data-tip="黃國興　2件　業主2" style="fill:var(--series-1)"><circle class="hit" cx="77.6" cy="56.9" r="15"/><circle cx="77.6" cy="56.9" r="6"/><text class="nlab" x="77.6" y="74.9" text-anchor="middle">黃國興</text></g>
+<g class="node t-person" tabindex="0" data-tip="黃遠容　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="110.1" cy="46.4" r="15"/><circle cx="110.1" cy="46.4" r="5"/><text class="nlab" x="110.1" y="63.4" text-anchor="middle">黃遠容</text></g>
 </svg></div>
 <div class="netcard"><h4>陳氏等 4 人</h4><p class="meta">4 件 · 1805–1829<br>地點不明</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
 <line class="edge trade" x1="171.0" y1="127.1" x2="125.2" y2="93.5"/>
@@ -257,20 +267,20 @@ footer a{color:var(--text-secondary)}
 <g class="node t-person" tabindex="0" data-tip="黃隆貫　2件　賣2" style="fill:var(--series-1)"><circle class="hit" cx="74.6" cy="56.3" r="15"/><circle cx="74.6" cy="56.3" r="6"/><text class="nlab" x="74.6" y="74.3" text-anchor="middle">黃隆貫</text></g>
 </svg></div>
 <div class="netcard"><h4>林氏等 4 人</h4><p class="meta">2 件 · 1844–1854<br>閩侯（閩縣・侯官・林森）</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
-<line class="edge co" x1="128.6" y1="75.0" x2="100.0" y2="103.6"/>
-<line class="edge trade" x1="128.6" y1="75.0" x2="100.0" y2="46.4"/>
-<line class="edge co" x1="128.6" y1="75.0" x2="71.4" y2="75.0"/>
-<line class="edge trade" x1="100.0" y1="103.6" x2="100.0" y2="46.4"/>
-<line class="edge co" x1="100.0" y1="103.6" x2="71.4" y2="75.0"/>
-<line class="edge trade" x1="71.4" y1="75.0" x2="100.0" y2="46.4"/>
-<g class="node t-person" tabindex="0" data-tip="林厚成　2件　賣2" style="fill:var(--series-1)"><circle class="hit" cx="128.6" cy="75.0" r="15"/><circle cx="128.6" cy="75.0" r="6"/><text class="nlab" x="128.6" y="63.0" text-anchor="middle">林厚成</text></g>
-<g class="node t-person" tabindex="0" data-tip="林厚祥　1件　賣1" style="fill:var(--series-1)"><circle class="hit" cx="100.0" cy="103.6" r="15"/><circle cx="100.0" cy="103.6" r="5"/><text class="nlab" x="100.0" y="92.6" text-anchor="middle">林厚祥</text></g>
-<g class="node t-person" tabindex="0" data-tip="林厚祿　1件　賣1" style="fill:var(--series-1)"><circle class="hit" cx="71.4" cy="75.0" r="15"/><circle cx="71.4" cy="75.0" r="5"/><text class="nlab" x="71.4" y="64.0" text-anchor="middle">林厚祿</text></g>
-<g class="node t-person" tabindex="0" data-tip="葉成　2件　買2・業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.0" cy="46.4" r="15"/><circle cx="100.0" cy="46.4" r="6"/><text class="nlab" x="100.0" y="64.4" text-anchor="middle">葉成</text></g>
+<line class="edge co" x1="128.6" y1="75.1" x2="100.1" y2="103.6"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
+<line class="edge trade" x1="128.6" y1="75.1" x2="99.9" y2="46.4"/>
+<line class="edge co" x1="100.1" y1="103.6" x2="71.4" y2="74.9"/>
+<line class="edge trade" x1="100.1" y1="103.6" x2="99.9" y2="46.4"/>
+<line class="edge trade" x1="71.4" y1="74.9" x2="99.9" y2="46.4"/>
+<g class="node t-person" tabindex="0" data-tip="林厚成　2件　賣2" style="fill:var(--series-1)"><circle class="hit" cx="128.6" cy="75.1" r="15"/><circle cx="128.6" cy="75.1" r="6"/><text class="nlab" x="128.6" y="63.1" text-anchor="middle">林厚成</text></g>
+<g class="node t-person" tabindex="0" data-tip="林厚祥　1件　賣1" style="fill:var(--series-1)"><circle class="hit" cx="100.1" cy="103.6" r="15"/><circle cx="100.1" cy="103.6" r="5"/><text class="nlab" x="100.1" y="92.6" text-anchor="middle">林厚祥</text></g>
+<g class="node t-person" tabindex="0" data-tip="林厚祿　1件　賣1" style="fill:var(--series-1)"><circle class="hit" cx="71.4" cy="74.9" r="15"/><circle cx="71.4" cy="74.9" r="5"/><text class="nlab" x="71.4" y="91.9" text-anchor="middle">林厚祿</text></g>
+<g class="node t-person" tabindex="0" data-tip="葉成　2件　買2・業主1" style="fill:var(--series-1)"><circle class="hit" cx="99.9" cy="46.4" r="15"/><circle cx="99.9" cy="46.4" r="6"/><text class="nlab" x="99.9" y="64.4" text-anchor="middle">葉成</text></g>
 </svg></div>
 <div class="netcard"><h4>陳氏等 4 人</h4><p class="meta">1 件 · 1890<br>閩侯（閩縣・侯官・林森）</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
-<line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
 <line class="edge co" x1="128.6" y1="75.1" x2="100.1" y2="103.6"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
 <line class="edge co" x1="128.6" y1="75.1" x2="99.9" y2="46.4"/>
 <line class="edge co" x1="100.1" y1="103.6" x2="71.4" y2="74.9"/>
 <line class="edge co" x1="100.1" y1="103.6" x2="99.9" y2="46.4"/>
@@ -281,45 +291,45 @@ footer a{color:var(--text-secondary)}
 <g class="node t-person" tabindex="0" data-tip="陳雅　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="99.9" cy="46.4" r="15"/><circle cx="99.9" cy="46.4" r="5"/><text class="nlab" x="99.9" y="63.4" text-anchor="middle">陳雅</text></g>
 </svg></div>
 <div class="netcard"><h4>林氏等 4 人</h4><p class="meta">1 件 · 1952<br>晉江</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
-<line class="edge co" x1="128.5" y1="75.0" x2="71.5" y2="75.0"/>
-<line class="edge co" x1="128.5" y1="75.0" x2="100.0" y2="46.5"/>
-<line class="edge co" x1="128.5" y1="75.0" x2="100.0" y2="103.5"/>
-<line class="edge co" x1="100.0" y1="103.5" x2="100.0" y2="46.5"/>
-<line class="edge co" x1="100.0" y1="103.5" x2="71.5" y2="75.0"/>
-<line class="edge co" x1="71.5" y1="75.0" x2="100.0" y2="46.5"/>
-<g class="node t-person" tabindex="0" data-tip="吳淑珍　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="128.5" cy="75.0" r="15"/><circle cx="128.5" cy="75.0" r="5"/><text class="nlab" x="128.5" y="64.0" text-anchor="middle">吳淑珍</text></g>
-<g class="node t-person" tabindex="0" data-tip="林宗　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.0" cy="103.5" r="15"/><circle cx="100.0" cy="103.5" r="5"/><text class="nlab" x="100.0" y="92.5" text-anchor="middle">林宗</text></g>
-<g class="node t-person" tabindex="0" data-tip="林涯　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="71.5" cy="75.0" r="15"/><circle cx="71.5" cy="75.0" r="5"/><text class="nlab" x="71.5" y="64.0" text-anchor="middle">林涯</text></g>
-<g class="node t-person" tabindex="0" data-tip="林貢　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.0" cy="46.5" r="15"/><circle cx="100.0" cy="46.5" r="5"/><text class="nlab" x="100.0" y="63.5" text-anchor="middle">林貢</text></g>
-</svg></div>
-<div class="netcard"><h4>劉氏等 4 人</h4><p class="meta">1 件 · 1935<br>建陽</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
-<line class="edge co" x1="128.5" y1="75.0" x2="71.5" y2="75.0"/>
-<line class="edge co" x1="128.5" y1="75.0" x2="100.0" y2="46.5"/>
-<line class="edge co" x1="128.5" y1="75.0" x2="100.0" y2="103.5"/>
-<line class="edge co" x1="100.0" y1="103.5" x2="100.0" y2="46.5"/>
-<line class="edge co" x1="100.0" y1="103.5" x2="71.5" y2="75.0"/>
-<line class="edge co" x1="71.5" y1="75.0" x2="100.0" y2="46.5"/>
-<g class="node t-person" tabindex="0" data-tip="劉如慶　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="128.5" cy="75.0" r="15"/><circle cx="128.5" cy="75.0" r="5"/><text class="nlab" x="128.5" y="64.0" text-anchor="middle">劉如慶</text></g>
-<g class="node t-person" tabindex="0" data-tip="劉德桂　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.0" cy="103.5" r="15"/><circle cx="100.0" cy="103.5" r="5"/><text class="nlab" x="100.0" y="92.5" text-anchor="middle">劉德桂</text></g>
-<g class="node t-person" tabindex="0" data-tip="劉德輝　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="71.5" cy="75.0" r="15"/><circle cx="71.5" cy="75.0" r="5"/><text class="nlab" x="71.5" y="64.0" text-anchor="middle">劉德輝</text></g>
-<g class="node t-person" tabindex="0" data-tip="劉景星　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.0" cy="46.5" r="15"/><circle cx="100.0" cy="46.5" r="5"/><text class="nlab" x="100.0" y="63.5" text-anchor="middle">劉景星</text></g>
-</svg></div>
-<div class="netcard"><h4>施氏等 4 人</h4><p class="meta">1 件 · 1952<br>晉江</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
-<line class="edge co" x1="128.6" y1="75.0" x2="100.0" y2="103.6"/>
-<line class="edge co" x1="128.6" y1="75.0" x2="100.0" y2="46.4"/>
-<line class="edge co" x1="128.6" y1="75.0" x2="71.4" y2="75.0"/>
-<line class="edge co" x1="100.0" y1="103.6" x2="100.0" y2="46.4"/>
-<line class="edge co" x1="100.0" y1="103.6" x2="71.4" y2="75.0"/>
-<line class="edge co" x1="71.4" y1="75.0" x2="100.0" y2="46.4"/>
-<g class="node t-person" tabindex="0" data-tip="施性固　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="128.6" cy="75.0" r="15"/><circle cx="128.6" cy="75.0" r="5"/><text class="nlab" x="128.6" y="64.0" text-anchor="middle">施性固</text></g>
-<g class="node t-person" tabindex="0" data-tip="施松柏　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.0" cy="103.6" r="15"/><circle cx="100.0" cy="103.6" r="5"/><text class="nlab" x="100.0" y="92.6" text-anchor="middle">施松柏</text></g>
-<g class="node t-person" tabindex="0" data-tip="施能鎖　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="71.4" cy="75.0" r="15"/><circle cx="71.4" cy="75.0" r="5"/><text class="nlab" x="71.4" y="64.0" text-anchor="middle">施能鎖</text></g>
-<g class="node t-person" tabindex="0" data-tip="顏蒜　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.0" cy="46.4" r="15"/><circle cx="100.0" cy="46.4" r="5"/><text class="nlab" x="100.0" y="63.4" text-anchor="middle">顏蒜</text></g>
-</svg></div>
-<div class="netcard"><h4>黃氏等 4 人</h4><p class="meta">1 件 · 1952<br>南安</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
+<line class="edge co" x1="128.6" y1="75.1" x2="100.1" y2="103.6"/>
 <line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
 <line class="edge co" x1="128.6" y1="75.1" x2="99.9" y2="46.4"/>
+<line class="edge co" x1="100.1" y1="103.6" x2="71.4" y2="74.9"/>
+<line class="edge co" x1="100.1" y1="103.6" x2="99.9" y2="46.4"/>
+<line class="edge co" x1="71.4" y1="74.9" x2="99.9" y2="46.4"/>
+<g class="node t-person" tabindex="0" data-tip="吳淑珍　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="128.6" cy="75.1" r="15"/><circle cx="128.6" cy="75.1" r="5"/><text class="nlab" x="128.6" y="64.1" text-anchor="middle">吳淑珍</text></g>
+<g class="node t-person" tabindex="0" data-tip="林宗　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.1" cy="103.6" r="15"/><circle cx="100.1" cy="103.6" r="5"/><text class="nlab" x="100.1" y="92.6" text-anchor="middle">林宗</text></g>
+<g class="node t-person" tabindex="0" data-tip="林涯　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="71.4" cy="74.9" r="15"/><circle cx="71.4" cy="74.9" r="5"/><text class="nlab" x="71.4" y="91.9" text-anchor="middle">林涯</text></g>
+<g class="node t-person" tabindex="0" data-tip="林貢　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="99.9" cy="46.4" r="15"/><circle cx="99.9" cy="46.4" r="5"/><text class="nlab" x="99.9" y="63.4" text-anchor="middle">林貢</text></g>
+</svg></div>
+<div class="netcard"><h4>劉氏等 4 人</h4><p class="meta">1 件 · 1935<br>建陽</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
 <line class="edge co" x1="128.6" y1="75.1" x2="100.1" y2="103.6"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="99.9" y2="46.4"/>
+<line class="edge co" x1="100.1" y1="103.6" x2="71.4" y2="74.9"/>
+<line class="edge co" x1="100.1" y1="103.6" x2="99.9" y2="46.4"/>
+<line class="edge co" x1="71.4" y1="74.9" x2="99.9" y2="46.4"/>
+<g class="node t-person" tabindex="0" data-tip="劉如慶　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="128.6" cy="75.1" r="15"/><circle cx="128.6" cy="75.1" r="5"/><text class="nlab" x="128.6" y="64.1" text-anchor="middle">劉如慶</text></g>
+<g class="node t-person" tabindex="0" data-tip="劉德桂　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.1" cy="103.6" r="15"/><circle cx="100.1" cy="103.6" r="5"/><text class="nlab" x="100.1" y="92.6" text-anchor="middle">劉德桂</text></g>
+<g class="node t-person" tabindex="0" data-tip="劉德輝　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="71.4" cy="74.9" r="15"/><circle cx="71.4" cy="74.9" r="5"/><text class="nlab" x="71.4" y="91.9" text-anchor="middle">劉德輝</text></g>
+<g class="node t-person" tabindex="0" data-tip="劉景星　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="99.9" cy="46.4" r="15"/><circle cx="99.9" cy="46.4" r="5"/><text class="nlab" x="99.9" y="63.4" text-anchor="middle">劉景星</text></g>
+</svg></div>
+<div class="netcard"><h4>施氏等 4 人</h4><p class="meta">1 件 · 1952<br>晉江</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
+<line class="edge co" x1="128.6" y1="75.1" x2="100.1" y2="103.6"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="99.9" y2="46.4"/>
+<line class="edge co" x1="100.1" y1="103.6" x2="71.4" y2="74.9"/>
+<line class="edge co" x1="100.1" y1="103.6" x2="99.9" y2="46.4"/>
+<line class="edge co" x1="71.4" y1="74.9" x2="99.9" y2="46.4"/>
+<g class="node t-person" tabindex="0" data-tip="施性固　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="128.6" cy="75.1" r="15"/><circle cx="128.6" cy="75.1" r="5"/><text class="nlab" x="128.6" y="64.1" text-anchor="middle">施性固</text></g>
+<g class="node t-person" tabindex="0" data-tip="施松柏　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="100.1" cy="103.6" r="15"/><circle cx="100.1" cy="103.6" r="5"/><text class="nlab" x="100.1" y="92.6" text-anchor="middle">施松柏</text></g>
+<g class="node t-person" tabindex="0" data-tip="施能鎖　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="71.4" cy="74.9" r="15"/><circle cx="71.4" cy="74.9" r="5"/><text class="nlab" x="71.4" y="91.9" text-anchor="middle">施能鎖</text></g>
+<g class="node t-person" tabindex="0" data-tip="顏蒜　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="99.9" cy="46.4" r="15"/><circle cx="99.9" cy="46.4" r="5"/><text class="nlab" x="99.9" y="63.4" text-anchor="middle">顏蒜</text></g>
+</svg></div>
+<div class="netcard"><h4>黃氏等 4 人</h4><p class="meta">1 件 · 1952<br>南安</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
+<line class="edge co" x1="128.6" y1="75.1" x2="100.1" y2="103.6"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="99.9" y2="46.4"/>
 <line class="edge co" x1="100.1" y1="103.6" x2="71.4" y2="74.9"/>
 <line class="edge co" x1="100.1" y1="103.6" x2="99.9" y2="46.4"/>
 <line class="edge co" x1="71.4" y1="74.9" x2="99.9" y2="46.4"/>
@@ -329,8 +339,8 @@ footer a{color:var(--text-secondary)}
 <g class="node t-person" tabindex="0" data-tip="黃滑　1件　業主1" style="fill:var(--series-1)"><circle class="hit" cx="99.9" cy="46.4" r="15"/><circle cx="99.9" cy="46.4" r="5"/><text class="nlab" x="99.9" y="63.4" text-anchor="middle">黃滑</text></g>
 </svg></div>
 <div class="netcard"><h4>李氏等 4 人</h4><p class="meta">1 件 · 1952<br>邵武</p><svg viewBox="0 0 200 150" class="net" role="img" aria-label="宗族交易关系图">
-<line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
 <line class="edge co" x1="128.6" y1="75.1" x2="100.1" y2="103.6"/>
+<line class="edge co" x1="128.6" y1="75.1" x2="71.4" y2="74.9"/>
 <line class="edge co" x1="128.6" y1="75.1" x2="99.9" y2="46.4"/>
 <line class="edge co" x1="100.1" y1="103.6" x2="71.4" y2="74.9"/>
 <line class="edge co" x1="100.1" y1="103.6" x2="99.9" y2="46.4"/>
@@ -361,7 +371,7 @@ footer a{color:var(--text-secondary)}
 
   <h3>字輩族群 <span class="tag">共 32 組，涵蓋 70 人、75 件</span></h3>
   <p>同姓且名字第二字相同者，在閩中宗族中通常為同輩族人。此一線索把孤立的人名連成了可追索的世代。</p>
-  <table><thead><tr><th>字輩</th><th class="num">人</th><th class="num">文書</th><th>年代</th><th>地理單元</th><th>成員</th></tr></thead><tbody>
+  <div class="tablescroll"><table><thead><tr><th>字輩</th><th class="num">人</th><th class="num">文書</th><th>年代</th><th>地理單元</th><th>成員</th></tr></thead><tbody>
 <tr><td><b>林氏「可」字輩</b></td><td class="num">4</td><td class="num">4</td><td class="num">1906–1932</td><td style="font-size:13px;color:var(--text-secondary)">閩侯（閩縣・侯官・林森）</td><td style="font-size:13px">林可昌、林可淦、林可瓊、林可鑒</td></tr>
 <tr><td><b>張氏「國」字輩</b></td><td class="num">3</td><td class="num">3</td><td class="num">1928–1935</td><td style="font-size:13px;color:var(--text-secondary)">閩侯（閩縣・侯官・林森）</td><td style="font-size:13px">張國光、張國寶、張國軒</td></tr>
 <tr><td><b>林氏「久」字輩</b></td><td class="num">3</td><td class="num">2</td><td class="num">1915–1924</td><td style="font-size:13px;color:var(--text-secondary)">閩侯（閩縣・侯官・林森）</td><td style="font-size:13px">林久樹、林久澍、林久興</td></tr>
@@ -378,10 +388,10 @@ footer a{color:var(--text-secondary)}
 <tr><td><b>王氏「兆」字輩</b></td><td class="num">2</td><td class="num">3</td><td class="num">1893–1894</td><td style="font-size:13px;color:var(--text-secondary)">閩侯（閩縣・侯官・林森）</td><td style="font-size:13px">王兆熙、王兆熙出租</td></tr>
 <tr><td><b>黃氏「乞」字輩</b></td><td class="num">2</td><td class="num">3</td><td class="num">1923–1931</td><td style="font-size:13px;color:var(--text-secondary)">永泰（永福）</td><td style="font-size:13px">黃乞容、黃乞容等</td></tr>
 <tr><td><b>張氏「炳」字輩</b></td><td class="num">2</td><td class="num">2</td><td class="num">1584–1925</td><td style="font-size:13px;color:var(--text-secondary)">古田、連城</td><td style="font-size:13px">張炳源、張炳財</td></tr>
-</tbody></table>
+</tbody></table></div>
 
   <h3>出現最頻繁的個人</h3>
-  <table><thead><tr><th>人物</th><th class="num">文書</th><th>角色</th><th>年代</th><th>地理單元</th></tr></thead><tbody>
+  <div class="tablescroll"><table><thead><tr><th>人物</th><th class="num">文書</th><th>角色</th><th>年代</th><th>地理單元</th></tr></thead><tbody>
 <tr><td><b>林修枝</b></td><td class="num">9</td><td>業主×9</td><td class="num">1947</td><td style="font-size:13px;color:var(--text-secondary)">閩侯（閩縣・侯官・林森）</td></tr>
 <tr><td><b>林萬開</b></td><td class="num">7</td><td>買主×5、業主×1、賣主×1</td><td class="num">1875–1913</td><td style="font-size:13px;color:var(--text-secondary)">閩侯（閩縣・侯官・林森）</td></tr>
 <tr><td><b>陳欽瑞</b></td><td class="num">5</td><td>買主×5</td><td class="num">1932–1936</td><td style="font-size:13px;color:var(--text-secondary)">福清、閩侯（閩縣・侯官・林森）</td></tr>
@@ -394,7 +404,7 @@ footer a{color:var(--text-secondary)}
 <tr><td><b>陳國遠</b></td><td class="num">3</td><td>賣主×2、買主×1</td><td class="num">1829</td><td style="font-size:13px;color:var(--text-secondary)">—</td></tr>
 <tr><td><b>黃克動</b></td><td class="num">3</td><td>業主×3</td><td class="num">1946–1947</td><td style="font-size:13px;color:var(--text-secondary)">閩侯（閩縣・侯官・林森）</td></tr>
 <tr><td><b>陳必清</b></td><td class="num">3</td><td>賣主×3</td><td class="num">1887–1888</td><td style="font-size:13px;color:var(--text-secondary)">閩侯（閩縣・侯官・林森）</td></tr>
-</tbody></table>
+</tbody></table></div>
   <div class="finding"><p><b>林萬開</b>在 1875 至 1913 年間五次作為買主出現，另有一次賣出、一次登記為業主，
   全部位於閩侯單元——近四十年持續購入，是這批材料中土地集中最清晰的個案。</p></div>
 
@@ -409,7 +419,7 @@ footer a{color:var(--text-secondary)}
   <h2><span class="num">三</span>時空分布</h2>
   <p class="lede">歸併後的 17 個地理單元與五個分期交叉。深色表示件數多。</p>
   <figure>
-    <table class="hm"><thead><tr><th></th>
+    <div class="tablescroll"><table class="hm"><thead><tr><th></th>
 <th>≤1795<br><span style="color:var(--text-muted);font-weight:400">明末—乾隆</span></th>
 <th>1796–1874<br><span style="color:var(--text-muted);font-weight:400">嘉道咸同</span></th>
 <th>1875–1911<br><span style="color:var(--text-muted);font-weight:400">光緒—清末</span></th>
@@ -535,7 +545,7 @@ footer a{color:var(--text-secondary)}
 <td class="c" style="background:var(--cell-zero);color:var(--text-primary)" tabindex="0" data-tip="順昌　民國（1912–1948）　0 件">·</td>
 <td class="c" style="background:#cde2fb;color:var(--text-primary)" tabindex="0" data-tip="順昌　1949以後（1949–）　1 件">1</td>
 <td class="num" style="font-weight:600">1</td></tr>
-</tbody></table>
+</tbody></table></div>
     <figcaption>僅計入可定年且地點可歸併者（175 件）。
     單元按總件數排序；一件跨兩縣的文書在兩列各計一次。</figcaption>
   </figure>
@@ -736,7 +746,7 @@ footer a{color:var(--text-secondary)}
   其三，這是一批經過兩次選擇（原藏家、後入藏）的材料，不是隨機樣本。
   可靠的結論只是：<b>在這批文書中</b>，晚近者更多地帶有官方印記。</p></div>
 
-  <details><summary>分年代數據表</summary><div class="dwrap"><table><thead><tr><th class="num">年代</th><th class="num">官契</th><th class="num">民契</th><th class="num">合計</th><th class="num">官契占比</th></tr></thead><tbody>
+  <details><summary>分年代數據表</summary><div class="dwrap"><div class="tablescroll"><table><thead><tr><th class="num">年代</th><th class="num">官契</th><th class="num">民契</th><th class="num">合計</th><th class="num">官契占比</th></tr></thead><tbody>
 <tr><td class="num">1580s</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td class="num">0%</td></tr>
 <tr><td class="num">1650s</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td class="num">0%</td></tr>
 <tr><td class="num">1670s</td><td class="num">1</td><td class="num">0</td><td class="num">1</td><td class="num">100%</td></tr>
@@ -761,7 +771,7 @@ footer a{color:var(--text-secondary)}
 <tr><td class="num">1940s</td><td class="num">29</td><td class="num">3</td><td class="num">32</td><td class="num">91%</td></tr>
 <tr><td class="num">1950s</td><td class="num">16</td><td class="num">1</td><td class="num">17</td><td class="num">94%</td></tr>
 <tr><td class="num">1970s</td><td class="num">1</td><td class="num">0</td><td class="num">1</td><td class="num">100%</td></tr>
-</tbody></table></div></details>
+</tbody></table></div></div></details>
 </div></section>
 
 <section><div class="wrap">
