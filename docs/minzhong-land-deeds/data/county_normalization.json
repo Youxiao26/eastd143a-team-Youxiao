@@ -1,0 +1,38 @@
+{
+  "_doc": "历史政区归并表。unit = 跨时期稳定的地理单元；variants = 原编目中出现的写法。沿革依据见 README。",
+  "units": [
+    {"unit":"閩侯（閩縣・侯官・林森）","unit_id":"minhou","modern":"福州市闽侯县及市区",
+     "note":"閩縣＋侯官縣 →1913.3 閩侯縣 →1943.10 林森縣（纪念林森）→1950.4 復名閩侯縣",
+     "variants":["福建省閩侯縣","福建閩侯縣","福建聲閩侯縣","福建省閩縣","福建省侯官縣","福建省閩邑","福建省閩邑縣","福建省林森縣","福建省福州市","福建省閩侯縣和侯官縣"]},
+    {"unit":"永泰（永福）","unit_id":"yongtai","modern":"福州市永泰县",
+     "note":"唐766年置永泰縣 →北宋1102年避諱改永福縣 →民國3年(1914)因與廣西永福縣重名，復名永泰縣",
+     "variants":["福建省永泰縣","福建省永福縣"]},
+    {"unit":"古田","unit_id":"gutian","modern":"宁德市古田县","note":"","variants":["福建省古田縣"]},
+    {"unit":"閩清","unit_id":"minqing","modern":"福州市闽清县","note":"","variants":["福建省閩清縣"]},
+    {"unit":"建陽","unit_id":"jianyang","modern":"南平市建阳区","note":"","variants":["福建省建陽縣"]},
+    {"unit":"東山","unit_id":"dongshan","modern":"漳州市东山县","note":"","variants":["福建省東山縣"]},
+    {"unit":"晉江","unit_id":"jinjiang","modern":"泉州市晋江市","note":"","variants":["福建省晉江縣"]},
+    {"unit":"福清","unit_id":"fuqing","modern":"福州市福清市","note":"","variants":["福建省福清縣"]},
+    {"unit":"屏南","unit_id":"pingnan","modern":"宁德市屏南县","note":"1734年析古田縣地置","variants":["福建省屏南縣"]},
+    {"unit":"永安","unit_id":"yongan","modern":"三明市永安市","note":"","variants":["福建省永安縣"]},
+    {"unit":"連城","unit_id":"liancheng","modern":"龙岩市连城县","note":"","variants":["福建省連城縣"]},
+    {"unit":"南安","unit_id":"nanan","modern":"泉州市南安市","note":"","variants":["福建省南安縣"]},
+    {"unit":"永定","unit_id":"yongding","modern":"龙岩市永定区","note":"","variants":["福建省永定縣"]},
+    {"unit":"南平","unit_id":"nanping","modern":"南平市延平区","note":"","variants":["福建省南平縣"]},
+    {"unit":"連江","unit_id":"lianjiang","modern":"福州市连江县","note":"","variants":["福建省連江縣"]},
+    {"unit":"邵武","unit_id":"shaowu","modern":"南平市邵武市","note":"","variants":["福建邵武縣"]},
+    {"unit":"順昌","unit_id":"shunchang","modern":"南平市顺昌县","note":"","variants":["福建省順昌縣"]}
+  ],
+  "multi_county": {
+    "福建省屏南縣和古田縣":["pingnan","gutian"],
+    "福建省永安县和永福县":["yongan","yongtai"],
+    "福建省閩侯縣和侯官縣":["minhou"]
+  },
+  "unresolved": {
+    "福建省清源縣":"原编目作「福建省(清源縣?)」，馆方自标存疑；福建近代无清源縣建制（清源为唐代泉州郡名）。不予归并。",
+    "福建省上竹林":"村落级地名，无法定位到县。",
+    "華東":"1949年「华东」为大行政区，非县级。",
+    "福建省":"仅标至省级。"
+  },
+  "non_fujian": ["安徽省歙縣","四川省合川縣","四川省榮縣","雲南省鶴慶縣","遼寧省新金縣","上海市"]
+}

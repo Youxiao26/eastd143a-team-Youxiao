@@ -1,0 +1,6051 @@
+{
+ "nodes": [
+  {
+   "id": "高恭地",
+   "type": "person",
+   "docs": [
+    83791
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "福清"
+   ],
+   "year_min": 1886,
+   "year_max": 1886
+  },
+  {
+   "id": "張學車",
+   "type": "person",
+   "docs": [
+    83792
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1,
+    "buyer": 1
+   },
+   "units": [
+    "福清"
+   ],
+   "year_min": 1946,
+   "year_max": 1946
+  },
+  {
+   "id": "陳書寶",
+   "type": "person",
+   "docs": [
+    83792
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "福清"
+   ],
+   "year_min": 1946,
+   "year_max": 1946
+  },
+  {
+   "id": "林枝貴",
+   "type": "person",
+   "docs": [
+    83793
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1929,
+   "year_max": 1929
+  },
+  {
+   "id": "林春源",
+   "type": "person",
+   "docs": [
+    83794,
+    83868
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1866,
+   "year_max": 1869
+  },
+  {
+   "id": "张华富",
+   "type": "person",
+   "docs": [
+    83795
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1862,
+   "year_max": 1862
+  },
+  {
+   "id": "高天钏",
+   "type": "person",
+   "docs": [
+    83796
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1931,
+   "year_max": 1931
+  },
+  {
+   "id": "郑祚龙",
+   "type": "person",
+   "docs": [
+    83796
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1931,
+   "year_max": 1931
+  },
+  {
+   "id": "王錦發",
+   "type": "person",
+   "docs": [
+    83797
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1887,
+   "year_max": 1887
+  },
+  {
+   "id": "王錦枝",
+   "type": "person",
+   "docs": [
+    83797
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1887,
+   "year_max": 1887
+  },
+  {
+   "id": "吳開成",
+   "type": "person",
+   "docs": [
+    83798,
+    83920
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1873,
+   "year_max": 1890
+  },
+  {
+   "id": "陳氏",
+   "type": "woman",
+   "docs": [
+    83798
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1890,
+   "year_max": 1890
+  },
+  {
+   "id": "鄒允春",
+   "type": "person",
+   "docs": [
+    83799,
+    84024
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1900,
+   "year_max": 1900
+  },
+  {
+   "id": "和意軒老人會",
+   "type": "institution",
+   "docs": [
+    83799
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1900,
+   "year_max": 1900
+  },
+  {
+   "id": "陳燦祥",
+   "type": "person",
+   "docs": [
+    83801,
+    83981
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1918,
+   "year_max": 1918
+  },
+  {
+   "id": "王三妹",
+   "type": "person",
+   "docs": [
+    83802,
+    84031
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1924,
+   "year_max": 1924
+  },
+  {
+   "id": "陳軍漢",
+   "type": "person",
+   "docs": [
+    83802,
+    84031
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1924,
+   "year_max": 1924
+  },
+  {
+   "id": "祿中",
+   "type": "person",
+   "docs": [
+    83803
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "永安"
+   ],
+   "year_min": 1876,
+   "year_max": 1876
+  },
+  {
+   "id": "許瓊栢",
+   "type": "person",
+   "docs": [
+    83804
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "永定"
+   ],
+   "year_min": 1761,
+   "year_max": 1761
+  },
+  {
+   "id": "吳省忠",
+   "type": "person",
+   "docs": [
+    83804
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "永定"
+   ],
+   "year_min": 1761,
+   "year_max": 1761
+  },
+  {
+   "id": "黃毓扆",
+   "type": "person",
+   "docs": [
+    83805
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1760,
+   "year_max": 1760
+  },
+  {
+   "id": "藍維乾",
+   "type": "person",
+   "docs": [
+    83806
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1940,
+   "year_max": 1940
+  },
+  {
+   "id": "藍維坤",
+   "type": "person",
+   "docs": [
+    83806
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1940,
+   "year_max": 1940
+  },
+  {
+   "id": "吳淮棉",
+   "type": "person",
+   "docs": [
+    83806
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1940,
+   "year_max": 1940
+  },
+  {
+   "id": "維衜",
+   "type": "person",
+   "docs": [
+    83807
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1917,
+   "year_max": 1917
+  },
+  {
+   "id": "吳秉鑒",
+   "type": "person",
+   "docs": [
+    83808,
+    83925
+   ],
+   "n_docs": 2,
+   "roles": {
+    "owner": 1,
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1805,
+   "year_max": 1805
+  },
+  {
+   "id": "謝先經",
+   "type": "person",
+   "docs": [
+    83808
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1805,
+   "year_max": 1805
+  },
+  {
+   "id": "方元慈",
+   "type": "person",
+   "docs": [
+    83809
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1871,
+   "year_max": 1871
+  },
+  {
+   "id": "方潮濤",
+   "type": "person",
+   "docs": [
+    83809
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1871,
+   "year_max": 1871
+  },
+  {
+   "id": "劉振萬",
+   "type": "person",
+   "docs": [
+    83810
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1932,
+   "year_max": 1932
+  },
+  {
+   "id": "劉紀臣",
+   "type": "person",
+   "docs": [
+    83810
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1932,
+   "year_max": 1932
+  },
+  {
+   "id": "張銓銓",
+   "type": "person",
+   "docs": [
+    83812,
+    84023
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1889,
+   "year_max": 1925
+  },
+  {
+   "id": "鄒道明",
+   "type": "person",
+   "docs": [
+    83812,
+    84023
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1889,
+   "year_max": 1925
+  },
+  {
+   "id": "蘇章林",
+   "type": "person",
+   "docs": [
+    83813
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1898,
+   "year_max": 1898
+  },
+  {
+   "id": "劉仕懋",
+   "type": "person",
+   "docs": [
+    83813
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1898,
+   "year_max": 1898
+  },
+  {
+   "id": "葉文怡",
+   "type": "person",
+   "docs": [
+    83814
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1945,
+   "year_max": 1945
+  },
+  {
+   "id": "林萬開",
+   "type": "person",
+   "docs": [
+    83816,
+    83821,
+    83826,
+    83827,
+    83830,
+    83833,
+    83840
+   ],
+   "n_docs": 7,
+   "roles": {
+    "owner": 1,
+    "buyer": 5,
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1875,
+   "year_max": 1913
+  },
+  {
+   "id": "劉盛章",
+   "type": "person",
+   "docs": [
+    83817
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1798,
+   "year_max": 1798
+  },
+  {
+   "id": "劉咸安",
+   "type": "person",
+   "docs": [
+    83817,
+    83818
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 1,
+    "owner": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1798,
+   "year_max": 1805
+  },
+  {
+   "id": "劉道建",
+   "type": "person",
+   "docs": [
+    83817
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1798,
+   "year_max": 1798
+  },
+  {
+   "id": "應梓龍",
+   "type": "person",
+   "docs": [
+    83819
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1782,
+   "year_max": 1782
+  },
+  {
+   "id": "劉繼伍",
+   "type": "person",
+   "docs": [
+    83819
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1782,
+   "year_max": 1782
+  },
+  {
+   "id": "開保",
+   "type": "person",
+   "docs": [
+    83820
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1910,
+   "year_max": 1910
+  },
+  {
+   "id": "林應香",
+   "type": "person",
+   "docs": [
+    83821,
+    83830
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1875,
+   "year_max": 1913
+  },
+  {
+   "id": "林為良",
+   "type": "person",
+   "docs": [
+    83822
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1906,
+   "year_max": 1906
+  },
+  {
+   "id": "林可瓊",
+   "type": "person",
+   "docs": [
+    83822,
+    83825
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 1,
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1906,
+   "year_max": 1913
+  },
+  {
+   "id": "林可昌",
+   "type": "person",
+   "docs": [
+    83823
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1932,
+   "year_max": 1932
+  },
+  {
+   "id": "林可淦",
+   "type": "person",
+   "docs": [
+    83823
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1932,
+   "year_max": 1932
+  },
+  {
+   "id": "楊兆通",
+   "type": "person",
+   "docs": [
+    83824
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1862,
+   "year_max": 1862
+  },
+  {
+   "id": "劉興國",
+   "type": "person",
+   "docs": [
+    83825
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1913,
+   "year_max": 1913
+  },
+  {
+   "id": "王聯鄧",
+   "type": "person",
+   "docs": [
+    83826
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1913,
+   "year_max": 1913
+  },
+  {
+   "id": "林秋溥",
+   "type": "person",
+   "docs": [
+    83827,
+    83840
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 1,
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1884,
+   "year_max": 1888
+  },
+  {
+   "id": "林萬利",
+   "type": "person",
+   "docs": [
+    83828,
+    83904
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 1,
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1884,
+   "year_max": 1886
+  },
+  {
+   "id": "官方政府",
+   "type": "government",
+   "docs": [
+    83828
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1884,
+   "year_max": 1884
+  },
+  {
+   "id": "林久興",
+   "type": "person",
+   "docs": [
+    83829
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1924,
+   "year_max": 1924
+  },
+  {
+   "id": "林可鑒",
+   "type": "person",
+   "docs": [
+    83829
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1924,
+   "year_max": 1924
+  },
+  {
+   "id": "林久澍",
+   "type": "person",
+   "docs": [
+    83829
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1924,
+   "year_max": 1924
+  },
+  {
+   "id": "王兆熙出租",
+   "type": "person",
+   "docs": [
+    83832
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1893,
+   "year_max": 1893
+  },
+  {
+   "id": "林春發",
+   "type": "person",
+   "docs": [
+    83833
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1881,
+   "year_max": 1881
+  },
+  {
+   "id": "王兆熙",
+   "type": "person",
+   "docs": [
+    83834,
+    83835
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1894,
+   "year_max": 1894
+  },
+  {
+   "id": "楊鵬超出租",
+   "type": "person",
+   "docs": [
+    83836
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1866,
+   "year_max": 1866
+  },
+  {
+   "id": "趙守藻",
+   "type": "person",
+   "docs": [
+    83837,
+    83838,
+    83841
+   ],
+   "n_docs": 3,
+   "roles": {
+    "seller": 2,
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1805,
+   "year_max": 1913
+  },
+  {
+   "id": "林有柱",
+   "type": "person",
+   "docs": [
+    83838,
+    83841
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 1,
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1817,
+   "year_max": 1913
+  },
+  {
+   "id": "林世奕",
+   "type": "person",
+   "docs": [
+    83839
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1850,
+   "year_max": 1850
+  },
+  {
+   "id": "黃鴻吉",
+   "type": "person",
+   "docs": [
+    83842
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1784,
+   "year_max": 1784
+  },
+  {
+   "id": "熊長生",
+   "type": "person",
+   "docs": [
+    83842
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1784,
+   "year_max": 1784
+  },
+  {
+   "id": "熊亨讀",
+   "type": "person",
+   "docs": [
+    83842
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1784,
+   "year_max": 1784
+  },
+  {
+   "id": "張蘭芬",
+   "type": "person",
+   "docs": [
+    83843
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "屏南 / 古田"
+   ],
+   "year_min": 1870,
+   "year_max": 1870
+  },
+  {
+   "id": "張昌暢",
+   "type": "person",
+   "docs": [
+    83843
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "屏南 / 古田"
+   ],
+   "year_min": 1870,
+   "year_max": 1870
+  },
+  {
+   "id": "張邦昔",
+   "type": "person",
+   "docs": [
+    83843
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "屏南 / 古田"
+   ],
+   "year_min": 1870,
+   "year_max": 1870
+  },
+  {
+   "id": "張利禧",
+   "type": "person",
+   "docs": [
+    83844
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1864,
+   "year_max": 1864
+  },
+  {
+   "id": "鄭嬌姑",
+   "type": "person",
+   "docs": [
+    83844
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1864,
+   "year_max": 1864
+  },
+  {
+   "id": "鄭淳氏",
+   "type": "woman",
+   "docs": [
+    83844
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1864,
+   "year_max": 1864
+  },
+  {
+   "id": "徐幹通",
+   "type": "person",
+   "docs": [
+    83845
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "南平"
+   ],
+   "year_min": 1767,
+   "year_max": 1767
+  },
+  {
+   "id": "熊孫",
+   "type": "person",
+   "docs": [
+    83845
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "南平"
+   ],
+   "year_min": 1767,
+   "year_max": 1767
+  },
+  {
+   "id": "李有定",
+   "type": "person",
+   "docs": [
+    83847
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1779,
+   "year_max": 1779
+  },
+  {
+   "id": "謝氏",
+   "type": "woman",
+   "docs": [
+    83847
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1779,
+   "year_max": 1779
+  },
+  {
+   "id": "陳裔煌",
+   "type": "person",
+   "docs": [
+    83848
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1872,
+   "year_max": 1872
+  },
+  {
+   "id": "鄭璟",
+   "type": "person",
+   "docs": [
+    83848
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1872,
+   "year_max": 1872
+  },
+  {
+   "id": "輝煌",
+   "type": "person",
+   "docs": [
+    83849
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "屏南"
+   ],
+   "year_min": 1869,
+   "year_max": 1869
+  },
+  {
+   "id": "蘇坐標",
+   "type": "person",
+   "docs": [
+    83849
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "屏南"
+   ],
+   "year_min": 1869,
+   "year_max": 1869
+  },
+  {
+   "id": "林元鼎",
+   "type": "person",
+   "docs": [
+    83851
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1849,
+   "year_max": 1849
+  },
+  {
+   "id": "張氏",
+   "type": "woman",
+   "docs": [
+    83852
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1920,
+   "year_max": 1920
+  },
+  {
+   "id": "林欽祥",
+   "type": "person",
+   "docs": [
+    83852
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1920,
+   "year_max": 1920
+  },
+  {
+   "id": "盧亨雲",
+   "type": "person",
+   "docs": [
+    83853
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1928,
+   "year_max": 1928
+  },
+  {
+   "id": "雷汝知",
+   "type": "person",
+   "docs": [
+    83854
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1915,
+   "year_max": 1915
+  },
+  {
+   "id": "洪國慶",
+   "type": "person",
+   "docs": [
+    83855
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1930,
+   "year_max": 1930
+  },
+  {
+   "id": "陳如良",
+   "type": "person",
+   "docs": [
+    83856
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "陈謀丁",
+   "type": "person",
+   "docs": [
+    83856
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "林履同",
+   "type": "person",
+   "docs": [
+    83857
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1925,
+   "year_max": 1925
+  },
+  {
+   "id": "張炳源",
+   "type": "person",
+   "docs": [
+    83857
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1925,
+   "year_max": 1925
+  },
+  {
+   "id": "張傳珍",
+   "type": "person",
+   "docs": [
+    83858
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "屏南"
+   ],
+   "year_min": 1913,
+   "year_max": 1913
+  },
+  {
+   "id": "郭宗仲",
+   "type": "person",
+   "docs": [
+    83859,
+    84026
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1906,
+   "year_max": 1906
+  },
+  {
+   "id": "王齊發",
+   "type": "person",
+   "docs": [
+    83859,
+    84026
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1906,
+   "year_max": 1906
+  },
+  {
+   "id": "謝祀初",
+   "type": "person",
+   "docs": [
+    83860
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1921,
+   "year_max": 1921
+  },
+  {
+   "id": "余興泉",
+   "type": "person",
+   "docs": [
+    83861
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1933,
+   "year_max": 1933
+  },
+  {
+   "id": "葉克培",
+   "type": "person",
+   "docs": [
+    83863
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1933,
+   "year_max": 1933
+  },
+  {
+   "id": "黃財業",
+   "type": "person",
+   "docs": [
+    83864
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1,
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1904,
+   "year_max": 1904
+  },
+  {
+   "id": "許春願",
+   "type": "person",
+   "docs": [
+    83864
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1904,
+   "year_max": 1904
+  },
+  {
+   "id": "張道興",
+   "type": "person",
+   "docs": [
+    83865
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1,
+    "buyer": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1942,
+   "year_max": 1942
+  },
+  {
+   "id": "余傳荃",
+   "type": "person",
+   "docs": [
+    83865
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1942,
+   "year_max": 1942
+  },
+  {
+   "id": "金寬英",
+   "type": "person",
+   "docs": [
+    83866
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1,
+    "buyer": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1903,
+   "year_max": 1903
+  },
+  {
+   "id": "張文楚",
+   "type": "person",
+   "docs": [
+    83866
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1903,
+   "year_max": 1903
+  },
+  {
+   "id": "劉景茂",
+   "type": "person",
+   "docs": [
+    83867
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1867,
+   "year_max": 1867
+  },
+  {
+   "id": "王元靄",
+   "type": "person",
+   "docs": [
+    83868
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1,
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1869,
+   "year_max": 1869
+  },
+  {
+   "id": "黃遠容",
+   "type": "person",
+   "docs": [
+    83869
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1917,
+   "year_max": 1917
+  },
+  {
+   "id": "黃同華",
+   "type": "person",
+   "docs": [
+    83869,
+    83873,
+    83955
+   ],
+   "n_docs": 3,
+   "roles": {
+    "owner": 3
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1917,
+   "year_max": 1926
+  },
+  {
+   "id": "黃同德",
+   "type": "person",
+   "docs": [
+    83869,
+    83878
+   ],
+   "n_docs": 2,
+   "roles": {
+    "owner": 2
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1917,
+   "year_max": 1924
+  },
+  {
+   "id": "黃國興",
+   "type": "person",
+   "docs": [
+    83869,
+    83871
+   ],
+   "n_docs": 2,
+   "roles": {
+    "owner": 2
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1917,
+   "year_max": 1926
+  },
+  {
+   "id": "黃國義",
+   "type": "person",
+   "docs": [
+    83869
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1917,
+   "year_max": 1917
+  },
+  {
+   "id": "黃乞容等",
+   "type": "person",
+   "docs": [
+    83870
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1923,
+   "year_max": 1923
+  },
+  {
+   "id": "林仁典等",
+   "type": "person",
+   "docs": [
+    83872
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1920,
+   "year_max": 1920
+  },
+  {
+   "id": "黃雲村",
+   "type": "person",
+   "docs": [
+    83874
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1920,
+   "year_max": 1920
+  },
+  {
+   "id": "黃汝勷",
+   "type": "person",
+   "docs": [
+    83874,
+    83880
+   ],
+   "n_docs": 2,
+   "roles": {
+    "owner": 2
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1920,
+   "year_max": 1922
+  },
+  {
+   "id": "陳明",
+   "type": "person",
+   "docs": [
+    83875
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1920,
+   "year_max": 1920
+  },
+  {
+   "id": "陳雅",
+   "type": "person",
+   "docs": [
+    83876
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1890,
+   "year_max": 1890
+  },
+  {
+   "id": "陳道書",
+   "type": "person",
+   "docs": [
+    83876
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1890,
+   "year_max": 1890
+  },
+  {
+   "id": "陳建璽",
+   "type": "person",
+   "docs": [
+    83876
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1890,
+   "year_max": 1890
+  },
+  {
+   "id": "陳成嘉",
+   "type": "person",
+   "docs": [
+    83876
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1890,
+   "year_max": 1890
+  },
+  {
+   "id": "鄭其英",
+   "type": "person",
+   "docs": [
+    83879
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永安 / 永泰（永福）"
+   ],
+   "year_min": 1895,
+   "year_max": 1895
+  },
+  {
+   "id": "沈齊",
+   "type": "person",
+   "docs": [
+    83879,
+    83953
+   ],
+   "n_docs": 2,
+   "roles": {
+    "owner": 2
+   },
+   "units": [
+    "永安",
+    "永安 / 永泰（永福）"
+   ],
+   "year_min": 1895,
+   "year_max": 1900
+  },
+  {
+   "id": "陳欽隆",
+   "type": "person",
+   "docs": [
+    83882,
+    83942,
+    83946,
+    83947
+   ],
+   "n_docs": 4,
+   "roles": {
+    "seller": 4
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1936,
+   "year_max": 1936
+  },
+  {
+   "id": "陳欽瑞",
+   "type": "person",
+   "docs": [
+    83882,
+    83942,
+    83945,
+    83946,
+    83947
+   ],
+   "n_docs": 5,
+   "roles": {
+    "buyer": 5
+   },
+   "units": [
+    "福清",
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1932,
+   "year_max": 1936
+  },
+  {
+   "id": "黃昌聲",
+   "type": "person",
+   "docs": [
+    83883
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1943,
+   "year_max": 1943
+  },
+  {
+   "id": "陳智存",
+   "type": "person",
+   "docs": [
+    83883
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1943,
+   "year_max": 1943
+  },
+  {
+   "id": "黃隆貫",
+   "type": "person",
+   "docs": [
+    83884,
+    83950
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [],
+   "year_min": 1805,
+   "year_max": 1829
+  },
+  {
+   "id": "陳國遠",
+   "type": "person",
+   "docs": [
+    83884,
+    83936,
+    83937
+   ],
+   "n_docs": 3,
+   "roles": {
+    "buyer": 1,
+    "seller": 2
+   },
+   "units": [],
+   "year_min": 1829,
+   "year_max": 1829
+  },
+  {
+   "id": "劉嘉命",
+   "type": "person",
+   "docs": [
+    83885
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1910,
+   "year_max": 1910
+  },
+  {
+   "id": "劉源森",
+   "type": "person",
+   "docs": [
+    83885
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1910,
+   "year_max": 1910
+  },
+  {
+   "id": "張國光",
+   "type": "person",
+   "docs": [
+    83886,
+    83965
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1928,
+   "year_max": 1928
+  },
+  {
+   "id": "張國寶",
+   "type": "person",
+   "docs": [
+    83886,
+    83965
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1928,
+   "year_max": 1928
+  },
+  {
+   "id": "張國軒",
+   "type": "person",
+   "docs": [
+    83887
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "吳修晟",
+   "type": "person",
+   "docs": [
+    83888
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1937,
+   "year_max": 1937
+  },
+  {
+   "id": "黃克動",
+   "type": "person",
+   "docs": [
+    83889,
+    83921,
+    83928
+   ],
+   "n_docs": 3,
+   "roles": {
+    "owner": 3
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1946,
+   "year_max": 1947
+  },
+  {
+   "id": "黃生官",
+   "type": "person",
+   "docs": [
+    83889,
+    83911,
+    83927,
+    84007
+   ],
+   "n_docs": 4,
+   "roles": {
+    "owner": 4
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1945,
+   "year_max": 1951
+  },
+  {
+   "id": "王鐘鈞",
+   "type": "person",
+   "docs": [
+    83890,
+    83891
+   ],
+   "n_docs": 2,
+   "roles": {
+    "owner": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1947,
+   "year_max": 1947
+  },
+  {
+   "id": "林修枝",
+   "type": "person",
+   "docs": [
+    83893,
+    83894,
+    83895,
+    83896,
+    83897,
+    83898,
+    83899,
+    83900,
+    83901
+   ],
+   "n_docs": 9,
+   "roles": {
+    "owner": 9
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1947,
+   "year_max": 1947
+  },
+  {
+   "id": "林氏",
+   "type": "woman",
+   "docs": [
+    83902
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1840,
+   "year_max": 1840
+  },
+  {
+   "id": "德詮僧人",
+   "type": "person",
+   "docs": [
+    83903
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1866,
+   "year_max": 1866
+  },
+  {
+   "id": "林宜新",
+   "type": "person",
+   "docs": [
+    83905
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1915,
+   "year_max": 1915
+  },
+  {
+   "id": "林久樹",
+   "type": "person",
+   "docs": [
+    83905
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1915,
+   "year_max": 1915
+  },
+  {
+   "id": "張寶詨",
+   "type": "person",
+   "docs": [
+    83906
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1890,
+   "year_max": 1890
+  },
+  {
+   "id": "程長孫",
+   "type": "person",
+   "docs": [
+    83906,
+    83907
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2
+   },
+   "units": [],
+   "year_min": 1890,
+   "year_max": 1890
+  },
+  {
+   "id": "藍炳孫",
+   "type": "person",
+   "docs": [
+    83907
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1890,
+   "year_max": 1890
+  },
+  {
+   "id": "程姑仔",
+   "type": "person",
+   "docs": [
+    83909
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1870,
+   "year_max": 1870
+  },
+  {
+   "id": "金寶",
+   "type": "person",
+   "docs": [
+    83909
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1870,
+   "year_max": 1870
+  },
+  {
+   "id": "賴國才",
+   "type": "person",
+   "docs": [
+    83910
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1927,
+   "year_max": 1927
+  },
+  {
+   "id": "錆啇百壽協廳軒",
+   "type": "person",
+   "docs": [
+    83912
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1928,
+   "year_max": 1928
+  },
+  {
+   "id": "黃維裕",
+   "type": "person",
+   "docs": [
+    83914
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1842,
+   "year_max": 1842
+  },
+  {
+   "id": "黃維岑",
+   "type": "person",
+   "docs": [
+    83914
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1842,
+   "year_max": 1842
+  },
+  {
+   "id": "林厚成",
+   "type": "person",
+   "docs": [
+    83915,
+    83999
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1844,
+   "year_max": 1854
+  },
+  {
+   "id": "林厚祿",
+   "type": "person",
+   "docs": [
+    83915
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1844,
+   "year_max": 1844
+  },
+  {
+   "id": "林厚祥",
+   "type": "person",
+   "docs": [
+    83915
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1844,
+   "year_max": 1844
+  },
+  {
+   "id": "葉成",
+   "type": "person",
+   "docs": [
+    83915,
+    83999
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2,
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1844,
+   "year_max": 1854
+  },
+  {
+   "id": "陸元規",
+   "type": "person",
+   "docs": [
+    83916
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1888,
+   "year_max": 1888
+  },
+  {
+   "id": "陸元賜",
+   "type": "person",
+   "docs": [
+    83916
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1888,
+   "year_max": 1888
+  },
+  {
+   "id": "陳朝朋",
+   "type": "person",
+   "docs": [
+    83917
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "連江"
+   ],
+   "year_min": 1915,
+   "year_max": 1915
+  },
+  {
+   "id": "陳行典",
+   "type": "person",
+   "docs": [
+    83918
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1840,
+   "year_max": 1840
+  },
+  {
+   "id": "陳必清",
+   "type": "person",
+   "docs": [
+    83919,
+    84009,
+    84010
+   ],
+   "n_docs": 3,
+   "roles": {
+    "seller": 3
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1887,
+   "year_max": 1888
+  },
+  {
+   "id": "陳必泉",
+   "type": "person",
+   "docs": [
+    83919,
+    84009,
+    84010,
+    84011
+   ],
+   "n_docs": 4,
+   "roles": {
+    "buyer": 3,
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1887,
+   "year_max": 1913
+  },
+  {
+   "id": "慎方",
+   "type": "person",
+   "docs": [
+    83922
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "連城"
+   ],
+   "year_min": 1827,
+   "year_max": 1827
+  },
+  {
+   "id": "林忠",
+   "type": "person",
+   "docs": [
+    83924
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1841,
+   "year_max": 1841
+  },
+  {
+   "id": "林榮",
+   "type": "person",
+   "docs": [
+    83924
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1841,
+   "year_max": 1841
+  },
+  {
+   "id": "賴榮松",
+   "type": "person",
+   "docs": [
+    83924
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1841,
+   "year_max": 1841
+  },
+  {
+   "id": "林邦端",
+   "type": "person",
+   "docs": [
+    83926
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1868,
+   "year_max": 1868
+  },
+  {
+   "id": "程利欲",
+   "type": "person",
+   "docs": [
+    83926
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1868,
+   "year_max": 1868
+  },
+  {
+   "id": "程利霖",
+   "type": "person",
+   "docs": [
+    83926
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1868,
+   "year_max": 1868
+  },
+  {
+   "id": "黃森官等",
+   "type": "person",
+   "docs": [
+    83929
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1946,
+   "year_max": 1946
+  },
+  {
+   "id": "葉國佑",
+   "type": "person",
+   "docs": [
+    83930
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1839,
+   "year_max": 1839
+  },
+  {
+   "id": "邱有本",
+   "type": "person",
+   "docs": [
+    83931
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1802,
+   "year_max": 1802
+  },
+  {
+   "id": "邱有炳",
+   "type": "person",
+   "docs": [
+    83931
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1802,
+   "year_max": 1802
+  },
+  {
+   "id": "邱傳學",
+   "type": "person",
+   "docs": [
+    83931
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1802,
+   "year_max": 1802
+  },
+  {
+   "id": "余德光",
+   "type": "person",
+   "docs": [
+    83932
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1913,
+   "year_max": 1913
+  },
+  {
+   "id": "林聖魁",
+   "type": "person",
+   "docs": [
+    83932
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1913,
+   "year_max": 1913
+  },
+  {
+   "id": "文鳳",
+   "type": "person",
+   "docs": [
+    83933,
+    83948
+   ],
+   "n_docs": 2,
+   "roles": {
+    "seller": 1,
+    "buyer": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1926,
+   "year_max": 1927
+  },
+  {
+   "id": "劉孝良",
+   "type": "person",
+   "docs": [
+    83934
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1840,
+   "year_max": 1840
+  },
+  {
+   "id": "林高滿",
+   "type": "person",
+   "docs": [
+    83934
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1840,
+   "year_max": 1840
+  },
+  {
+   "id": "黃懷周",
+   "type": "person",
+   "docs": [
+    83935
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1934,
+   "year_max": 1934
+  },
+  {
+   "id": "邵李氏",
+   "type": "woman",
+   "docs": [
+    83935
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1934,
+   "year_max": 1934
+  },
+  {
+   "id": "葉宜全保票人",
+   "type": "person",
+   "docs": [
+    83936,
+    83937
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2
+   },
+   "units": [],
+   "year_min": 1829,
+   "year_max": 1829
+  },
+  {
+   "id": "林明尊",
+   "type": "person",
+   "docs": [
+    83938
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1945,
+   "year_max": 1945
+  },
+  {
+   "id": "陳功存",
+   "type": "person",
+   "docs": [
+    83938
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1945,
+   "year_max": 1945
+  },
+  {
+   "id": "道楷",
+   "type": "person",
+   "docs": [
+    83940
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "咸宜",
+   "type": "person",
+   "docs": [
+    83940,
+    83941
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2
+   },
+   "units": [],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "昌宜",
+   "type": "person",
+   "docs": [
+    83941
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "陳老鳳",
+   "type": "person",
+   "docs": [
+    83943
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1941,
+   "year_max": 1941
+  },
+  {
+   "id": "陳玉書",
+   "type": "person",
+   "docs": [
+    83943
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1941,
+   "year_max": 1941
+  },
+  {
+   "id": "康宗瑞",
+   "type": "person",
+   "docs": [
+    83944
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1879,
+   "year_max": 1879
+  },
+  {
+   "id": "陳連孫",
+   "type": "person",
+   "docs": [
+    83944
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1879,
+   "year_max": 1879
+  },
+  {
+   "id": "欽源",
+   "type": "person",
+   "docs": [
+    83945
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "福清"
+   ],
+   "year_min": 1932,
+   "year_max": 1932
+  },
+  {
+   "id": "朝官",
+   "type": "person",
+   "docs": [
+    83948
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1926,
+   "year_max": 1926
+  },
+  {
+   "id": "黃丁荃",
+   "type": "person",
+   "docs": [
+    83949
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1927,
+   "year_max": 1927
+  },
+  {
+   "id": "黃花蘭租客",
+   "type": "person",
+   "docs": [
+    83949
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1927,
+   "year_max": 1927
+  },
+  {
+   "id": "陳國龍",
+   "type": "person",
+   "docs": [
+    83950
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1805,
+   "year_max": 1805
+  },
+  {
+   "id": "黃乞容",
+   "type": "person",
+   "docs": [
+    83951,
+    83952
+   ],
+   "n_docs": 2,
+   "roles": {
+    "owner": 2
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1928,
+   "year_max": 1931
+  },
+  {
+   "id": "林宗",
+   "type": "person",
+   "docs": [
+    83956
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "吳淑珍",
+   "type": "person",
+   "docs": [
+    83956
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "林涯",
+   "type": "person",
+   "docs": [
+    83956
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "林貢",
+   "type": "person",
+   "docs": [
+    83956
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "劉德桂",
+   "type": "person",
+   "docs": [
+    83957
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "劉德輝",
+   "type": "person",
+   "docs": [
+    83957
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "劉如慶",
+   "type": "person",
+   "docs": [
+    83957
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "劉景星",
+   "type": "person",
+   "docs": [
+    83957
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "李銀山",
+   "type": "person",
+   "docs": [
+    83958
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1953,
+   "year_max": 1953
+  },
+  {
+   "id": "施性固",
+   "type": "person",
+   "docs": [
+    83959
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "顏蒜",
+   "type": "person",
+   "docs": [
+    83959
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "施能鎖",
+   "type": "person",
+   "docs": [
+    83959
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "施松柏",
+   "type": "person",
+   "docs": [
+    83959
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "陳佃",
+   "type": "person",
+   "docs": [
+    83960,
+    83971,
+    83974,
+    83975
+   ],
+   "n_docs": 4,
+   "roles": {
+    "seller": 4
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1935,
+   "year_max": 1953
+  },
+  {
+   "id": "施至尚",
+   "type": "person",
+   "docs": [
+    83960,
+    83971,
+    83974
+   ],
+   "n_docs": 3,
+   "roles": {
+    "buyer": 3
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1953,
+   "year_max": 1953
+  },
+  {
+   "id": "黃志林",
+   "type": "person",
+   "docs": [
+    83961
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "劉子珜",
+   "type": "person",
+   "docs": [
+    83961
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "王萃延",
+   "type": "person",
+   "docs": [
+    83962
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "南安"
+   ],
+   "year_min": 1951,
+   "year_max": 1951
+  },
+  {
+   "id": "黃滑",
+   "type": "person",
+   "docs": [
+    83963
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "南安"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "黃嚕",
+   "type": "person",
+   "docs": [
+    83963
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "南安"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "黃世",
+   "type": "person",
+   "docs": [
+    83963
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "南安"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "連芳",
+   "type": "person",
+   "docs": [
+    83963
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "南安"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "劉欽達違",
+   "type": "person",
+   "docs": [
+    83964
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1813,
+   "year_max": 1813
+  },
+  {
+   "id": "劉王建",
+   "type": "person",
+   "docs": [
+    83964
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1813,
+   "year_max": 1813
+  },
+  {
+   "id": "方圍九",
+   "type": "person",
+   "docs": [
+    83966
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1953,
+   "year_max": 1953
+  },
+  {
+   "id": "林武",
+   "type": "person",
+   "docs": [
+    83966
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1953,
+   "year_max": 1953
+  },
+  {
+   "id": "林清",
+   "type": "person",
+   "docs": [
+    83967
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1954,
+   "year_max": 1954
+  },
+  {
+   "id": "陳蕃薯",
+   "type": "person",
+   "docs": [
+    83967
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1954,
+   "year_max": 1954
+  },
+  {
+   "id": "姚望兌",
+   "type": "person",
+   "docs": [
+    83968
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1921,
+   "year_max": 1921
+  },
+  {
+   "id": "姚望駀",
+   "type": "person",
+   "docs": [
+    83968
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1921,
+   "year_max": 1921
+  },
+  {
+   "id": "林述璋",
+   "type": "person",
+   "docs": [
+    83969
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1934,
+   "year_max": 1934
+  },
+  {
+   "id": "林學通",
+   "type": "person",
+   "docs": [
+    83969
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1934,
+   "year_max": 1934
+  },
+  {
+   "id": "黃榮森",
+   "type": "person",
+   "docs": [
+    83972
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1947,
+   "year_max": 1947
+  },
+  {
+   "id": "黃煌",
+   "type": "person",
+   "docs": [
+    83972
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1947,
+   "year_max": 1947
+  },
+  {
+   "id": "黃炮",
+   "type": "person",
+   "docs": [
+    83973
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1943,
+   "year_max": 1943
+  },
+  {
+   "id": "沈秀清",
+   "type": "person",
+   "docs": [
+    83973
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1943,
+   "year_max": 1943
+  },
+  {
+   "id": "林親顶",
+   "type": "person",
+   "docs": [
+    83975
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "施至祥",
+   "type": "person",
+   "docs": [
+    83975
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "晉江"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "王昌年",
+   "type": "person",
+   "docs": [
+    83976
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1910,
+   "year_max": 1910
+  },
+  {
+   "id": "李學堃",
+   "type": "person",
+   "docs": [
+    83976
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1910,
+   "year_max": 1910
+  },
+  {
+   "id": "金輯和",
+   "type": "person",
+   "docs": [
+    83977
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1925,
+   "year_max": 1925
+  },
+  {
+   "id": "金信江",
+   "type": "person",
+   "docs": [
+    83977
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1925,
+   "year_max": 1925
+  },
+  {
+   "id": "李文富",
+   "type": "person",
+   "docs": [
+    83978
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1953,
+   "year_max": 1953
+  },
+  {
+   "id": "李水旺",
+   "type": "person",
+   "docs": [
+    83979
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "邵武"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "陳連玉",
+   "type": "person",
+   "docs": [
+    83979
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "邵武"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "李義妹",
+   "type": "person",
+   "docs": [
+    83979
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "邵武"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "李義草",
+   "type": "person",
+   "docs": [
+    83979
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "邵武"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "黃振發",
+   "type": "person",
+   "docs": [
+    83980
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1889,
+   "year_max": 1889
+  },
+  {
+   "id": "吳右嚴",
+   "type": "person",
+   "docs": [
+    83981
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "何金盛",
+   "type": "person",
+   "docs": [
+    83982
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1909,
+   "year_max": 1909
+  },
+  {
+   "id": "何振華",
+   "type": "person",
+   "docs": [
+    83982
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "建陽"
+   ],
+   "year_min": 1909,
+   "year_max": 1909
+  },
+  {
+   "id": "藍福良",
+   "type": "person",
+   "docs": [
+    83984
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1953,
+   "year_max": 1953
+  },
+  {
+   "id": "林定宗林登宗",
+   "type": "person",
+   "docs": [
+    83986
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1949,
+   "year_max": 1949
+  },
+  {
+   "id": "余溪",
+   "type": "person",
+   "docs": [
+    83986
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1949,
+   "year_max": 1949
+  },
+  {
+   "id": "王志撥",
+   "type": "person",
+   "docs": [
+    83987
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": null,
+   "year_max": null
+  },
+  {
+   "id": "林施裕",
+   "type": "person",
+   "docs": [
+    83988
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1939,
+   "year_max": 1939
+  },
+  {
+   "id": "林祥德",
+   "type": "person",
+   "docs": [
+    83989
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1921,
+   "year_max": 1921
+  },
+  {
+   "id": "張經炎",
+   "type": "person",
+   "docs": [
+    83989
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1921,
+   "year_max": 1921
+  },
+  {
+   "id": "范南山",
+   "type": "person",
+   "docs": [
+    83990
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1659,
+   "year_max": 1659
+  },
+  {
+   "id": "徐正耀",
+   "type": "person",
+   "docs": [
+    83991
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1678,
+   "year_max": 1678
+  },
+  {
+   "id": "黃奶壽",
+   "type": "person",
+   "docs": [
+    83992
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1869,
+   "year_max": 1869
+  },
+  {
+   "id": "朱發",
+   "type": "person",
+   "docs": [
+    83993
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "孫宗馨",
+   "type": "person",
+   "docs": [
+    83994
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1952,
+   "year_max": 1952
+  },
+  {
+   "id": "長忠",
+   "type": "person",
+   "docs": [
+    83995
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1916,
+   "year_max": 1916
+  },
+  {
+   "id": "嬌世范",
+   "type": "person",
+   "docs": [
+    83996
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1949,
+   "year_max": 1949
+  },
+  {
+   "id": "張炳財",
+   "type": "person",
+   "docs": [
+    83997
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "連城"
+   ],
+   "year_min": 1584,
+   "year_max": 1584
+  },
+  {
+   "id": "劉隹",
+   "type": "person",
+   "docs": [
+    83998
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1949,
+   "year_max": 1949
+  },
+  {
+   "id": "沙延德",
+   "type": "person",
+   "docs": [
+    83998
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "東山"
+   ],
+   "year_min": 1949,
+   "year_max": 1949
+  },
+  {
+   "id": "陳亮",
+   "type": "person",
+   "docs": [
+    84000
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1892,
+   "year_max": 1892
+  },
+  {
+   "id": "李清",
+   "type": "person",
+   "docs": [
+    84000
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1892,
+   "year_max": 1892
+  },
+  {
+   "id": "王師禮",
+   "type": "person",
+   "docs": [
+    84002
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1886,
+   "year_max": 1886
+  },
+  {
+   "id": "許大華",
+   "type": "person",
+   "docs": [
+    84002
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1886,
+   "year_max": 1886
+  },
+  {
+   "id": "熾原",
+   "type": "person",
+   "docs": [
+    84003
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1909,
+   "year_max": 1909
+  },
+  {
+   "id": "尚堃",
+   "type": "person",
+   "docs": [
+    84003
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1909,
+   "year_max": 1909
+  },
+  {
+   "id": "可翅",
+   "type": "person",
+   "docs": [
+    84004
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1782,
+   "year_max": 1782
+  },
+  {
+   "id": "林與清",
+   "type": "person",
+   "docs": [
+    84005
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1903,
+   "year_max": 1903
+  },
+  {
+   "id": "陳傳京",
+   "type": "person",
+   "docs": [
+    84006
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1929,
+   "year_max": 1929
+  },
+  {
+   "id": "陈成餘",
+   "type": "person",
+   "docs": [
+    84006
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1929,
+   "year_max": 1929
+  },
+  {
+   "id": "陳士曾",
+   "type": "person",
+   "docs": [
+    84008
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [],
+   "year_min": 1858,
+   "year_max": 1858
+  },
+  {
+   "id": "陳潮寳",
+   "type": "person",
+   "docs": [
+    84013
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1947,
+   "year_max": 1947
+  },
+  {
+   "id": "陳敦清",
+   "type": "person",
+   "docs": [
+    84013
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1947,
+   "year_max": 1947
+  },
+  {
+   "id": "陳敬侯",
+   "type": "person",
+   "docs": [
+    84014
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1924,
+   "year_max": 1924
+  },
+  {
+   "id": "子秀",
+   "type": "person",
+   "docs": [
+    84014
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1924,
+   "year_max": 1924
+  },
+  {
+   "id": "義容",
+   "type": "person",
+   "docs": [
+    84015
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1837,
+   "year_max": 1837
+  },
+  {
+   "id": "楊世平",
+   "type": "person",
+   "docs": [
+    84017
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "順昌"
+   ],
+   "year_min": 1978,
+   "year_max": 1978
+  },
+  {
+   "id": "陳道祥",
+   "type": "person",
+   "docs": [
+    84017
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "順昌"
+   ],
+   "year_min": 1978,
+   "year_max": 1978
+  },
+  {
+   "id": "阮承苑",
+   "type": "person",
+   "docs": [
+    84019
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1869,
+   "year_max": 1869
+  },
+  {
+   "id": "黃象智",
+   "type": "person",
+   "docs": [
+    84019
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1869,
+   "year_max": 1869
+  },
+  {
+   "id": "劉貞文",
+   "type": "person",
+   "docs": [
+    84019
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1,
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1869,
+   "year_max": 1869
+  },
+  {
+   "id": "陸元盛",
+   "type": "person",
+   "docs": [
+    84019
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "古田"
+   ],
+   "year_min": 1869,
+   "year_max": 1869
+  },
+  {
+   "id": "游振梅",
+   "type": "person",
+   "docs": [
+    84020
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1850,
+   "year_max": 1850
+  },
+  {
+   "id": "楊坤貞",
+   "type": "person",
+   "docs": [
+    84020
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1850,
+   "year_max": 1850
+  },
+  {
+   "id": "吳開揚",
+   "type": "person",
+   "docs": [
+    84021
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1864,
+   "year_max": 1864
+  },
+  {
+   "id": "陳世旺",
+   "type": "person",
+   "docs": [
+    84021
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1864,
+   "year_max": 1864
+  },
+  {
+   "id": "高金亮",
+   "type": "person",
+   "docs": [
+    84022
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1889,
+   "year_max": 1889
+  },
+  {
+   "id": "秋意軒老人會",
+   "type": "institution",
+   "docs": [
+    84024
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [],
+   "year_min": 1900,
+   "year_max": 1900
+  },
+  {
+   "id": "郭成亮",
+   "type": "person",
+   "docs": [
+    84025
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1906,
+   "year_max": 1906
+  },
+  {
+   "id": "王駿發",
+   "type": "person",
+   "docs": [
+    84025
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1906,
+   "year_max": 1906
+  },
+  {
+   "id": "方兆揚",
+   "type": "person",
+   "docs": [
+    84027
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1910,
+   "year_max": 1910
+  },
+  {
+   "id": "方亨猷",
+   "type": "person",
+   "docs": [
+    84027
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1910,
+   "year_max": 1910
+  },
+  {
+   "id": "陳琮細",
+   "type": "person",
+   "docs": [
+    84028
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1913,
+   "year_max": 1913
+  },
+  {
+   "id": "陳吳氏",
+   "type": "woman",
+   "docs": [
+    84029
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1918,
+   "year_max": 1918
+  },
+  {
+   "id": "吳右岩",
+   "type": "person",
+   "docs": [
+    84029
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1918,
+   "year_max": 1918
+  },
+  {
+   "id": "聖余",
+   "type": "person",
+   "docs": [
+    84030
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1923,
+   "year_max": 1923
+  },
+  {
+   "id": "西房眾",
+   "type": "person",
+   "docs": [
+    84030
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1923,
+   "year_max": 1923
+  },
+  {
+   "id": "陳兆濤",
+   "type": "person",
+   "docs": [
+    84033
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1927,
+   "year_max": 1927
+  },
+  {
+   "id": "陳兆和",
+   "type": "person",
+   "docs": [
+    84033
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "永泰（永福）"
+   ],
+   "year_min": 1927,
+   "year_max": 1927
+  },
+  {
+   "id": "程道魯",
+   "type": "person",
+   "docs": [
+    84034
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1929,
+   "year_max": 1929
+  },
+  {
+   "id": "程楊春",
+   "type": "person",
+   "docs": [
+    84034
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1929,
+   "year_max": 1929
+  },
+  {
+   "id": "陳太記",
+   "type": "person",
+   "docs": [
+    84035
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1929,
+   "year_max": 1929
+  },
+  {
+   "id": "陳宿漙",
+   "type": "person",
+   "docs": [
+    84035
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1929,
+   "year_max": 1929
+  },
+  {
+   "id": "陳宿康",
+   "type": "person",
+   "docs": [
+    84036
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1929,
+   "year_max": 1929
+  },
+  {
+   "id": "陳桂修",
+   "type": "person",
+   "docs": [
+    84036,
+    84037
+   ],
+   "n_docs": 2,
+   "roles": {
+    "buyer": 2
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1929,
+   "year_max": 1932
+  },
+  {
+   "id": "陳聖榜",
+   "type": "person",
+   "docs": [
+    84037
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1932,
+   "year_max": 1932
+  },
+  {
+   "id": "劉人科",
+   "type": "person",
+   "docs": [
+    84038
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "劉子知後裔",
+   "type": "person",
+   "docs": [
+    84038
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩清"
+   ],
+   "year_min": 1935,
+   "year_max": 1935
+  },
+  {
+   "id": "余挹岩",
+   "type": "person",
+   "docs": [
+    84039
+   ],
+   "n_docs": 1,
+   "roles": {
+    "owner": 1
+   },
+   "units": [],
+   "year_min": 1948,
+   "year_max": 1948
+  },
+  {
+   "id": "王細細弟",
+   "type": "person",
+   "docs": [
+    84040
+   ],
+   "n_docs": 1,
+   "roles": {
+    "seller": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1951,
+   "year_max": 1951
+  },
+  {
+   "id": "王炳凱",
+   "type": "person",
+   "docs": [
+    84040
+   ],
+   "n_docs": 1,
+   "roles": {
+    "buyer": 1
+   },
+   "units": [
+    "閩侯（閩縣・侯官・林森）"
+   ],
+   "year_min": 1951,
+   "year_max": 1951
+  }
+ ],
+ "edges": [
+  {
+   "source": "張學車",
+   "target": "陳書寶",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張學車",
+   "target": "陳書寶",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "郑祚龙",
+   "target": "高天钏",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "王錦枝",
+   "target": "王錦發",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "吳開成",
+   "target": "陳氏",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "和意軒老人會",
+   "target": "鄒允春",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "王三妹",
+   "target": "陳軍漢",
+   "kind": "trade",
+   "weight": 2
+  },
+  {
+   "source": "吳省忠",
+   "target": "許瓊栢",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "吳淮棉",
+   "target": "藍維乾",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "吳淮棉",
+   "target": "藍維坤",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "藍維乾",
+   "target": "藍維坤",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "吳秉鑒",
+   "target": "謝先經",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "方元慈",
+   "target": "方潮濤",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉振萬",
+   "target": "劉紀臣",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張銓銓",
+   "target": "鄒道明",
+   "kind": "trade",
+   "weight": 2
+  },
+  {
+   "source": "劉仕懋",
+   "target": "蘇章林",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉咸安",
+   "target": "劉盛章",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉盛章",
+   "target": "劉道建",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉咸安",
+   "target": "劉道建",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉繼伍",
+   "target": "應梓龍",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林應香",
+   "target": "林萬開",
+   "kind": "trade",
+   "weight": 2
+  },
+  {
+   "source": "林可瓊",
+   "target": "林為良",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林可昌",
+   "target": "林可淦",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉興國",
+   "target": "林可瓊",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林萬開",
+   "target": "王聯鄧",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林秋溥",
+   "target": "林萬開",
+   "kind": "trade",
+   "weight": 2
+  },
+  {
+   "source": "官方政府",
+   "target": "林萬利",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林久興",
+   "target": "林可鑒",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林久澍",
+   "target": "林久興",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林久澍",
+   "target": "林可鑒",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林春發",
+   "target": "林萬開",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林有柱",
+   "target": "趙守藻",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "熊亨讀",
+   "target": "熊長生",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張昌暢",
+   "target": "張邦昔",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "鄭嬌姑",
+   "target": "鄭淳氏",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "徐幹通",
+   "target": "熊孫",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "李有定",
+   "target": "謝氏",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "鄭璟",
+   "target": "陳裔煌",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "蘇坐標",
+   "target": "輝煌",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張氏",
+   "target": "林欽祥",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陈謀丁",
+   "target": "陳如良",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張炳源",
+   "target": "林履同",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "王齊發",
+   "target": "郭宗仲",
+   "kind": "trade",
+   "weight": 2
+  },
+  {
+   "source": "許春願",
+   "target": "黃財業",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "余傳荃",
+   "target": "張道興",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張文楚",
+   "target": "金寬英",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林春源",
+   "target": "王元靄",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "黃同華",
+   "target": "黃遠容",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃同德",
+   "target": "黃遠容",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃國興",
+   "target": "黃遠容",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃國義",
+   "target": "黃遠容",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃同德",
+   "target": "黃同華",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃同華",
+   "target": "黃國興",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃同華",
+   "target": "黃國義",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃同德",
+   "target": "黃國興",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃同德",
+   "target": "黃國義",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃國義",
+   "target": "黃國興",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃汝勷",
+   "target": "黃雲村",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "陳道書",
+   "target": "陳雅",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "陳建璽",
+   "target": "陳雅",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "陳成嘉",
+   "target": "陳雅",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "陳建璽",
+   "target": "陳道書",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "陳成嘉",
+   "target": "陳道書",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "陳建璽",
+   "target": "陳成嘉",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "沈齊",
+   "target": "鄭其英",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "陳欽瑞",
+   "target": "陳欽隆",
+   "kind": "trade",
+   "weight": 4
+  },
+  {
+   "source": "陳國遠",
+   "target": "黃隆貫",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉嘉命",
+   "target": "劉源森",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張國光",
+   "target": "張國寶",
+   "kind": "trade",
+   "weight": 2
+  },
+  {
+   "source": "黃克動",
+   "target": "黃生官",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林久樹",
+   "target": "林宜新",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張寶詨",
+   "target": "程長孫",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "程長孫",
+   "target": "藍炳孫",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "程姑仔",
+   "target": "金寶",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "黃維岑",
+   "target": "黃維裕",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林厚成",
+   "target": "葉成",
+   "kind": "trade",
+   "weight": 2
+  },
+  {
+   "source": "林厚祿",
+   "target": "葉成",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林厚祥",
+   "target": "葉成",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林厚成",
+   "target": "林厚祿",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林厚成",
+   "target": "林厚祥",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林厚祥",
+   "target": "林厚祿",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "陸元規",
+   "target": "陸元賜",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陳必泉",
+   "target": "陳必清",
+   "kind": "trade",
+   "weight": 3
+  },
+  {
+   "source": "林忠",
+   "target": "賴榮松",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林榮",
+   "target": "賴榮松",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林忠",
+   "target": "林榮",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林邦端",
+   "target": "程利欲",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林邦端",
+   "target": "程利霖",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "程利欲",
+   "target": "程利霖",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "邱有本",
+   "target": "邱有炳",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "邱傳學",
+   "target": "邱有本",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "邱傳學",
+   "target": "邱有炳",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "余德光",
+   "target": "林聖魁",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉孝良",
+   "target": "林高滿",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "邵李氏",
+   "target": "黃懷周",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "葉宜全保票人",
+   "target": "陳國遠",
+   "kind": "trade",
+   "weight": 2
+  },
+  {
+   "source": "林明尊",
+   "target": "陳功存",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "咸宜",
+   "target": "道楷",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "咸宜",
+   "target": "昌宜",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陳玉書",
+   "target": "陳老鳳",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "康宗瑞",
+   "target": "陳連孫",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "欽源",
+   "target": "陳欽瑞",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "文鳳",
+   "target": "朝官",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "黃丁荃",
+   "target": "黃花蘭租客",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陳國龍",
+   "target": "黃隆貫",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "吳淑珍",
+   "target": "林宗",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林宗",
+   "target": "林涯",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林宗",
+   "target": "林貢",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "吳淑珍",
+   "target": "林涯",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "吳淑珍",
+   "target": "林貢",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林涯",
+   "target": "林貢",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉德桂",
+   "target": "劉德輝",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉如慶",
+   "target": "劉德桂",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉德桂",
+   "target": "劉景星",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉如慶",
+   "target": "劉德輝",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉德輝",
+   "target": "劉景星",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉如慶",
+   "target": "劉景星",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "施性固",
+   "target": "顏蒜",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "施性固",
+   "target": "施能鎖",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "施性固",
+   "target": "施松柏",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "施能鎖",
+   "target": "顏蒜",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "施松柏",
+   "target": "顏蒜",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "施松柏",
+   "target": "施能鎖",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "施至尚",
+   "target": "陳佃",
+   "kind": "trade",
+   "weight": 3
+  },
+  {
+   "source": "劉子珜",
+   "target": "黃志林",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "黃嚕",
+   "target": "黃滑",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃世",
+   "target": "黃滑",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "連芳",
+   "target": "黃滑",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "黃世",
+   "target": "黃嚕",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "連芳",
+   "target": "黃嚕",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "連芳",
+   "target": "黃世",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉欽達違",
+   "target": "劉王建",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "方圍九",
+   "target": "林武",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "林清",
+   "target": "陳蕃薯",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "姚望兌",
+   "target": "姚望駀",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "林學通",
+   "target": "林述璋",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "黃榮森",
+   "target": "黃煌",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "沈秀清",
+   "target": "黃炮",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "施至祥",
+   "target": "陳佃",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "李學堃",
+   "target": "王昌年",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "金信江",
+   "target": "金輯和",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "李水旺",
+   "target": "陳連玉",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "李水旺",
+   "target": "李義妹",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "李水旺",
+   "target": "李義草",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "李義妹",
+   "target": "陳連玉",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "李義草",
+   "target": "陳連玉",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "李義妹",
+   "target": "李義草",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "吳右嚴",
+   "target": "陳燦祥",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "何振華",
+   "target": "何金盛",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "余溪",
+   "target": "林定宗林登宗",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "張經炎",
+   "target": "林祥德",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉隹",
+   "target": "沙延德",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "李清",
+   "target": "陳亮",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "王師禮",
+   "target": "許大華",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "尚堃",
+   "target": "熾原",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陳敦清",
+   "target": "陳潮寳",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "子秀",
+   "target": "陳敬侯",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "楊世平",
+   "target": "陳道祥",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉貞文",
+   "target": "黃象智",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陸元盛",
+   "target": "黃象智",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉貞文",
+   "target": "陸元盛",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉貞文",
+   "target": "黃象智",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "劉貞文",
+   "target": "陸元盛",
+   "kind": "co_party",
+   "weight": 1
+  },
+  {
+   "source": "楊坤貞",
+   "target": "游振梅",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "吳開揚",
+   "target": "陳世旺",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "秋意軒老人會",
+   "target": "鄒允春",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "王駿發",
+   "target": "郭成亮",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "方亨猷",
+   "target": "方兆揚",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "吳右岩",
+   "target": "陳吳氏",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "聖余",
+   "target": "西房眾",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陳兆和",
+   "target": "陳兆濤",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "程楊春",
+   "target": "程道魯",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陳太記",
+   "target": "陳宿漙",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陳宿康",
+   "target": "陳桂修",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "陳桂修",
+   "target": "陳聖榜",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "劉人科",
+   "target": "劉子知後裔",
+   "kind": "trade",
+   "weight": 1
+  },
+  {
+   "source": "王炳凱",
+   "target": "王細細弟",
+   "kind": "trade",
+   "weight": 1
+  }
+ ]
+}
