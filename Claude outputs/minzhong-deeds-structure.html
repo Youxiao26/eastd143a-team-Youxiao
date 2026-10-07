@@ -1,0 +1,194 @@
+<title>How Minzhong Deeds Speak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Noto+Serif+TC:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column (~68ch) with full-width tables; deed text quoted in a paper-toned inset like a slip pasted onto the page */
+:root{
+  --bg:#f3f4f1;        /* xuan paper, slight green-grey */
+  --panel:#e8eae4;
+  --fg:#1f2421;        /* ink */
+  --muted:#5d655f;
+  --rule:#c9cdc5;
+  --seal:#b23a2e;      /* cinnabar seal paste, used sparingly */
+  --seal-soft:#f1dcd6;
+  --f-body:"Newsreader","Noto Serif TC",Georgia,serif;
+  --f-cjk:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --f-ui:"IBM Plex Sans",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151917;--panel:#1e2421;--fg:#e3e6e1;--muted:#9aa39c;--rule:#36403b;--seal:#e0705f;--seal-soft:#3a2522;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#151917;--panel:#1e2421;--fg:#e3e6e1;--muted:#9aa39c;--rule:#36403b;--seal:#e0705f;--seal-soft:#3a2522;color-scheme:dark}
+
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:18px;line-height:1.6}
+.wrap{max-width:46rem;margin:0 auto;padding-inline:20px;padding-block:48px 80px}
+h1,h2,h3{font-weight:600;line-height:1.2;text-wrap:balance}
+h1{font-size:2.5rem;margin:0 0 .4rem}
+h1 .zh{font-family:var(--f-cjk);color:var(--seal);font-size:1.6rem;display:block;margin-bottom:.4rem;letter-spacing:.15em}
+h2{font-size:1.55rem;margin:3.2rem 0 .8rem;padding-top:1.4rem;border-top:1px solid var(--rule)}
+h3{font-size:1.15rem;margin:2rem 0 .5rem}
+p{margin:0 0 1rem}
+.lede{font-size:1.15rem;color:var(--muted)}
+.meta{font-family:var(--f-ui);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:2rem}
+.zh,q.zh,.cjk{font-family:var(--f-cjk)}
+.cjk{font-size:.95em}
+blockquote{margin:1.2rem 0;padding:14px 18px;background:var(--panel);border-left:3px solid var(--seal);font-family:var(--f-cjk);font-size:1rem;line-height:1.9}
+blockquote cite{display:block;font-family:var(--f-ui);font-style:normal;font-size:.75rem;color:var(--muted);margin-top:.5rem;letter-spacing:.03em}
+.tbl{overflow-x:auto;margin:1.2rem 0 1.6rem}
+table{border-collapse:collapse;width:100%;font-family:var(--f-ui);font-size:.86rem;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+td.n{text-align:right;white-space:nowrap}
+td .cjk{font-size:1rem}
+.bar{display:inline-block;height:8px;background:var(--seal);border-radius:1px;vertical-align:middle;margin-right:6px;opacity:.85}
+ol.moves{list-style:none;padding:0;margin:1.2rem 0;display:grid;gap:10px;counter-reset:m}
+ol.moves li{counter-increment:m;display:grid;grid-template-columns:2.2rem 1fr;gap:4px 12px;align-items:baseline}
+ol.moves li::before{content:counter(m);font-family:var(--f-ui);font-size:.8rem;color:var(--seal);font-weight:600;text-align:right}
+ol.moves b{font-family:var(--f-cjk);font-weight:600}
+ol.moves span{grid-column:2;color:var(--muted);font-size:.95rem}
+.note{font-family:var(--f-ui);font-size:.85rem;color:var(--muted);background:var(--panel);padding:12px 16px;border-radius:2px}
+.seal{font-family:var(--f-ui);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--seal);border:1px solid var(--seal);padding:1px 6px;border-radius:2px;vertical-align:2px;margin-right:6px;white-space:nowrap}
+ul{padding-left:1.2rem}li{margin-bottom:.4rem}
+a{color:var(--seal)}
+:focus-visible{outline:2px solid var(--seal);outline-offset:2px}
+@media (max-width:480px){body{font-size:17px}h1{font-size:2rem}}
+</style>
+
+<div class="wrap">
+<h1><span class="zh">閩中契約的敘事與語言</span>How Minzhong Deeds Speak</h1>
+<p class="lede">The narrative and linguistic structure of the Fuzhou-area land records, read from the team's OCR output.</p>
+<p class="meta">EASTD 143A · eastd143a-team-Youxiao · OCR_results/ · Oct 2026</p>
+
+<h2>What was read</h2>
+<p>The <span class="cjk">OCR_results</span> folder has 407 HTML pages covering 234 items from the University of Pittsburgh's <em>Chinese Land Records</em>. Each page breaks into labelled layout blocks, mostly <em>Text</em> (5,103 blocks), with 310 <em>Section-Header</em> and 258 <em>Image</em> blocks; the image blocks are model-written descriptions of seals and stamps. The recognised text adds up to about 140,000 characters. I joined each page to the item catalogue in the <span class="cjk">jackieldyh</span> branch (<span class="cjk">chinese_land_records_235.csv</span>) by its Pitt ID, which gives a date and a county for every item.</p>
+<p>I sorted every page by what kind of text it carries:</p>
+<div class="tbl"><table>
+<tr><th>Page type</th><th>How detected</th><th class="n">Pages</th></tr>
+<tr><td>Private contract only</td><td>opens with <span class="cjk">立…契 / 字 / 約</span> and has no state formulae</td><td class="n">83</td></tr>
+<tr><td>Private contract plus state certificate on one sheet</td><td>both kinds of text</td><td class="n">35</td></tr>
+<tr><td>Official form only</td><td><span class="cjk">執照, 契紙, 契尾, 稅, 縣長, 政府</span>…</td><td class="n">197</td></tr>
+<tr><td>Other (ledgers, receipts, fragments, blank backs)</td><td>none of the above</td><td class="n">92</td></tr>
+</table></div>
+<p>All counts below are numbers of pages. Most of the private contracts date from 1796 to 1948: 58 pages fall between 1796 and 1911 and 43 between 1912 and 1948.</p>
+
+<h2>1. The private deed tells one story every time</h2>
+<p>Whatever the deed type (sale, conditional sale, top-up or final sale), the private contract runs through the same fixed sequence of moves. It is a short first-person story told in the third person. The seller narrates how he came to own the land and why he must part with it. Then he lists, one by one, every claim that could later be raised against the buyer, and shuts each one down.</p>
+<ol class="moves">
+<li><b>立〔賣斷〕契 + name</b><span>The contract's title and its author, in a single phrase: "the one who sets up this sale deed is…". The deed names itself by its legal type.</span></li>
+<li><b>承祖 / 承父手置 / 鬮書份下</b><span>Provenance. The land came from the grandfather, from the father, or from the family division document. Ownership is told as inheritance.</span></li>
+<li><b>坐落…土名… / 四至 / 受種 / 年載租</b><span>Description, located by native place-name (<span class="cjk">土名</span>). The land is measured by seed sown and rent owed, not by area.</span></li>
+<li><b>今因 + motive</b><span>The turning point: "now, because…" (<span class="cjk">要用, 別置, 無錢應用</span>). The reason is kept formulaic and vague.</span></li>
+<li><b>自願託中 … 送與 / 賣與 [line break] X 處為業</b><span>Voluntariness and mediation. The buyer's name often starts a new line, a spatial form of courtesy (see §3).</span></li>
+<li><b>三面言議 … 價銀 … 正</b><span>Agreement "on three sides" (seller, buyer, middleman). The price is written in formal numerals and closed with <span class="cjk">正</span> ("exactly").</span></li>
+<li><b>其銀即日隨契交足</b><span>Payment is complete at the moment of writing.</span></li>
+<li><b>其田即聽 … 管業 / 收租 / 耕作</b><span>Transfer of use rights: what the buyer may now do.</span></li>
+<li><b>亦未曾重張典當…來歷不明…出頭承當，不涉 X 之事</b><span>Warranty: a chain of negated scenarios, each assigned to the seller.</span></li>
+<li><b>面約…年為限…取贖 / 永斷萬無…不得言贖言找</b><span>Time clause. A conditional sale opens a redemption window; a final sale closes it for good.</span></li>
+<li><b>兩相允願，各無反悔。今欲有憑，立…壹紙為照</b><span>Closing couplet and the act of writing itself: the paper is the proof.</span></li>
+<li><b>Date · 知契 · 在見 · 中人 · 代筆</b><span>Signature block: a small public of family, witnesses, middleman and scribe.</span></li>
+</ol>
+<p>The formulae are very stable over time. This table counts the share of private-deed pages in each period where each move appears in the OCR text:</p>
+<div class="tbl"><table>
+<tr><th>Move (search pattern)</th><th class="n">pre-1796</th><th class="n">1796–1911</th><th class="n">1912–48</th><th>Overall</th></tr>
+<tr><td><span class="cjk">今欲有憑 / 恐口無憑 / 為照</span> closing</td><td class="n">8/9</td><td class="n">54/58</td><td class="n">42/43</td><td><span class="bar" style="width:94px"></span>94%</td></tr>
+<tr><td>Witness / middleman (<span class="cjk">中見, 中人</span>)</td><td class="n">8/9</td><td class="n">46/58</td><td class="n">33/43</td><td><span class="bar" style="width:79px"></span>79%</td></tr>
+<tr><td>Payment completed (<span class="cjk">即日, 隨契交足</span>)</td><td class="n">6/9</td><td class="n">46/58</td><td class="n">33/43</td><td><span class="bar" style="width:78px"></span>78%</td></tr>
+<tr><td>Motive (<span class="cjk">今因</span>)</td><td class="n">4/9</td><td class="n">45/58</td><td class="n">27/43</td><td><span class="bar" style="width:68px"></span>68%</td></tr>
+<tr><td>Mediated (<span class="cjk">託中 / 憑中</span>)</td><td class="n">4/9</td><td class="n">44/58</td><td class="n">24/43</td><td><span class="bar" style="width:64px"></span>64%</td></tr>
+<tr><td>No prior pledge / unclear title (<span class="cjk">重典, 來歷不明</span>)</td><td class="n">4/9</td><td class="n">36/58</td><td class="n">28/43</td><td><span class="bar" style="width:61px"></span>61%</td></tr>
+<tr><td>Scribe named (<span class="cjk">代筆</span>)</td><td class="n">4/9</td><td class="n">39/58</td><td class="n">21/43</td><td><span class="bar" style="width:60px"></span>60%</td></tr>
+<tr><td><span class="cjk">三面言議</span></td><td class="n">3/9</td><td class="n">39/58</td><td class="n">25/43</td><td><span class="bar" style="width:59px"></span>59%</td></tr>
+<tr><td>No later objection (<span class="cjk">異言, 反悔</span>)</td><td class="n">3/9</td><td class="n">30/58</td><td class="n">24/43</td><td><span class="bar" style="width:51px"></span>51%</td></tr>
+<tr><td>Seller answers claims (<span class="cjk">出頭支理, 不涉</span>)</td><td class="n">2/9</td><td class="n">21/58</td><td class="n">25/43</td><td><span class="bar" style="width:44px"></span>44%</td></tr>
+<tr><td>Redemption (<span class="cjk">取贖, 備價</span>)</td><td class="n">3/9</td><td class="n">19/58</td><td class="n">14/43</td><td><span class="bar" style="width:33px"></span>33%</td></tr>
+<tr><td>Female kin consents (<span class="cjk">知契…氏</span>)</td><td class="n">0/9</td><td class="n">12/58</td><td class="n">11/43</td><td><span class="bar" style="width:20px"></span>20%</td></tr>
+<tr><td><span class="cjk">吉日</span> in date line</td><td class="n">0/9</td><td class="n">22/58</td><td class="n">3/43</td><td><span class="bar" style="width:21px"></span>21%</td></tr>
+</table></div>
+<p class="note">These are lower bounds. A move counts only if the OCR spelled it correctly, and the OCR often misreads <span class="cjk">托中</span> (as <span class="cjk">托牛</span>), <span class="cjk">找</span> (as <span class="cjk">我</span>), and so on. One trend looks real rather than an OCR effect: <span class="cjk">吉日</span> ("auspicious day") nearly disappears from Republican-era deeds (from 22 of 58 pages to 3 of 43). The Republic's calendar of numbered days pushed out the ritual date formula.</p>
+
+<h3>A worked example</h3>
+<blockquote>立寄佃契弟朝官…承祖遺下〔鬮〕分有民田根貳號，坐產七都牛欄墩地方，土名尼姑墜併大墩等處，受種肆拾捌〔斗〕正，年載租〔米〕貳石叁斗伍升正…今因要用，自愿托中寄與<br>兄文鳳處為業，三面言議，即日得訖田根價先番壹百玖拾捌員正，其銀隨契交足…面約年限伍年為限，俟至限滿之日，听弟備價照契面…取贖…今欲有憑，立寄佃契…為憑。<br>中華民國拾伍年十一月日 立寄佃契弟朝官　知契母黃氏　在見叔仁立　中人黃家仙　執筆馬傳梅
+<cite>31735066266689_001 · 1926 · line breaks as in the OCR; bracketed characters are my emendations</cite></blockquote>
+<p>All twelve moves are present. The parties are brothers, so kinship terms (<span class="cjk">弟…兄</span>) sit in the slot where a stranger's surname would go: the contract writes the family relationship into its grammar.</p>
+
+<h2>2. Deeds are chapters in a longer story</h2>
+<p>Deeds come in series. The vocabulary of deed types sets out a sequence of stages, and the most common opening phrases in the OCR show it:</p>
+<div class="tbl"><table>
+<tr><th>Stage</th><th>Opening phrases (pages)</th><th>What it does</th></tr>
+<tr><td>Conditional sale</td><td><span class="cjk">立典契 47 · 立轉典契 4 · 立繳典契 5 · 立胎押字 3 · 立當山契 3</span></td><td>The land changes hands with a right to buy it back</td></tr>
+<tr><td>Top-up payment</td><td><span class="cjk">立湊字 6 · 立增找杜新契 3</span></td><td>The seller gets an extra payment on a deal already made</td></tr>
+<tr><td>Final sale</td><td><span class="cjk">立盡根斷賣契 7 · 立湊斷契 6</span></td><td>"Exhausts the root": no more claims</td></tr>
+<tr><td>Outright sale</td><td><span class="cjk">立賣斷契 45 · 立賣斷根面全田契 19 · 立賣斷皮骨山契 4</span></td><td>Permanent transfer, sometimes of both layers of the land</td></tr>
+</table></div>
+<p>The finality vocabulary escalates: <span class="cjk">賣 → 斷 → 盡根斷 → 杜</span>. Final-sale deeds pile up negated verbs to shut the story down: <q class="zh">永斷萬無，嗣後不得言贖言找言盡</q> ("cut off for ever; hereafter none may speak of redeeming, of topping up, of exhausting"). The parallel <span class="cjk">言X言Y</span> construction names, then forbids, the next chapter that the earlier deeds had left open.</p>
+<p>The deeds also cite their own predecessors. A third of private pages (33 of 118) record handing over earlier papers (<span class="cjk">併繳…契壹紙</span>), and 16 count the total (<span class="cjk">共成…紙</span>). An 1870 sale of a house in Fuzhou by 吳開成 retells three decades of earlier pledges. It then lists 25 papers handed to the buyer: redemption deeds, a loan note, earlier conditional-sale deeds, and <q class="zh">司單執照老契壹拾肆紙</q> (14 old deeds with tax certificates).</p>
+<blockquote>…今欲有憑，立賣斷契壹紙，併繳陳家贖回契壹紙…鄭家贖回契壹紙，魏家贖回契壹紙，向陳家借字壹紙，陳世旺繳典契壹紙…上手原典斷契併司單執照老契壹拾肆紙，共成貳拾伍紙，統付永遠為憑。
+<cite>31735064607488_001 · 同治九年 (1870)</cite></blockquote>
+<p>One chain in the corpus can be followed across 117 years. In 嘉慶十年 (1805) 趙守藻 re-pledged a field "with rented-out surface rights" (<span class="cjk">田面</span>) at 馬坑, 草市都, 侯官縣, for <span class="cjk">銀壹拾肆兩</span>, with 楊海武 as middleman. In 1922 the Republican tax office issued a deed-verification certificate (<span class="cjk">契單</span>) to 林有柱 for a field at 閩侯縣草市都馬坑, "pledged from 趙華藻 in 嘉慶十年", at <span class="cjk">原價銀拾肆兩</span>, with <span class="cjk">中證楊海武</span>. The place, year, price and middleman all match; <span class="cjk">華/守</span> is very likely an OCR or copying variant. The state form copied the old private deed's story into its own blanks.</p>
+
+<h2>3. Linguistic features</h2>
+<h3>Voice and person</h3>
+<p>Deeds are written in the seller's voice, but the seller usually refers to himself by name (<q class="zh">係成與枝等出頭承當</q>). The text reads like testimony recorded on his behalf, which matches the frequent named scribe (<span class="cjk">代筆</span>, 73 of 118 pages). The buyer is always "<span class="cjk">X 處</span>" ("the place or house of X"). This is a locative, not a personal name used directly, so the buyer is addressed indirectly as a household.</p>
+<h3>Courtesy by layout</h3>
+<p>In many deeds the OCR text breaks the line right after <span class="cjk">賣與 / 寄與 / 送與</span>, and the buyer's name starts a new column (<span class="cjk">托中寄與 ⏎ 兄文鳳處</span>; <span class="cjk">賣與 ⏎ 西房平處</span>). This matches the Qing practice of moving an honoured party's name to the top of a new column (<span class="cjk">抬頭</span>), and it shows up even after the OCR flattened the columns into lines. Official forms do the same for the issuing authority: <span class="cjk">⏎財政部核准</span>, <span class="cjk">奉 ⏎令</span>.</p>
+<h3>Four-character rhythm and parallelism</h3>
+<p>The binding clauses are cast as four-character pairs: <span class="cjk">兩相允願，各無反悔</span>; <span class="cjk">價足心願，永斷萬無</span>; <span class="cjk">高低相配，肥瘦相兼</span> (from a family division document). The rhythm makes the clauses easy to remember and hard to alter, so a scribe could compose a deed from memory and a reader could spot a deviation.</p>
+<h3>Negation as the core of the guarantee</h3>
+<p>The warranty section is built almost entirely from negations: <span class="cjk">未曾、並無、不得、無干、不涉、無異</span>. Instead of stating the seller's title in positive terms, the deed lists the ways the title could fail (a prior pledge, a kinsman's claim, a missing tax registration) and denies each one. Ownership is defined by excluding claims, in line with the deed's practical job: being produced when a dispute arises.</p>
+<h3>Anti-tamper writing</h3>
+<p>Money and rent are written in formal numerals (<span class="cjk">壹貳叁…拾佰仟</span>; about 3,200 of them in the corpus) and closed with <span class="cjk">正</span> ("exactly"). Sixteen deeds certify their own corrections: <q class="zh">內改藻字壹字再為憑</q>, <q class="zh">內塗銷合字，又添註憑字</q>. Every change to the text is itself written into the text.</p>
+<h3>A layered vocabulary of land</h3>
+<p>The deeds divide the same field into a root or bone layer (<span class="cjk">根 / 骨</span>), which owes the land tax, and a surface or skin layer (<span class="cjk">面 / 皮</span>), which carries the right to farm it. The names are <span class="cjk">田根 16, 田面 16, 根面全田 24, 皮骨 8</span>. This is Fujian's "one field, two owners" (<span class="cjk">一田兩主</span>) system written into grammar: a deed must name which layer it transfers. Land is measured by seed sown and rent owed (<span class="cjk">受種…年載租谷…斤</span>), not by area, until Republican forms add blanks for <span class="cjk">畝分厘</span>.</p>
+<h3>A family audience</h3>
+<p>The signature block shows who had to approve: mothers and sisters-in-law as <span class="cjk">知契…氏</span> (29 pages), brothers and nephews as co-signers, lineage elders in family division documents and agreements, plus the middleman and scribe. The 1924 agreement of the 林 family has over twenty signers, grouped by branch: <span class="cjk">長房、次房、三房、族人、懿戚、公親、族鄰</span>. It shows the deed as a statement made before the whole kin community.</p>
+
+<h2>4. The state's voice</h2>
+<p>Official texts tell a different kind of story: a chain of reported commands. Qing and Republican forms share one bureaucratic framework:</p>
+<ol class="moves">
+<li><b>為…事</b><span>Purpose heading ("concerning the issuing of a deed certificate")</span></li>
+<li><b>案奉 / 奉 ⏎ 令 + quoted regulation</b><span>The higher authority's words, quoted inside the document</span></li>
+<li><b>等因，奉此</b><span>"…thus it said; having received this…"</span></li>
+<li><b>在案。今據 X 業戶…</b><span>Back to the case: the applicant's land and the facts of the private deed fill the blanks</span></li>
+<li><b>合行填給…須至…者</b><span>The performative act of issuing</span></li>
+<li><b>右給業戶 X 准此</b><span>Address and closing</span></li>
+</ol>
+<div class="tbl"><table>
+<tr><th>Formula on official pages</th><th class="n">Qing</th><th class="n">Republic</th><th class="n">PRC</th></tr>
+<tr><td><span class="cjk">須至…者</span></td><td class="n">11</td><td class="n">44</td><td class="n">0</td></tr>
+<tr><td><span class="cjk">右給…</span></td><td class="n">11</td><td class="n">36</td><td class="n">0</td></tr>
+<tr><td><span class="cjk">為…事</span></td><td class="n">14</td><td class="n">33</td><td class="n">0</td></tr>
+<tr><td><span class="cjk">等因 / 奉此</span></td><td class="n">14</td><td class="n">22</td><td class="n">0</td></tr>
+<tr><td>Penalties, deadlines (<span class="cjk">罰, 逾限</span>)</td><td class="n">8</td><td class="n">37</td><td class="n">3</td></tr>
+<tr><td>Validity in court (<span class="cjk">訴訟, 憑證, 効力</span>)</td><td class="n">5</td><td class="n">27</td><td class="n">2</td></tr>
+<tr><td>Serial number (<span class="cjk">字第…號</span>)</td><td class="n">18</td><td class="n">49</td><td class="n">13</td></tr>
+</table></div>
+<p>Periods follow each item's catalogue start date. Items that span periods are counted once, under their start date.</p>
+<p>Three changes stand out:</p>
+<ul>
+<li><span class="seal">Republic</span>The state starts arguing about evidence. Deed-verification certificates warn that an unverified deed <q class="zh">於訴訟時不能作為憑據</q> (cannot serve as evidence in a lawsuit). Forms print sliding scales of fines for under-reported prices. The private deed's warranty against third-party claims is matched by a state threat of making the deed void.</li>
+<li><span class="seal">1953</span>The narrative gives way to the form. The People's Government deed paper (<span class="cjk">福建省人民政府公定分拆契紙</span>) has labelled fields only: <span class="cjk">承受人姓名, 原所有人姓名, 不動產種類, 坐落, 面積, 價, 中證人, 監證人</span>. None of the bureaucratic storytelling formulae survive. The middleman sits next to a new "supervising witness" (<span class="cjk">監證人</span>). Dates are written as <span class="cjk">公元一九五三年</span>, and simplified characters appear in some 1950s–60s items.</li>
+<li><span class="seal">Hybrid sheets</span>On 35 pages a private contract and a state certificate share one sheet. The OCR interleaves the two voices: the seller's <span class="cjk">今欲有憑</span> beside the province's <span class="cjk">合填驗契執照</span>. The state literally attaches itself to the private story (<span class="cjk">粘連原契</span>).</li>
+</ul>
+
+<h2>5. OCR problems that affect this reading</h2>
+<p>Before anyone builds quantitative work on this text, these issues need attention:</p>
+<div class="tbl"><table>
+<tr><th>Issue</th><th>Example</th><th>Effect</th></tr>
+<tr><td>Misread similar-looking characters</td><td><span class="cjk">閩書 → 鬮書 (family division document); 增我杜新契 → 增找; 托牛 → 托中; 糧 → 卦; 布政使司 → 市政使司</span>; <span class="cjk">畫</span> where context wants <span class="cjk">盡</span> or <span class="cjk">壹</span> (<span class="cjk">立畫契, 畫紙為照</span>)</td><td>Formula counts too low; wrong deed-type labels</td></tr>
+<tr><td>Horizontal titles read in the wrong direction</td><td><span class="cjk">處理管食糧賦田</span> = <span class="cjk">田賦糧食管理處</span></td><td>Office names on 1940s tax forms are scrambled</td></tr>
+<tr><td>Truncated blocks</td><td>Blocks ending in "…": 211 blocks on 43 pages</td><td>The quoted regulation in <span class="cjk">契尾</span> and <span class="cjk">驗契</span> texts is often cut off</td></tr>
+<tr><td>Repetition and invented text</td><td><span class="cjk">福建等處承宣市政使司也</span> ×15; 57 duplicated adjacent lines</td><td>Inflates character counts</td></tr>
+<tr><td>English descriptions mixed in</td><td>"Vertical columns of text, likely a formal record…"</td><td>Must be removed before text mining</td></tr>
+<tr><td>Columns flattened</td><td>Signature blocks and form fields merged into single lines</td><td>Roles (<span class="cjk">中人</span> vs <span class="cjk">代筆</span>) attached to the wrong names</td></tr>
+</table></div>
+<p>Suggested next steps for the team:</p>
+<ol>
+<li>Strip the <em>Image</em> blocks and the English sentences out of the text.</li>
+<li>Build a small correction list for the confusions above and check each one against its image in <span class="cjk">images/</span> before applying it.</li>
+<li>Tag the twelve narrative moves in a hand-checked sample of about 30 deeds, so the formula counts can be checked against human readings.</li>
+<li>Link the OCR to the network data in the <span class="cjk">jackieldyh</span> branch, so chains like 趙守藻 → 林有柱 can be followed through both the parties and the text.</li>
+</ol>
+
+<p class="note">Method: I parsed all 407 OCR pages, removed the block labels, and searched them for regular-expression patterns. Each period comes from the matching catalogue record's start year. Quotations are as recognised; characters in 〔 〕 are my emendations. I read the deeds closely as a sample (about 25 documents across all types), not the whole corpus.</p>
+</div>
