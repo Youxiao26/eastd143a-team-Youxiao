@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>林萬開家族田产个案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;800&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: 单栏报告。顶部结论数字 → 世系 → 交易与阄书对照（主表）→ 房份构成图 → 阄书田块清单 → 时间线 → 方法与局限 */
+:root{
+  --bg:#F3F5F4; --panel:#FFFFFF; --fg:#1C2320; --muted:#5E6B66; --line:#D9DFDC; --chip:#EBEFED;
+  --seal:#B0382A; --ink:#2C4A6B; --hit:#B0382A; --maybe:#C27A1E; --base:#C9D3CE;
+  --f-display:"Noto Serif SC","Songti SC","SimSun",serif;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141917; --panel:#1C2220; --fg:#E6ECE9; --muted:#97A39E; --line:#2E3733; --chip:#252D2A;
+  --seal:#E0614F; --ink:#8FB3D9; --hit:#E0614F; --maybe:#E3A54C; --base:#3A4541;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141917; --panel:#1C2220; --fg:#E6ECE9; --muted:#97A39E; --line:#2E3733; --chip:#252D2A;
+  --seal:#E0614F; --ink:#8FB3D9; --hit:#E0614F; --maybe:#E3A54C; --base:#3A4541;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.7;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:32px 56px;display:flex;flex-direction:column;gap:28px}
+header{border-bottom:1px solid var(--line);padding-bottom:18px}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(26px,3.6vw,38px);margin:4px 0 0;letter-spacing:.04em;text-wrap:balance}
+h1 .seal{display:inline-block;border:2px solid var(--seal);color:var(--seal);font-size:.45em;padding:2px 6px;margin-left:10px;vertical-align:middle;letter-spacing:.1em}
+.lede{max-width:68ch;color:var(--fg);margin:10px 0 0}
+h2{font-family:var(--f-display);font-weight:600;font-size:21px;margin:0 0 6px;text-wrap:balance}
+p{margin:0;max-width:72ch}
+.note{color:var(--muted);font-size:13px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+@media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{border-top:2px solid var(--fg);padding-top:8px}
+.kpi b{display:block;font-family:var(--f-mono);font-size:26px;font-weight:500;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--muted)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px;min-width:0}
+.tree{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px;font-size:14px}
+@media (max-width:760px){.tree{grid-template-columns:minmax(0,1fr)}}
+.tree .gen{grid-column:1/-1;text-align:center;color:var(--muted);font-size:13px}
+.room{border:1px solid var(--line);border-radius:4px;padding:10px 12px}
+.room h3{font-family:var(--f-display);font-size:16px;margin:0}
+.room .who{font-size:13px;color:var(--muted)}
+.room.fu{border-color:var(--hit)}
+.tablewrap{overflow-x:auto;margin-top:12px}
+table{border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums;width:100%;min-width:900px}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+th{font-weight:500;color:var(--muted);font-size:12px;white-space:nowrap}
+td.n{font-family:var(--f-mono);text-align:right;white-space:nowrap}
+td.y{font-family:var(--f-mono);white-space:nowrap}
+.pill{display:inline-block;font-size:11px;padding:0 7px;border-radius:999px;white-space:nowrap;border:1px solid}
+.pill.hit{color:var(--hit);border-color:var(--hit)}
+.pill.maybe{color:var(--maybe);border-color:var(--maybe)}
+.pill.none{color:var(--muted);border-color:var(--line)}
+tr.key td{background:color-mix(in srgb, var(--hit) 7%, transparent)}
+a{color:var(--ink);text-decoration:none}
+a:hover{text-decoration:underline}
+#chart{width:100%;height:300px;margin-top:8px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;margin-top:6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.timeline{list-style:none;margin:12px 0 0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 14px 18px}
+.timeline li::before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--base);border:2px solid var(--panel)}
+.timeline li.hit::before{background:var(--hit)}
+.timeline li.maybe::before{background:var(--maybe)}
+.timeline .yr{font-family:var(--f-mono);font-weight:500;margin-right:8px}
+.timeline q{font-family:var(--f-display);quotes:"「" "」"}
+ul.plain{margin:8px 0 0;padding-left:20px;max-width:72ch}
+ul.plain li{margin-bottom:6px}
+.calc{font-family:var(--f-mono);font-size:13px;background:var(--chip);padding:1px 6px;border-radius:3px;white-space:nowrap}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">个案研究 · 闽侯西关外三十八都白龙 · 1862–1932</div>
+  <h1>林萬開家族田产个案<span class="seal">光绪十七年阄书</span></h1>
+  <p class="lede">林萬開兄弟在光绪十七年（1891）分家，阄书逐块列出了田名、亩数和所属粮户。把这份清单和林家留下的买契、典契、验契对照，能算出几笔交易各占家产的比例。这是全部 234 件文书里唯一能这样算的家庭。</p>
+  <div class="kpis">
+    <div class="kpi"><b>32.5 亩</b><span>1891 年三兄弟共有田产（19 块写明亩数的田）</span></div>
+    <div class="kpi"><b>5.0 亩</b><span>能找到买契的田（1875、1881 两笔）</span></div>
+    <div class="kpi"><b>15.4%</b><span>这两笔买入占三房共有田产的比例</span></div>
+    <div class="kpi"><b>38.8%</b><span>占林萬開本人（福房＋长子长孙份）田产的比例</span></div>
+  </div>
+</header>
+
+<section class="panel">
+  <h2>家族世系与分家</h2>
+  <p>阄书由林萬開与弟萬拱、萬欽同立，家产在祖宗堂前“按照福禄寿三房匀作三股均分，拈阄为定”。1924 年的合约写明三房的对应关系，可以据此把阄书里的“房”和人对上。</p>
+  <div class="tree">
+    <div class="gen">父辈：“承父遗物业及手置田园屋宇山场树木” · 族长 林昌意（萬開堂叔）</div>
+    <div class="room fu"><h3>福房 · 林萬開</h3><div class="who">长子 可瓊 → 孙 久謝；另得“长子长孙份”</div><div class="who">田 9.4 亩 ＋ 长子长孙份 3.5 亩</div></div>
+    <div class="room"><h3>禄房 · 林萬拱</h3><div class="who">后人 可昌（1924 年合约中为次房）</div><div class="who">田 10.3 亩</div></div>
+    <div class="room"><h3>寿房 · 林萬欽</h3><div class="who">子 可鑑</div><div class="who">田 9.3 亩</div></div>
+    <div class="gen">三房公众：祠堂边厝地三栏、园五坪、山两仑、坑里田仔一坵</div>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>交易与阄书田块对照</h2>
+  <p class="note">比例的分母：“三房合计”为 1891 年阄书中写明亩数的田 32.5 亩；“萬開名下”为福房 9.4 亩加长子长孙份 3.5 亩，共 12.9 亩。只有田根或田面一层权利的交易，不计入面积比例。</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>年份</th><th>交易</th><th>标的（原文）</th><th>面积</th><th>价格</th><th>对应阄书田块</th><th>占三房合计</th><th>占萬開名下</th><th>原件</th></tr></thead>
+    <tbody>
+      <tr class="key"><td class="y">1875</td><td>林應香 <b>卖断</b>给“族名萬開”</td><td>根面全民田三号：马路下二号、井嘴一号，“共计官丈贰亩……”</td><td class="n">约 2.5 亩</td><td class="n">OCR 不清</td><td><span class="pill hit">对应</span> 长子长孙份“井嘴 1 亩 3 分”＋“马路下 1 亩 2 分”</td><td class="n">7.7%</td><td class="n">19.4%</td><td><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607785" target="_blank" rel="noopener">契</a> · <a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607694" target="_blank" rel="noopener">1913 验契</a></td></tr>
+      <tr class="key"><td class="y">1881</td><td>林春發 <b>卖断田根</b>给“族叔萬開”</td><td>白龙坛路，鲫鱼坵、牛头长坵等四坵，池一口，“官丈贰亩五分零”，年纳面主王家租谷 350 斤</td><td class="n">2.5 亩</td><td class="n">110 千文</td><td><span class="pill hit">对应</span> 福房“白龙土名坛路根田贰亩伍分，年纳本乡王处面租穀叁百伍拾斤”</td><td class="n">7.7%</td><td class="n">19.4%</td><td><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607801" target="_blank" rel="noopener">契</a></td></tr>
+      <tr><td class="y">1862</td><td>楊允通 <b>典田根</b>给“林”</td><td>同一块地：白龙岭路鲫鱼坵，2 亩 5 分，三坵池一口，向主王家租谷 350 斤</td><td class="n">2.5 亩</td><td class="n">283.5 两</td><td><span class="pill hit">同一块</span> 1881 年契中“并缴杨必通原由根契”即此契，是坛路田的上手契</td><td class="n">—</td><td class="n">—</td><td><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607728" target="_blank" rel="noopener">契</a></td></tr>
+      <tr><td class="y">1884</td><td>林秋溥 <b>撥典田面</b>给“堂兄萬開”</td><td>白龙东洋水流坵、圆坵等五号，“官丈肆亩捌分”，年载租谷 868 斤</td><td class="n">4.8 亩（田面）</td><td class="n">44 两</td><td><span class="pill maybe">可能对应</span> 阄书三房各有“田面租”：378＋200＋240＝818 斤，与 868 斤接近</td><td class="n">—</td><td class="n">—</td><td><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607751" target="_blank" rel="noopener">契</a></td></tr>
+      <tr><td class="y">1888</td><td>林萬開 → 林秋溥（契尾）</td><td>只有官印契尾，没有契文</td><td class="n">—</td><td class="n">—</td><td><span class="pill none">无法判断</span> 可能与 1884 年撥典的回赎有关</td><td class="n">—</td><td class="n">—</td><td><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607876" target="_blank" rel="noopener">契尾</a></td></tr>
+      <tr><td class="y">1893–94</td><td>王兆熙 <b>典 → 卖 → 凑断田面</b>给“林”</td><td>鲫鱼坵田面，租谷 350 斤；典价银 31 两，凑断 2 千文；1913 年验契记为“买受王兆熙田亩壹亩”，中银 138 元</td><td class="n">（田面）</td><td class="n">31 两＋2 千文</td><td><span class="pill hit">同一块</span> 王家正是坛路田的面主。林家买下田面后，这块田由“根田”变成根面全田</td><td class="n">—</td><td class="n">—</td><td><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607793" target="_blank" rel="noopener">典</a> · <a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607819" target="_blank" rel="noopener">约</a> · <a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607827" target="_blank" rel="noopener">凑断</a> · <a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607744" target="_blank" rel="noopener">验契</a></td></tr>
+      <tr class="key"><td class="y">1906</td><td>林為良 <b>卖断</b>给“族弟可瓊”（萬開长子）</td><td>黄道地字二百号，“民田池应半，计官丈壹亩伍分”，并缴杨鹏超曲契、林可镌凑断契</td><td class="n">1.5 亩</td><td class="n">130 两</td><td><span class="pill none">阄书后新增</span> 地字二百号即 1866、1884 年契中的“大狭地”，林家族内转手后归入长房</td><td class="n">—</td><td class="n">11.6%</td><td><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607702" target="_blank" rel="noopener">契</a> · <a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607736" target="_blank" rel="noopener">1913 验契</a></td></tr>
+      <tr><td class="y">1932</td><td>林可昌等 <b>声明遗失契</b></td><td>长子长孙份下坑里田根，大小五坵，官丈 1 亩，“上辈置原尽断各契共七纸”</td><td class="n">1 亩</td><td class="n">—</td><td><span class="pill hit">对应</span> 长子长孙份“坑里根面全壹亩”，声明中写明“系福房管业”</td><td class="n">3.1%</td><td class="n">7.8%</td><td><a href="https://digital.library.pitt.edu/islandora/object/pitt:31735064607710" target="_blank" rel="noopener">声明</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note" style="margin-top:8px">计算：<span class="calc">2.5 ÷ 32.5 = 7.7%</span> <span class="calc">2.5 ÷ 12.9 = 19.4%</span> <span class="calc">(2.5＋2.5) ÷ 12.9 = 38.8%</span> <span class="calc">1.5 ÷ 12.9 = 11.6%</span>。1906 年的 1.5 亩是阄书之后新增的，所以只和萬開名下的 12.9 亩比较。</p>
+</section>
+
+<section class="panel">
+  <h2>1891 年各房田产构成</h2>
+  <p class="note">每根条按亩数分段：深色是能找到取得契约的田块，浅色是来历不明的田块。</p>
+  <div id="chart" role="img" aria-label="1891 年阄书各房田产亩数，标出有契约可查的部分"></div>
+  <div class="legend"><span><i style="background:var(--hit)"></i>有买契可查（1875、1881）</span><span><i style="background:var(--maybe)"></i>上辈所置、有遗失声明（1932）</span><span><i style="background:var(--base)"></i>来历不明</span></div>
+</section>
+
+<section class="panel">
+  <h2>阄书田块清单</h2>
+  <p class="note">只列田。“根田”表示林家只有田根，每年要向面主交面租；“根面全”表示两层权利都在林家手里。亩数按 OCR 识读，“零”表示原文在分以下还有零头。</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>房份</th><th>土名</th><th>权利</th><th>亩数</th><th>粮户</th><th>附注</th><th>来历</th></tr></thead>
+    <tbody id="parcels"></tbody>
+  </table>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>时间线</h2>
+  <ul class="timeline">
+    <li class="maybe"><span class="yr">1805</span>林有柱典受赵守藻草市都马坑坑口田面，租谷 170 斤，价银 14 两。林家在此地置产最早的记录，与萬開一支的关系不明。</li>
+    <li class="hit"><span class="yr">1862</span>杨允通把鲫鱼坵田根典给“林”，即后来林春發转卖的那块田。</li>
+    <li><span class="yr">1866</span>杨鹏超把大秧地（地字二百号）半号田面典给“林”，<q>中友林萬開</q>。</li>
+    <li class="hit"><span class="yr">1875</span>林萬開买入井嘴、马路下根面全田约 2.5 亩，后来列入长子长孙份。</li>
+    <li class="hit"><span class="yr">1881</span>林萬開买入坛路鲫鱼坵田根 2.5 亩，后来列入福房。</li>
+    <li class="maybe"><span class="yr">1884</span>堂弟林秋溥把白龙田面五号 4.8 亩撥典给萬開；同年堂兄弟林萬利把大狭地半号田面典出。</li>
+    <li class="hit"><span class="yr">1891</span>三兄弟分家，阄书列出三房及公众产业：田 32.5 亩、厝屋十余栏、粪池十余口、园五坪、山两仑。</li>
+    <li class="hit"><span class="yr">1893–94</span>王兆熙把鲫鱼坵田面典、卖、凑断给林家，坛路田由此成为根面全田。</li>
+    <li class="hit"><span class="yr">1906</span>长子林可瓊买入地字二百号应半田 1.5 亩。</li>
+    <li><span class="yr">1913</span>民国验契：林萬開、林可瓊为 1875、1894、1906 年的买契补领契单。</li>
+    <li><span class="yr">1924</span>三房后人立合约，重申 1891 年阄分有效，<q>各管各业所凭自由买卖</q>。</li>
+    <li class="hit"><span class="yr">1932</span>林可昌等声明长子长孙份坑里田的旧契七纸遗失，作废。</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>方法与局限</h2>
+  <ul class="plain">
+    <li><b>对应依据</b>：土名、亩数、面租数额、面主姓氏和上手契都要吻合。1875、1881 两笔四项都对得上；1884 年那笔只有租额接近，所以标为“可能对应”。</li>
+    <li><b>分母是 1891 年的家产</b>，买入发生在分家之前，所以比例表示“这笔买入占后来分家时家产的多少”，不是交易当时的比例。</li>
+    <li><b>阄书亩数不全</b>：福房的北马鞍田、林克江等佃耕田，以及三房的田面租，都没有写亩数，没有计入 32.5 亩。实际田产应当更多，所以算出来的比例偏高。</li>
+    <li><b>田根和田面分开计</b>：1881 年买的只是田根；1893–94 年补买田面后才成为整块田。所以“占比”说的是田块面积，不代表完整产权。</li>
+    <li><b>价格不可直接比较</b>：1862 年典田根 283.5 两、1881 年卖田根 110 千文、1906 年卖根面全田每亩约 87 两，币种和权利层次都不同，OCR 也可能有误读。</li>
+    <li><b>与其他文书的关系</b>：1947 年林修枝的白龙厝前、白龙坪上两块田，以及 1915 年林久樹典受马坑屋产，可能是同一家族的后续，但文书里找不到能把它们连起来的信息，没有计入。</li>
+  </ul>
+</section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
+<script>
+const P = [
+ ["长子长孙份","井嘴","根面全",1.3,"草市都五甲林镇户","水壑一口","1875 林應香卖断","hit"],
+ ["长子长孙份","马路下","根面全",1.2,"草市都五甲林镇户","水壑一口","1875 林應香卖断","hit"],
+ ["长子长孙份","坑里","根面全",1.0,"草市都五甲林镇户","贴福房施食；田尾松柏为祖墓风水","上辈所置（1932 声明）","maybe"],
+ ["福房","白龙（土名缺）","根面全",2.1,"三十六都六甲林溥户","","",""],
+ ["福房","圆坵","根面全",0.8,"三十六都十甲林维豪户","","",""],
+ ["福房","湖尾长坵","根面全",2.2,"三十六都七甲林昌元户","","",""],
+ ["福房","后圳四角横坵","根面全",0.8,"三十六都四甲林均户","典久溜夹片，水半用","",""],
+ ["福房","白龙坛路","根田",2.5,"—","年纳王处面租谷 350 斤","1881 林春發卖断田根","hit"],
+ ["福房","白龙长坵","根田",1.0,"—","年纳福城林家面租谷 136 斤","",""],
+ ["禄房","湖尾水流路","根面全",3.3,"三十六都二图二甲林开户","又纳倪家禾租 40 斤","",""],
+ ["禄房","湖尾流道（应半）","根面全",1.1,"三十六都二图二甲林春户","","",""],
+ ["禄房","湖尾猪蹄坵","根面全",1.3,"三十六都二图四甲林均户","典契价一百两又借二十两","",""],
+ ["禄房","后圳五二坵","根面全",1.8,"三十八都二图十甲林盛炽户","水壑一口","",""],
+ ["禄房","后圳橄榄坵","根面全",2.2,"附林均户","又纳陈家面租 315 斤","",""],
+ ["禄房","后圳（土名缺）","根田",0.6,"—","年纳李家面租 100 斤","",""],
+ ["寿房","白龙后圳灯笼坵","根面全",3.3,"三十六都二图三甲林茂户","","",""],
+ ["寿房","白龙坛路磨盘","根面全",2.0,"三十六都二图四甲林润之户","","",""],
+ ["寿房","湖尾长坵头","根面全",2.2,"三十六都二图四甲林栋户","","",""],
+ ["寿房","湖尾洋中","根田",1.8,"—","年纳井片亭李家面租 224 斤","",""]];
+document.getElementById("parcels").innerHTML = P.map(r=>`<tr${r[7]==="hit"?' class="key"':''}><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td class="n">${r[3].toFixed(1)}</td><td>${r[4]}</td><td>${r[5]}</td><td>${r[6]?`<span class="pill ${r[7]}">${r[6]}</span>`:""}</td></tr>`).join("")
+ + `<tr><td colspan="3"><b>合计（19 块）</b></td><td class="n"><b>${P.reduce((s,r)=>s+r[3],0).toFixed(1)}</b></td><td colspan="3" class="note">另有未写亩数的：福房北马鞍田（用价 60 两，年收谷 600 斤）、佃耕田若干；三房田面租共 818 斤；公众坑里田仔一坵</td></tr>`;
+
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const ROOMS=["寿房","禄房","福房","长子长孙份"];
+const sum=(room,tag)=>+P.filter(r=>r[0]===room&&r[7]===tag).reduce((s,r)=>s+r[3],0).toFixed(1);
+const chart=echarts.init(document.getElementById("chart"));
+function render(){
+  const fg=css("--fg"), muted=css("--muted"), line=css("--line");
+  const mk=(name,tag,c)=>({name,type:"bar",stack:"a",barWidth:26,itemStyle:{color:css(c)},
+    label:{show:true,color:tag==="" ? fg : "#fff",fontFamily:"IBM Plex Mono",fontSize:12,formatter:p=>p.value>=0.9?p.value:""},
+    data:ROOMS.map(r=>sum(r,tag))});
+  chart.setOption({backgroundColor:"transparent",textStyle:{fontFamily:"Noto Sans SC"},
+    grid:{left:96,right:60,top:8,bottom:28},
+    tooltip:{trigger:"axis",axisPointer:{type:"shadow"},backgroundColor:css("--panel"),borderColor:line,textStyle:{color:fg},
+      formatter:ps=>{const r=ROOMS[ps[0].dataIndex];const t=P.filter(x=>x[0]===r).reduce((s,x)=>s+x[3],0);
+        return `<b>${r}</b> 共 ${t.toFixed(1)} 亩<br>`+ps.filter(p=>p.value).map(p=>`${p.marker}${p.seriesName}：${p.value} 亩`).join("<br>");}},
+    xAxis:{type:"value",name:"亩",nameTextStyle:{color:muted},axisLabel:{color:muted,fontFamily:"IBM Plex Mono"},splitLine:{lineStyle:{color:line}}},
+    yAxis:{type:"category",data:ROOMS,axisLabel:{color:fg,fontSize:13},axisTick:{show:false},axisLine:{lineStyle:{color:line}}},
+    series:[mk("有买契可查","hit","--hit"),mk("上辈所置","maybe","--maybe"),mk("来历不明","","--base")]},true);
+}
+render(); window.addEventListener("resize",()=>chart.resize());
+const mq=matchMedia("(prefers-color-scheme: dark)"); mq.addEventListener&&mq.addEventListener("change",render);
+new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+</script>
+
+</body>
+</html>

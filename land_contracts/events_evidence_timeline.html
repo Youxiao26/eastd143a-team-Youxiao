@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>事件与文书证据</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;800&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: 课堂投影用。顶部标题与图例 → 总览时间轴（按主题分泳道，底部为每年文书件数）→ 筛选条 → 逐条“事件 ↔ 文书证据”卡片 */
+:root{
+  --bg:#F2F4F3; --panel:#FFFFFF; --fg:#1A211E; --muted:#58655F; --line:#D6DDD9; --chip:#E8EDEA; --lane:#F7F9F8;
+  --seal:#B0382A; --ink:#2C4A6B;
+  --s1:#B0382A; --s2:#C98A1C; --s3:#7E8A85;
+  --bar:#C3CEC8;
+  --f-display:"Noto Serif SC","Songti SC","SimSun",serif;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121715; --panel:#1B211F; --fg:#E7EDEA; --muted:#9AA6A1; --line:#2E3834; --chip:#252D2A; --lane:#171D1B;
+  --seal:#E0614F; --ink:#8FB3D9;
+  --s1:#E0614F; --s2:#E3A54C; --s3:#8E9A95;
+  --bar:#3B4642;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121715; --panel:#1B211F; --fg:#E7EDEA; --muted:#9AA6A1; --line:#2E3834; --chip:#252D2A; --lane:#171D1B;
+  --seal:#E0614F; --ink:#8FB3D9;
+  --s1:#E0614F; --s2:#E3A54C; --s3:#8E9A95;
+  --bar:#3B4642;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16px;line-height:1.65;margin:0}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:30px 60px;display:flex;flex-direction:column;gap:22px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:14px 30px;border-bottom:1px solid var(--line);padding-bottom:16px}
+.eyebrow{font-size:13px;letter-spacing:.12em;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(28px,4vw,42px);margin:4px 0 0;letter-spacing:.04em;line-height:1.25;text-wrap:balance}
+h1 .seal{display:inline-block;border:2px solid var(--seal);color:var(--seal);font-size:.42em;padding:2px 7px;margin-left:12px;vertical-align:middle;letter-spacing:.1em}
+.sub{color:var(--muted);margin:8px 0 0;max-width:62ch;font-size:15px}
+.legend{display:flex;flex-direction:column;gap:6px;font-size:14px}
+.legend div{display:flex;align-items:center;gap:10px}
+.mk{width:16px;height:16px;border-radius:50%;flex:none;display:inline-block}
+.mk.s1{background:var(--s1)}
+.mk.s2{background:linear-gradient(90deg,var(--s2) 50%,transparent 50%);border:2.5px solid var(--s2)}
+.mk.s3{border:2.5px dashed var(--s3)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px;min-width:0}
+h2{font-family:var(--f-display);font-weight:600;font-size:21px;margin:0}
+.note{color:var(--muted);font-size:13px}
+.ovwrap{overflow-x:auto;margin-top:10px}
+#ov{display:block;min-width:900px;width:100%}
+#ov text{font-family:var(--f-body)}
+#ov .yr{font-family:var(--f-mono);font-size:11px;fill:var(--muted)}
+#ov .lane-label{font-size:13px;fill:var(--fg);font-weight:500}
+#ov .ev{cursor:pointer}
+#ov .ev:focus{outline:none}
+#ov .ev:focus .hit, #ov .ev:hover .hit{stroke:var(--fg);stroke-width:2}
+.filters{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+.filters .grp{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.filters .lab{font-size:12px;letter-spacing:.08em;color:var(--muted);margin-right:4px}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--fg);font:inherit;font-size:14px;padding:4px 12px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed="false"]{opacity:.42}
+.chip:focus-visible{outline:2px solid var(--ink);outline-offset:1px}
+.chip .mk{width:12px;height:12px}
+.cards{display:flex;flex-direction:column;gap:12px}
+.card{display:grid;grid-template-columns:118px minmax(0,1fr) minmax(0,1.25fr);gap:0 22px;background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--s3);border-radius:6px;padding:16px 18px;scroll-margin-top:16px}
+.card.s1{border-left-color:var(--s1)}
+.card.s2{border-left-color:var(--s2)}
+.card.s3{border-left-style:dashed}
+.card.flash{box-shadow:0 0 0 3px var(--ink)}
+@media (max-width:860px){.card{grid-template-columns:minmax(0,1fr);gap:8px}}
+.when{font-family:var(--f-mono);font-size:20px;font-weight:500;line-height:1.2}
+.when small{display:block;font-family:var(--f-body);font-size:12px;color:var(--muted);font-weight:400;margin-top:4px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;margin-top:8px;white-space:nowrap}
+.badge .mk{width:12px;height:12px}
+.cat{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 6px;margin-top:6px}
+.col h3{font-size:12px;letter-spacing:.1em;color:var(--muted);font-weight:500;margin:0 0 2px}
+.col .ev-title{font-family:var(--f-display);font-weight:600;font-size:18px;line-height:1.4;margin:0 0 4px;text-wrap:balance}
+.col p{margin:0;font-size:15px}
+.col q{font-family:var(--f-display);quotes:"「" "」";background:color-mix(in srgb,var(--s2) 14%,transparent);padding:0 3px;border-radius:2px}
+.docs{margin-top:6px;font-size:13px;display:flex;flex-wrap:wrap;gap:4px 10px}
+.docs a{color:var(--ink);text-decoration:none;font-family:var(--f-mono)}
+.docs a:hover{text-decoration:underline}
+.inference{margin-top:6px;font-size:14px;color:var(--muted)}
+footer{color:var(--muted);font-size:13px;max-width:95ch}
+</style>
+
+<div class="wrap">
+<header>
+  <div>
+    <div class="eyebrow">福建契约文书 234 件 · 1659–1954</div>
+    <h1>事件与文书证据<span class="seal">对照时间线</span></h1>
+    <p class="sub">把契约里的线索和同时期、同地区的历史事件对照。每一条都标明证据强度：契约原文直接提到，时间地点吻合，或只是推测。点击时间轴上的标记可跳到对应条目。</p>
+  </div>
+  <div class="legend" aria-label="证据强度图例">
+    <div><span class="mk s1"></span><b>直接证据</b>：契约原文写到，或文书本身就是事件的产物</div>
+    <div><span class="mk s2"></span><b>时间地点吻合</b>：契约特征与事件同时同地，原文未提</div>
+    <div><span class="mk s3"></span><b>推测</b>：一种可能的解释，证据不足</div>
+  </div>
+</header>
+
+<section class="panel">
+  <h2>总览</h2>
+  <p class="note">横条为事件持续的时间，圆点为文书证据所在的年份。最下一行是每年的文书件数，几个高峰对应的是政策，不是交易多寡。</p>
+  <div class="ovwrap"><svg id="ov" role="img" aria-label="按主题分泳道的事件与证据总览时间轴"></svg></div>
+</section>
+
+<section class="filters" aria-label="筛选">
+  <div class="grp" id="f-str"><span class="lab">证据强度</span></div>
+  <div class="grp" id="f-cat"><span class="lab">主题</span></div>
+</section>
+
+<section class="cards" id="cards"></section>
+
+<footer>
+  文书编号为匹兹堡大学数字图书馆的条目号，点击可查看原件。引文按 OCR 识读，个别字可能有误。“直接证据”只说明契约里有这条记录，不等于证明了因果关系；“吻合”和“推测”两类尤其不能当作结论引用。文书在各年代、各地区的多少受收藏来源影响很大。
+</footer>
+</div>
+
+<script>
+const CATS = [
+ {k:"war",  name:"战争与动乱"},
+ {k:"money",name:"货币与金融"},
+ {k:"trade",name:"贸易与城市商业"},
+ {k:"policy",name:"国家政策"},
+ {k:"life", name:"灾害与家庭"}];
+const STR = {s1:"直接证据", s2:"时间地点吻合", s3:"推测"};
+// y0,y1: 事件起止；ey: 证据年份（可多个）
+const E = [
+ {id:"e01",cat:"war",s:"s3",y0:1674,y1:1676,ey:[1678],where:"闽清",
+  ev:"耿精忠据闽，三藩之乱",
+  doc:"1678 年徐正耀出卖祖遗的<q>破屋</q>和竹山，理由是欠租无力偿还。",
+  inf:"乱后房屋残破、负债卖产，和战后的情形吻合，但契约没有提到战事。",docs:["31735066267729"]},
+ {id:"e02",cat:"policy",s:"s1",y0:1749,y1:1750,ey:[1761,1813],where:"永定、建阳等",
+  ev:"乾隆朝统一契尾格式",
+  doc:"清代契尾都抄录同一段奏议原文：<q>河南布政使富明条奏买卖田产将契尾粘连用印</q>。",
+  inf:"官府规定买卖田产要粘连契尾、加盖官印，契尾本身就是这项制度的产物。",docs:["31735064607538","31735066267471"]},
+ {id:"e03",cat:"life",s:"s1",y0:1800,y1:1820,ey:[1815],where:"福州城内",
+  ev:"嘉庆年间福州店屋火灾",
+  doc:"王志拔店屋典契追述：<q>两厝俱被火回燬</q>，父亲在日<q>将两主空地重新起盖</q>。",
+  inf:"福州城内多火灾，后来光绪年间的墙屋契约常写“四面风火墙”。",docs:["31735066267687"]},
+ {id:"e04",cat:"money",s:"s1",y0:1822,y1:1822,ey:[1822],where:"福州南台",
+  ev:"南台下杭街钱庄银票流通",
+  doc:"道光二年典契约定回赎时<q>每两折成壹千文，概用下杭街钱店银票</q>。",
+  inf:"道光初年福州的钱庄纸票已经用来支付房价，是本地商业金融积累的早期证据。",docs:["31735066267687"]},
+ {id:"e05",cat:"money",s:"s2",y0:1820,y1:1850,ey:[1805,1862,1868,1872,1884,1888,1903],where:"闽侯、古田",
+  ev:"道光以后银贵钱贱，银钱比价剧烈波动",
+  doc:"典契普遍写明回赎时<q>每两银折铜钱柒百伍拾文</q>至八百五十文。",
+  inf:"约定一个固定的折算率，可以免除回赎时银钱比价波动的风险。契约里的“两”实际上是一种记账单位。",docs:["31735064607843","31735064607728","31735066266473","31735066237383","31735064607769","31735066266382","31735066267851"]},
+ {id:"e06",cat:"life",s:"s3",y0:1830,y1:1850,ey:[1840],where:"闽侯",
+  ev:"人口增长、家庭规模扩大",
+  doc:"1840 年林氏分家书：<q>家口浩繁，恐生阴隙</q>。",
+  inf:"人多而分家是常见的析产理由，能否说明地区人口压力，单凭一件无法判断。",docs:["31735066266259"]},
+ {id:"e07",cat:"money",s:"s1",y0:1841,y1:1934,ey:[1841,1934],where:"未详、闽侯",
+  ev:"民间借贷按月计息",
+  doc:"1841 年借银<q>每员每月行息贰分</q>；1934 年胎押屋契<q>每元行息壹分六厘</q>。",
+  inf:"土地和房屋可以作为借贷抵押，利率写进契约。",docs:["31735066266457","31735066266564"]},
+ {id:"e08",cat:"trade",s:"s2",y0:1844,y1:1890,ey:[1862,1869,1870,1890],where:"闽北南坑等山区",
+  ev:"福州开埠，茶叶出口兴盛（1850–80 年代为高峰）",
+  doc:"茶山、杉竹山契约都以<q>洋银</q>计价：<q>土风时值契价洋银拾贰两</q>。",
+  inf:"山区土地交易直接使用外国银元，茶树与桐、杉、竹一起出卖，和茶叶贸易把洋银带入山区相吻合。",docs:["31735064607454","31735066267737","31735066266317","31735066266309"]},
+ {id:"e09",cat:"war",s:"s1",y0:1851,y1:1864,ey:[1935],where:"建阳",
+  ev:"太平天国战乱（1858 年入闽北）",
+  doc:"1935 年补立新契：<q>其田原有契据于咸丰年间因洪杨事变致失</q>。",
+  inf:"战乱造成契据遗失，七十多年后才补办手续。咸丰朝文书只有 2 件，是各朝最少的，也可能与此有关。",docs:["31735066266762"]},
+ {id:"e10",cat:"money",s:"s1",y0:1858,y1:1884,ey:[1858,1884],where:"闽侯",
+  ev:"铜钱票等民间纸币普及",
+  doc:"<q>南衙铜钱票壹百叁拾千文</q>（1858）；回赎<q>每两银折铜钱票捌百伍拾文</q>（1884）。",
+  inf:"大额土地交易用纸质钱票支付。",docs:["31735066267885","31735064607769"]},
+ {id:"e11",cat:"life",s:"s1",y0:1866,y1:1866,ey:[1866],where:"闽侯",
+  ev:"寺院修缮筹款",
+  doc:"僧德詮出卖寺田面，<q>今因修理佛殿要用</q>。",
+  inf:"宗教机构的田产同样进入市场。",docs:["31735066266267"]},
+ {id:"e12",cat:"war",s:"s3",y0:1884,y1:1884,ey:[1884],where:"闽侯",
+  ev:"中法马江海战（1884 年 8 月）",
+  doc:"同年林家族人两次典出田面（二月、十月），理由是<q>要用</q><q>别置</q>。",
+  inf:"时间相近，但一件在战前、一件在战后，理由都是常见套语，关联很弱。",docs:["31735064607751","31735064607769"]},
+ {id:"e13",cat:"trade",s:"s2",y0:1885,y1:1900,ey:[1887,1888,1889,1890],where:"福州城内各铺",
+  ev:"福州城内商业积累，店屋、墙屋交易集中",
+  doc:"横街铺“茶叶街”墙屋<q>四面风火墙</q>，文山铺、秋龙社的店面、厝屋接连转手，房价逐期上涨。",
+  inf:"城内房产成为交易重点，房价从同治年间的十余两涨到光绪中后期的数十至数百两。",docs:["31735064607470","31735066267893","31735066267901","31735068223308","31735064607488"]},
+ {id:"e14",cat:"policy",s:"s1",y0:1913,y1:1913,ey:[1913],where:"闽侯、屏南、闽清等",
+  ev:"北洋政府统一契纸、限期验契",
+  doc:"验契单开头：<q>本章程施行以前成立之不动产旧契……均应一律限期呈验</q>。1913 年一年有 8 件文书。",
+  inf:"文书数量的第二高峰来自这次验契，不代表当年交易增多。清代旧契的价格在此被折成“申银”。",docs:["31735064607694","31735064607736","31735064607744","31735064607884","31735066267919"]},
+ {id:"e15",cat:"money",s:"s1",y0:1918,y1:1924,ey:[1918,1920,1924],where:"闽侯",
+  ev:"福州钱庄“台伏”纸币通行",
+  doc:"典屋价<q>台伏柒百员</q>；买田<q>价钱台伏叁拾贰元</q>；族内合约认助<q>台伏伍拾元</q>。",
+  inf:"南台钱庄发行的台伏票成为本地房地交易的主要货币。",docs:["31735066267638","31735066237425","31735064607512","31735064607777"]},
+ {id:"e16",cat:"war",s:"s2",y0:1922,y1:1924,ey:[1924],where:"古田",
+  ev:"福建军阀混战",
+  doc:"1924 年古田契税单另行<q>加收善后捐大洋壹元</q>。",
+  inf:"善后捐一般在战后为善后事务开征，和这几年福建的战事吻合。",docs:["31735066267943"]},
+ {id:"e17",cat:"trade",s:"s2",y0:1919,y1:1934,ey:[1928,1934],where:"福州",
+  ev:"福州拆城墙、筑马路，市政现代化",
+  doc:"契约写<q>公安局现编门牌第十四号</q>（1934）；房屋卖给商号<q>百寿协广轩</q>（1934），1942 年在闽侯地方法院办理不动产登记。",
+  inf:"城市房产的买主从个人扩展到商号和团体，登记制度也随之建立。",docs:["31735066266564","31735064607611","31735066266341","31735066266358"]},
+ {id:"e18",cat:"policy",s:"s1",y0:1928,y1:1935,ey:[1929],where:"闽侯、古田",
+  ev:"南京国民政府验契、征收契税",
+  doc:"验契证：<q>凡属田园屋地各类不动产，已税未税……</q>，契税单只分“卖契”“典契”两种。",
+  inf:"国家把多样的民间交易方式归并成两类，1929 年前后的验契证因此集中。",docs:["31735068223415","31735068223423","31735068223431","31735066267521"]},
+ {id:"e19",cat:"war",s:"s3",y0:1929,y1:1934,ey:[],where:"闽西、闽北",
+  ev:"中央苏区土地革命，普遍烧毁田契",
+  doc:"闽西（永安、永定、连城）在清代有契约，民国时期<b>一件都没有</b>；闽北民国时期也只有 1 件。",
+  inf:"缺失与烧契分田的做法吻合，但也可能只是收藏者没有收到。这里的证据是“没有文书”，不是文书里的记载。",docs:[]},
+ {id:"e20",cat:"money",s:"s1",y0:1935,y1:1948,ey:[1936,1941,1942,1943],where:"闽侯、闽清、东山等",
+  ev:"法币改革",
+  doc:"契价改写为<q>国币大洋陆拾员</q>（1936）、<q>国币贰佰伍拾元</q>（1942）。",
+  inf:"法币取代银元成为契约货币。",docs:["31735066237706","31735066266663","31735066266630","31735066237540","31735066267554"]},
+ {id:"e21",cat:"trade",s:"s3",y0:1930,y1:1953,ey:[1936,1953],where:"福清一带、晋江",
+  ev:"侨乡与侨汇",
+  doc:"1936 年卖契一位中见人名下注<q>新加坡</q>；1953 年晋江契税单注明买主是<q>侨戚</q>。",
+  inf:"土改以后侨眷仍在买地，资金可能来自海外汇款。",docs:["31735066266663","31735066267539"]},
+ {id:"e22",cat:"policy",s:"s1",y0:1941,y1:1946,ey:[1945,1946],where:"林森县（闽侯）",
+  ev:"抗战时期田赋改征实物",
+  doc:"田赋通知单列明<q>征实、征借、积谷</q>，以稻谷计额。",
+  inf:"战时田赋改缴粮食，制度直接留在文书上。1943 年闽侯改名林森县，也反映在这批文书里。",docs:["31735066266481","31735066266499","31735066266507"]},
+ {id:"e23",cat:"policy",s:"s1",y0:1947,y1:1947,ey:[1947],where:"林森县（闽侯）",
+  ev:"土地陈报，发给管业执照",
+  doc:"执照：<q>本县奉令举办土地陈报，右记业主地亩业经审核无讹，合行填发管业执照</q>。1947 年共 15 件。",
+  inf:"文书数量的最高峰来自这次登记，一户往往有多张执照。",docs:["31735066266226","31735066266242","31735066266192","31735066266168"]},
+ {id:"e24",cat:"money",s:"s1",y0:1945,y1:1949,ey:[1947],where:"东山",
+  ev:"法币恶性通胀",
+  doc:"1947 年典屋价<q>国币壹佰万元</q>；1943 年同类典屋只要<q>国币银伍佰员</q>。",
+  inf:"四年间价格涨了约两千倍，基本反映的是货币贬值。",docs:["31735066267547","31735066267554"]},
+ {id:"e25",cat:"money",s:"s1",y0:1949,y1:1952,ey:[1949,1952],where:"东山",
+  ev:"货币崩溃，改用黄金、大米计价",
+  doc:"借厝<q>素金旧秤重柒钱</q>（1949）；典屋<q>足赤金旧秤壹两柒钱</q>，店租<q>白米贰拾叁市斤</q>（1952）。",
+  inf:"纸币失去信用，人们改用实物计价，这是本组证据中最清楚的一条。",docs:["31735066267794","31735066267752","31735066267745"]},
+ {id:"e26",cat:"life",s:"s2",y0:1943,y1:1952,ey:[1943,1947,1952],where:"东山",
+  ev:"海岛台风",
+  doc:"典契都有一条：<q>倘被风雨损坏，三年以内出典人自理，三年以外各开一半</q>。",
+  inf:"海岛常受台风侵袭，修缮责任被写成固定条款。",docs:["31735066267554","31735066267547","31735066267745","31735066267752"]},
+ {id:"e27",cat:"war",s:"s3",y0:1950,y1:1953,ey:[1949,1952,1953,1954],where:"东山",
+  ev:"国共对峙前线：1950 年撤退时抓丁，1953 年东山岛战役",
+  doc:"东山的契约几乎全是 1949–54 年的典屋契，理由都是<q>乏项费用</q><q>乏用</q>。",
+  inf:"前线居民生活困窘、靠典屋筹钱是一种可能，但契约没有提到战事。",docs:["31735066267679","31735066267745","31735066267497","31735066267505"]},
+ {id:"e28",cat:"policy",s:"s1",y0:1950,y1:1954,ey:[1953,1954],where:"东山",
+  ev:"《契税暂行条例》",
+  doc:"典契背面印有条文：<q>第一条　为保障人民土地房屋所有权并便利其移转变动……</q>",
+  inf:"新政权初期仍承认典当，并照章征税。",docs:["31735066267497","31735066267505"]},
+ {id:"e29",cat:"policy",s:"s1",y0:1950,y1:1953,ey:[1951,1952,1953],where:"南安、晋江、闽侯、邵武等",
+  ev:"土地改革",
+  doc:"土改证：<q>本户全家所有土地共计可耕地……有耕种居住典卖转让赠与出租等完全自由</q>。",
+  inf:"田面、田根等分层权利被单一的“所有权”取代，传统产权体系到此结束。",docs:["31735066267455","31735066267877","31735066267422","31735066267612"]}
+];
+const COUNTS = {"1659":1,"1678":1,"1760":1,"1761":1,"1767":1,"1779":1,"1782":2,"1784":1,"1798":1,"1802":1,"1805":4,"1813":1,"1817":1,"1827":1,"1829":3,"1837":1,"1839":1,"1840":3,"1841":1,"1842":1,"1844":1,"1849":1,"1850":2,"1854":1,"1858":1,"1862":2,"1864":2,"1866":3,"1867":1,"1868":1,"1869":4,"1870":2,"1871":1,"1872":1,"1873":1,"1875":1,"1876":1,"1879":1,"1881":1,"1884":2,"1886":3,"1887":3,"1888":4,"1889":3,"1890":4,"1891":1,"1892":1,"1893":1,"1894":2,"1895":1,"1898":1,"1900":3,"1903":2,"1904":1,"1906":4,"1909":2,"1910":4,"1913":8,"1915":3,"1916":1,"1917":2,"1918":2,"1920":5,"1921":3,"1922":1,"1923":2,"1924":5,"1925":3,"1926":3,"1927":4,"1928":5,"1929":5,"1930":1,"1931":2,"1932":5,"1933":2,"1934":2,"1935":4,"1936":4,"1937":1,"1939":1,"1940":1,"1941":1,"1942":1,"1943":2,"1945":3,"1946":4,"1947":15,"1948":1,"1949":5,"1951":3,"1952":6,"1953":7,"1954":1};
+const link = id => `https://digital.library.pitt.edu/islandora/object/pitt:${id}`;
+const onS = new Set(["s1","s2","s3"]), onC = new Set(CATS.map(c=>c.k));
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+// 筛选
+function chip(parent,label,html,set,key){
+  const b=document.createElement("button"); b.className="chip"; b.setAttribute("aria-pressed","true"); b.innerHTML=html;
+  b.onclick=()=>{set.has(key)?set.delete(key):set.add(key); b.setAttribute("aria-pressed",set.has(key)); draw();};
+  parent.appendChild(b);
+}
+Object.entries(STR).forEach(([k,v])=>chip(document.getElementById("f-str"),v,`<span class="mk ${k}"></span>${v}`,onS,k));
+CATS.forEach(c=>chip(document.getElementById("f-cat"),c.name,c.name,onC,c.k));
+
+// 卡片
+function cards(){
+  const list=E.filter(e=>onS.has(e.s)&&onC.has(e.cat)).sort((a,b)=>a.y0-b.y0);
+  document.getElementById("cards").innerHTML=list.map(e=>{
+    const when = e.y0===e.y1? `${e.y0}` : `${e.y0}–${e.y1}`;
+    const cat = CATS.find(c=>c.k===e.cat).name;
+    return `<article class="card ${e.s}" id="${e.id}">
+      <div><div class="when">${when}<small>${e.where}</small></div>
+        <div class="badge"><span class="mk ${e.s}"></span>${STR[e.s]}</div><div class="cat">${cat}</div></div>
+      <div class="col"><h3>历史事件</h3><p class="ev-title">${e.ev}</p></div>
+      <div class="col"><h3>文书证据${e.ey.length?`（${e.ey.join("、")}）`:""}</h3><p>${e.doc}</p>
+        <p class="inference">${e.inf}</p>
+        ${e.docs.length?`<div class="docs">${e.docs.map(d=>`<a href="${link(d)}" target="_blank" rel="noopener">${d.slice(-6)}</a>`).join("")}</div>`:""}</div>
+    </article>`;}).join("") || `<p class="note">没有符合筛选条件的条目。</p>`;
+}
+
+// 总览 SVG
+function overview(){
+  const svg=document.getElementById("ov"); const W=Math.max(900, svg.parentElement.clientWidth);
+  const L=128, R=24, T=26, laneH=46, histH=56, Y0=1650, Y1=1962;
+  const H=T+CATS.length*laneH+18+histH+24;
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`); svg.setAttribute("height",H);
+  const BR=1800, FR=0.12, IW=W-L-R;  // 1650–1800 压缩到前 12%
+  const x=y=> y<=BR ? L+(y-Y0)/(BR-Y0)*IW*FR : L+IW*FR+(y-BR)/(Y1-BR)*IW*(1-FR);
+  const fg=css("--fg"), muted=css("--muted"), line=css("--line"), lane=css("--lane"), bar=css("--bar"), panel=css("--panel");
+  const col={s1:css("--s1"),s2:css("--s2"),s3:css("--s3")};
+  let s="";
+  // 朝代分段
+  const eras=[[1800,1911,"清"],[1912,1949,"民国"],[1949,1962,"1949 后"]];
+  eras.forEach((r,i)=>{ s+=`<text x="${(x(r[0])+x(r[1]))/2}" y="14" text-anchor="middle" style="font-family:var(--f-display);font-size:13px;fill:${muted}">${r[2]}</text>`;
+    if(i) s+=`<line x1="${x(r[0])}" x2="${x(r[0])}" y1="18" y2="${H-20}" stroke="${muted}" stroke-dasharray="3 4" stroke-width="1"/>`; });
+  // 年份刻度
+  [1650,1700,1750].forEach(y=>{ const X=x(y);
+    s+=`<line x1="${X}" x2="${X}" y1="${T}" y2="${T+CATS.length*laneH}" stroke="${line}" stroke-width="1.2"/>`;
+    s+=`<text class="yr" x="${X+(y===1650?8:0)}" y="${H-6}" text-anchor="middle">${y}</text>`; });
+  for(let y=1800;y<=1960;y+=10){ const X=x(y);
+    s+=`<line x1="${X}" x2="${X}" y1="${T}" y2="${T+CATS.length*laneH}" stroke="${line}" stroke-width="${y%50?0.6:1.2}"/>`;
+    if(y%50===0||y===1960) s+=`<text class="yr" x="${X}" y="${H-6}" text-anchor="middle">${y}</text>`; }
+  const xb=x(BR)-3; s+=`<path d="M${xb-4} ${T-4} l4 -6 l4 12 l4 -6" fill="none" stroke="${muted}" stroke-width="1.2"/><text class="yr" x="${xb}" y="${T-12}" text-anchor="middle">轴断开</text>`;
+  // 泳道
+  CATS.forEach((c,i)=>{ const yT=T+i*laneH;
+    s+=`<rect x="${L}" y="${yT+3}" width="${W-L-R}" height="${laneH-6}" fill="${i%2?lane:"transparent"}"/>`;
+    s+=`<text class="lane-label" x="${L-10}" y="${yT+laneH/2+5}" text-anchor="end">${c.name}</text>`;
+    const evs=E.filter(e=>e.cat===c.k);
+    evs.forEach((e,j)=>{ const dim=!(onS.has(e.s)&&onC.has(e.cat)); const op=dim?0.15:1;
+      const yc=yT+laneH/2 + ((j%2)?7:-7);
+      const x0=x(e.y0), x1=Math.max(x(e.y1), x0+4);
+      s+=`<g class="ev" tabindex="0" role="link" data-id="${e.id}" opacity="${op}"><title>${e.y0===e.y1?e.y0:e.y0+"–"+e.y1} ${e.ev}（${STR[e.s]}）</title>`;
+      s+=`<rect class="hit" x="${x0}" y="${yc-4}" width="${x1-x0}" height="8" rx="4" fill="${col[e.s]}" opacity=".35"/>`;
+      e.ey.forEach(y=>{ const X=x(y);
+        if(e.s==="s1") s+=`<circle class="hit" cx="${X}" cy="${yc}" r="6" fill="${col.s1}" stroke="${panel}" stroke-width="1.5"/>`;
+        else if(e.s==="s2") s+=`<circle class="hit" cx="${X}" cy="${yc}" r="5.5" fill="${panel}" stroke="${col.s2}" stroke-width="2.5"/><path d="M${X} ${yc-5.5} A5.5 5.5 0 0 0 ${X} ${yc+5.5} Z" fill="${col.s2}"/>`;
+        else s+=`<circle class="hit" cx="${X}" cy="${yc}" r="5.5" fill="${panel}" stroke="${col.s3}" stroke-width="2.2" stroke-dasharray="2.5 2"/>`;
+      });
+      if(!e.ey.length) s+=`<text x="${(x0+x1)/2}" y="${yc+4}" text-anchor="middle" style="font-size:11px;fill:${col.s3}">无文书</text>`;
+      s+=`</g>`; });
+  });
+  // 文书件数
+  const hb=T+CATS.length*laneH+18, max=15;
+  s+=`<text class="lane-label" x="${L-10}" y="${hb+histH/2+5}" text-anchor="end">每年文书件数</text>`;
+  Object.entries(COUNTS).forEach(([y,n])=>{ const X=x(+y), h=n/max*histH;
+    s+=`<rect x="${X-1.6}" y="${hb+histH-h}" width="3.2" height="${h}" fill="${bar}"><title>${y} 年 ${n} 件</title></rect>`; });
+  [[1913,8],[1947,15],[1953,7]].forEach(([y,n])=>{ s+=`<text x="${x(y)}" y="${hb+histH-n/max*histH-4}" text-anchor="middle" style="font-family:var(--f-mono);font-size:11px;fill:${fg}">${y}</text>`; });
+  s+=`<line x1="${L}" x2="${W-R}" y1="${hb+histH}" y2="${hb+histH}" stroke="${line}"/>`;
+  svg.innerHTML=s;
+  svg.querySelectorAll(".ev").forEach(g=>{
+    const go=()=>{ const id=g.dataset.id, el=document.getElementById(id);
+      if(!el){ const e=E.find(z=>z.id===id); onS.add(e.s); onC.add(e.cat); syncChips(); draw(); }
+      const t=document.getElementById(id); t.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"});
+      t.classList.add("flash"); setTimeout(()=>t.classList.remove("flash"),1600); };
+    g.addEventListener("click",go); g.addEventListener("keydown",ev=>{ if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();} });
+  });
+}
+function syncChips(){
+  const sb=document.querySelectorAll("#f-str .chip"); Object.keys(STR).forEach((k,i)=>sb[i].setAttribute("aria-pressed",onS.has(k)));
+  const cb=document.querySelectorAll("#f-cat .chip"); CATS.forEach((c,i)=>cb[i].setAttribute("aria-pressed",onC.has(c.k)));
+}
+function draw(){ cards(); overview(); }
+draw();
+window.addEventListener("resize",overview);
+const mq=matchMedia("(prefers-color-scheme: dark)"); mq.addEventListener&&mq.addEventListener("change",overview);
+new MutationObserver(overview).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+</script>
+
+</body>
+</html>
