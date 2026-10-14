@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>福建契约土地研究</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;800&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: 左侧固定目录（窄屏时变为顶部横向目录）+ 右侧内容区；“总览”为本页自写内容，其余各节嵌入原页面 */
+:root{
+  --bg:#F3F5F4; --panel:#FFFFFF; --fg:#1C2320; --muted:#5E6B66; --line:#D9DFDC; --chip:#E8EDEA;
+  --seal:#B0382A; --ink:#2C4A6B; --side:#1F2A26; --side-fg:#E3EAE6; --side-muted:#93A39C; --side-on:#2E3B36;
+  --f-display:"Noto Serif SC","Songti SC","SimSun",serif;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#141917; --panel:#1C2220; --fg:#E6ECE9; --muted:#97A39E; --line:#2E3733; --chip:#252D2A;
+  --seal:#E0614F; --ink:#8FB3D9; --side:#0E1311; --side-fg:#E3EAE6; --side-muted:#7F8E88; --side-on:#1F2926;
+  color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{height:100vh;height:100dvh}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.7;display:grid;grid-template-columns:250px minmax(0,1fr)}
+@media (max-width:860px){body{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}}
+aside{background:var(--side);color:var(--side-fg);padding:24px 14px;display:flex;flex-direction:column;gap:18px;overflow-y:auto;min-height:0}
+@media (max-width:860px){aside{height:auto;padding:12px 16px;gap:8px}}
+.brand{padding:0 8px}
+.brand b{display:block;font-family:var(--f-display);font-size:20px;font-weight:800;letter-spacing:.06em;line-height:1.35}
+.brand span{font-size:12px;color:var(--side-muted)}
+.seal{display:inline-block;border:2px solid var(--seal);color:var(--seal);font-family:var(--f-display);font-size:12px;padding:1px 6px;margin-top:8px;letter-spacing:.1em}
+@media (max-width:860px){.brand .seal,.brand span{display:none}}
+nav{display:flex;flex-direction:column;gap:2px}
+@media (max-width:860px){nav{flex-direction:row;overflow-x:auto;gap:4px;padding-bottom:4px}}
+nav button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--side-fg);font:inherit;padding:8px 10px;border-radius:4px;cursor:pointer;border-left:3px solid transparent}
+nav button small{display:block;font-size:12px;color:var(--side-muted);line-height:1.4}
+nav button:hover{background:var(--side-on)}
+nav button[aria-current="true"]{background:var(--side-on);border-left-color:var(--seal);font-weight:700}
+nav button:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+nav .num{font-family:var(--f-mono);font-size:11px;color:var(--side-muted);margin-right:6px}
+@media (max-width:860px){nav button{width:auto;white-space:nowrap;border-left:0;border-bottom:3px solid transparent}nav button small{display:none}nav button[aria-current="true"]{border-bottom-color:var(--seal)}}
+.side-note{margin-top:auto;font-size:12px;color:var(--side-muted);padding:0 8px}
+@media (max-width:860px){.side-note{display:none}}
+main{overflow-y:auto;min-width:0;min-height:0;display:flex;flex-direction:column}
+#frame{display:block;width:100%;border:0;flex:1 1 auto;min-height:0}
+#home{width:100%;max-width:1060px;margin:0 auto;padding-inline:24px;padding-block:36px 64px;display:flex;flex-direction:column;gap:26px}
+#home[hidden],#frame[hidden]{display:none}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(28px,4vw,42px);margin:4px 0 0;letter-spacing:.04em;line-height:1.25;text-wrap:balance}
+h2{font-family:var(--f-display);font-weight:600;font-size:21px;margin:0 0 8px}
+p{margin:0;max-width:70ch}
+.lede{margin-top:10px;font-size:16px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{border-top:2px solid var(--fg);padding-top:8px}
+.kpi b{display:block;font-family:var(--f-mono);font-size:28px;font-weight:500;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--muted)}
+.findings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.findings{grid-template-columns:minmax(0,1fr)}}
+.finding{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px}
+.finding h3{font-family:var(--f-display);font-size:17px;margin:0 0 4px}
+.finding p{font-size:14px;color:var(--fg)}
+.finding .go{margin-top:8px;background:none;border:0;padding:0;color:var(--ink);font:inherit;font-size:13px;cursor:pointer}
+.finding .go:hover{text-decoration:underline}
+.finding .go:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.caveat{background:var(--chip);border-radius:6px;padding:14px 16px;font-size:14px}
+.caveat ul{margin:6px 0 0;padding-left:20px}
+.caveat li{margin-bottom:4px}
+</style>
+</head>
+<body>
+<aside>
+  <div class="brand"><b>福建契约土地研究</b><span>234 件契约文书 · 1584–1978</span><div class="seal">田·屋·山·典</div></div>
+  <nav id="nav" aria-label="目录"></nav>
+  <p class="side-note">各节为独立的交互页面，图表需联网加载。原件链接指向匹兹堡大学数字图书馆。</p>
+</aside>
+<main id="main">
+  <section id="home">
+    <header>
+      <div class="eyebrow">课程资料 students_documents · 匹兹堡大学数字图书馆藏中国契约文书</div>
+      <h1>契约里的土地：类型、交易与历史</h1>
+      <p class="lede">这组文书共 234 件、407 页，以福建为主，时间从明万历到 1978 年。本页汇总了基于 OCR 文本和编目信息所做的九项分析，从左侧目录进入各节。</p>
+    </header>
+    <div class="kpis">
+      <div class="kpi"><b>234</b><span>件文书，142 件为民间契约</span></div>
+      <div class="kpi"><b>191</b><span>件可定位到县，闽侯占一半</span></div>
+      <div class="kpi"><b>89 : 55</b><span>卖契与典契件数之比</span></div>
+      <div class="kpi"><b>29</b><span>条事件与文书证据的对照</span></div>
+    </div>
+    <div>
+      <h2>主要发现</h2>
+      <div class="findings" id="findings"></div>
+    </div>
+    <div class="caveat">
+      <b>使用前请注意</b>
+      <ul>
+        <li>数字来自 OCR 关键词统计，是下限估计，未逐件核对原图；页面中的引文也可能有个别错字。</li>
+        <li>文书在各年代、各地区的多少受收藏来源影响很大，不能直接代表当时交易的多少。</li>
+        <li>价格折算按 1913 年验契单上的比率（1 两 ≈ 1.45 元，1 千文 ≈ 1 元），19 世纪的折算只能看量级。</li>
+      </ul>
+    </div>
+  </section>
+  <iframe id="frame" title="分析页面" hidden></iframe>
+</main>
+
+<script>
+const NAV = __NAV__;
+const PAGES = __PAGES__;
+const FINDINGS = [
+ ["map","土地类型与地理","田最多（约 105 件），其次是房屋、宅基地、山地。城市（福州、东山县城）以房屋为主，闽江中游以田为主，闽北、闽西多山地契约。"],
+ ["tx","交易方式","卖 89 件、典 55 件。福州一带典、撥典、凑断最多，田面、田根可以分开交易；闽北、闽西以一次卖断为主。"],
+ ["units","计量单位","田按亩、受种、租额、号计；房屋按柱、栏、堵、间计；山按片、所计；坟按穴计。价格从银两、铜钱到银元、法币、金、米。"],
+ ["minhou","价格变化","闽侯房价从同治年间的十余两涨到民国的数百至一千元；田价没有明显趋势，单价主要取决于权利层次。"],
+ ["permu","权利层次与单价","闽侯每亩折合银元：田面约 12 元，田根约 74 元，根面全田约 57 元。买田根比买田面贵得多。"],
+ ["lin","家庭田产","林萬開兄弟 1891 年阄书列田 32.5 亩；1875、1881 年两笔买入共 5 亩，约占三房田产的 15%、萬開名下的 39%。"],
+ ["events","历史背景","契约中能直接看到太平天国造成的契据遗失、福州钱庄银票和台伏、民国验契、战时田赋征实、1949 年后改用金米计价和土地改革。"],
+ ["timeline","文书数量的高峰","1913、1947、1951–53 年的高峰来自验契、土地陈报和土改等政策，不代表交易增多。"]];
+const nav=document.getElementById("nav"), frame=document.getElementById("frame"), home=document.getElementById("home"), main=document.getElementById("main");
+const items=[{k:"home",name:"总览",desc:"主要发现与说明"}, ...NAV];
+items.forEach((p,i)=>{
+  const b=document.createElement("button"); b.dataset.k=p.k;
+  b.innerHTML=`<span class="num">${String(i).padStart(2,"0")}</span>${p.name}<small>${p.desc}</small>`;
+  b.onclick=()=>show(p.k,true); nav.appendChild(b);
+});
+document.getElementById("findings").innerHTML=FINDINGS.map(f=>{const p=NAV.find(n=>n.k===f[0]);
+  return `<div class="finding"><h3>${f[1]}</h3><p>${f[2]}</p><button class="go" data-k="${f[0]}">查看：${p.name} →</button></div>`;}).join("");
+document.querySelectorAll(".finding .go").forEach(b=>b.onclick=()=>show(b.dataset.k,true));
+
+function show(k,push){
+  nav.querySelectorAll("button").forEach(b=>b.setAttribute("aria-current", b.dataset.k===k));
+  if(k==="home"){ home.hidden=false; frame.hidden=true; frame.removeAttribute("srcdoc"); main.scrollTop=0; }
+  else { home.hidden=true; frame.hidden=false; frame.srcdoc=PAGES[k]; main.scrollTop=0; }
+  try{ localStorage.setItem("lc-tab",k); }catch(e){}
+  if(push){ try{ history.replaceState(null,"","#"+k); }catch(e){} }
+}
+let start="home";
+const h=(location.hash||"").slice(1);
+if(items.some(p=>p.k===h)) start=h; else { try{ const s=localStorage.getItem("lc-tab"); if(items.some(p=>p.k===s)) start=s; }catch(e){} }
+show(start,false);
+</script>
+</body>
+</html>
